@@ -45,7 +45,7 @@ var lzxPlayerInit = function () {
 
     var jsUrl = $("#ilt").attr("src");// /assets/player/player.js
     var webURL = jsUrl.startsWith("http") ? jsUrl.substring(0,jsUrl.indexOf("/",8)) : window.location.origin;//http://localhost:4000
-    var webURL = 'http://m.meihongvisa.com/music.php';//
+    var webURL = 'https://m.meihongvisa.com/music.php';//
  
         
         $("head").append('<link rel="stylesheet" type="text/css" href="/assets/player/player.css">');
