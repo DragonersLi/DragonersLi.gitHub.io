@@ -1,0 +1,40 @@
+#主题
+theme: yilia #主题模板修改 #geek #yilia #landscape
+
+
+#标签搜索
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+
+# 是否需要修改 root 路径
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+root: /
+url: 'https://dragonersli.github.io'
+
+# 音乐播放器后端接口
+music_web_url: 'https://zjyspm.com/music.php'
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository:  https://github.com/DragonersLi/DragonersLi.gitHub.io.git
+  branch: main
+

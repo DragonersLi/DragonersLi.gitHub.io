@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="https://dragonersli.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://dragonersli.github.io/"/>
+  <updated>2026-08-16T10:55:34.640Z</updated>
+  <id>https://dragonersli.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-index</title>
+    <link href="https://dragonersli.github.io/2016/06/12/blogs/index/"/>
+    <id>https://dragonersli.github.io/2016/06/12/blogs/index/</id>
+    <published>2016-06-11T19:30:16.000Z</published>
+    <updated>2026-08-16T10:55:34.640Z</updated>
+    
+    <content type="html"><![CDATA[<p> index.md</p><hr>]]></content>
+    
+    
+    <summary type="html">hexo-index</summary>
+    
+    
+    
+    <category term="Lucas" scheme="https://dragonersli.github.io/categories/Lucas/"/>
+    
+    
+    <category term="PHP" scheme="https://dragonersli.github.io/tags/PHP/"/>
+    
+    <category term="Lucas" scheme="https://dragonersli.github.io/tags/Lucas/"/>
+    
+  </entry>
+  
+</feed>
