@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="https://dragonersli.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://dragonersli.github.io/"/>
+  <updated>2026-08-17T08:55:17.649Z</updated>
+  <id>https://dragonersli.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>愿意温柔待花开，愿意慈悲等风来！</title>
+    <link href="https://dragonersli.github.io/2016/06/12/blogs/index/"/>
+    <id>https://dragonersli.github.io/2016/06/12/blogs/index/</id>
+    <published>2016-06-11T19:30:16.000Z</published>
+    <updated>2026-08-17T08:55:17.649Z</updated>
+    
+    <content type="html"><![CDATA[<p> 愿意温柔待花开，愿意慈悲等风来！</p><hr>]]></content>
+    
+    
+    <summary type="html">愿意温柔待花开，愿意慈悲等风来！</summary>
+    
+    
+    
+    <category term="Lucas" scheme="https://dragonersli.github.io/categories/Lucas/"/>
+    
+    
+    <category term="PHP" scheme="https://dragonersli.github.io/tags/PHP/"/>
+    
+    <category term="Lucas" scheme="https://dragonersli.github.io/tags/Lucas/"/>
+    
+  </entry>
+  
+</feed>
