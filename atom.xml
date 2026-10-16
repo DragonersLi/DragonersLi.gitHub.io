@@ -6,7 +6,7 @@
   <link href="https://dragonersli.github.io/atom.xml" rel="self"/>
   
   <link href="https://dragonersli.github.io/"/>
-  <updated>2026-10-16T06:50:07.740Z</updated>
+  <updated>2026-10-16T08:16:41.353Z</updated>
   <id>https://dragonersli.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>李世龙的求职简历</title>
-    <link href="https://dragonersli.github.io/2026/10/16/readme/job/"/>
-    <id>https://dragonersli.github.io/2026/10/16/readme/job/</id>
-    <published>2026-10-16T05:14:15.000Z</published>
-    <updated>2026-10-16T06:50:07.740Z</updated>
+    <link href="https://dragonersli.github.io/2026/10/18/readme/job/"/>
+    <id>https://dragonersli.github.io/2026/10/18/readme/job/</id>
+    <published>2026-10-18T05:14:15.000Z</published>
+    <updated>2026-10-16T08:16:41.353Z</updated>
     
     <content type="html"><![CDATA[<hr>]]></content>
     
@@ -60,11 +60,11 @@
     
     <category term="vue" scheme="https://dragonersli.github.io/tags/vue/"/>
     
+    <category term="uniapp" scheme="https://dragonersli.github.io/tags/uniapp/"/>
+    
     <category term="java" scheme="https://dragonersli.github.io/tags/java/"/>
     
     <category term="python" scheme="https://dragonersli.github.io/tags/python/"/>
-    
-    <category term="uniapp" scheme="https://dragonersli.github.io/tags/uniapp/"/>
     
   </entry>
   
