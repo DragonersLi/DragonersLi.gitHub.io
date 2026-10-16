@@ -6,7 +6,7 @@
   <link href="https://dragonersli.github.io/atom.xml" rel="self"/>
   
   <link href="https://dragonersli.github.io/"/>
-  <updated>2026-10-01T01:42:44.671Z</updated>
+  <updated>2026-10-16T06:50:07.740Z</updated>
   <id>https://dragonersli.github.io/</id>
   
   <author>
@@ -17,19 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>today</title>
-    <link href="https://dragonersli.github.io/2021/04/13/readme/today/"/>
-    <id>https://dragonersli.github.io/2021/04/13/readme/today/</id>
-    <published>2021-04-13T06:03:49.000Z</published>
-    <updated>2026-10-01T01:42:44.671Z</updated>
+    <title>李世龙的求职简历</title>
+    <link href="https://dragonersli.github.io/2026/10/16/readme/job/"/>
+    <id>https://dragonersli.github.io/2026/10/16/readme/job/</id>
+    <published>2026-10-16T05:14:15.000Z</published>
+    <updated>2026-10-16T06:50:07.740Z</updated>
     
     <content type="html"><![CDATA[<hr>]]></content>
     
     
-    <summary type="html">today</summary>
+    <summary type="html">10年以上工作经验,求一份全栈开发岗,PHP,GO,VUE,UNIAPP,NODEJS,JAVA,PYTHON等</summary>
     
     
     
+    
+    <category term="job" scheme="https://dragonersli.github.io/tags/job/"/>
     
   </entry>
   
@@ -38,7 +40,7 @@
     <link href="https://dragonersli.github.io/2016/06/12/readme/index/"/>
     <id>https://dragonersli.github.io/2016/06/12/readme/index/</id>
     <published>2016-06-11T19:30:16.000Z</published>
-    <updated>2026-10-02T18:53:04.677Z</updated>
+    <updated>2026-10-16T06:24:32.364Z</updated>
     
     <content type="html"><![CDATA[<p> 愿意温柔待花开，愿意慈悲等风来！</p><hr>]]></content>
     
@@ -47,12 +49,22 @@
     
     
     
-    <category term="Lucas" scheme="https://dragonersli.github.io/categories/Lucas/"/>
+    <category term="技术栈" scheme="https://dragonersli.github.io/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
     
     
     <category term="PHP" scheme="https://dragonersli.github.io/tags/PHP/"/>
     
-    <category term="Lucas" scheme="https://dragonersli.github.io/tags/Lucas/"/>
+    <category term="Go" scheme="https://dragonersli.github.io/tags/Go/"/>
+    
+    <category term="nodejs" scheme="https://dragonersli.github.io/tags/nodejs/"/>
+    
+    <category term="vue" scheme="https://dragonersli.github.io/tags/vue/"/>
+    
+    <category term="java" scheme="https://dragonersli.github.io/tags/java/"/>
+    
+    <category term="python" scheme="https://dragonersli.github.io/tags/python/"/>
+    
+    <category term="uniapp" scheme="https://dragonersli.github.io/tags/uniapp/"/>
     
   </entry>
   
