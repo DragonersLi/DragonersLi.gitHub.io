@@ -65,6 +65,50 @@
   letter-spacing: .04em;
 }
 
+.resume-section-nav {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 8px;
+  border: 1px solid var(--resume-line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .97);
+  box-shadow: 0 8px 22px rgba(21, 66, 59, .06);
+}
+
+.resume-section-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: var(--resume-ink);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resume-section-nav a:hover,
+.resume-section-nav a:focus-visible {
+  color: var(--resume-accent);
+  background: var(--resume-accent-soft);
+}
+
+.resume-section-nav a:focus-visible {
+  outline: 2px solid var(--resume-accent);
+  outline-offset: 2px;
+}
+
+.resume-section-nav span {
+  color: var(--resume-accent);
+  font-variant-numeric: tabular-nums;
+}
+
 .resume-hero::after {
   position: absolute;
   top: 0;
@@ -175,6 +219,7 @@
   margin: 0;
   color: var(--resume-ink);
   font-size: 27px;
+  scroll-margin-top: 88px;
 }
 
 .resume-section__header p {
@@ -186,29 +231,39 @@
 .resume-advantages {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 14px 28px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .resume-advantages li {
-  padding: 20px;
-  border: 1px solid #e2ece9;
-  border-radius: 14px;
-  background: #f8fbfa;
+  padding: 3px 0 3px 17px;
+  border-left: 2px solid #8dcabc;
+}
+
+.article-entry .resume-advantages li::before {
+  content: none;
 }
 
 .resume-timeline {
   position: relative;
-  margin-left: 9px;
-  padding-left: 30px;
-  border-left: 2px solid var(--resume-line);
+  padding-left: 183px;
+}
+
+.resume-timeline::before {
+  position: absolute;
+  top: 20px;
+  bottom: 30px;
+  left: 160px;
+  width: 2px;
+  background: var(--resume-line);
+  content: "";
 }
 
 .resume-timeline__item {
   position: relative;
-  margin: 0 0 18px;
+  margin: 0 0 13px;
   border: 1px solid #dfe9e7;
   border-radius: 14px;
   background: var(--resume-paper);
@@ -218,9 +273,9 @@
 .resume-timeline__item::before {
   position: absolute;
   top: 28px;
-  left: -38px;
-  width: 14px;
-  height: 14px;
+  left: -30px;
+  width: 12px;
+  height: 12px;
   border: 3px solid #fff;
   border-radius: 50%;
   background: var(--resume-accent);
@@ -236,8 +291,10 @@
 .resume-card__summary {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 8px 24px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  min-height: 80px;
+  align-content: center;
   padding: 22px 54px 22px 24px;
   cursor: pointer;
   list-style: none;
@@ -273,14 +330,14 @@
 }
 
 .resume-card__date {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  align-self: center;
-  padding: 5px 10px;
-  border-radius: 999px;
-  color: #32665f;
-  background: var(--resume-accent-soft);
+  position: absolute;
+  top: 26px;
+  right: calc(100% + 49px);
+  width: 135px;
+  color: var(--resume-muted);
   font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
   white-space: nowrap;
 }
 
@@ -309,7 +366,57 @@
   color: #254f4a;
 }
 
+@media (max-width: 900px) {
+  .resume-timeline {
+    margin-left: 6px;
+    padding-left: 20px;
+    border-left: 2px solid var(--resume-line);
+  }
+
+  .resume-timeline::before {
+    content: none;
+  }
+
+  .resume-timeline__item::before {
+    left: -28px;
+  }
+
+  .resume-card__summary {
+    display: block;
+    min-height: 0;
+    padding: 19px 45px 19px 18px;
+  }
+
+  .resume-card__summary span {
+    display: block;
+  }
+
+  .resume-card__date {
+    position: static;
+    display: block;
+    width: auto;
+    margin-bottom: 8px;
+    text-align: left;
+    white-space: normal;
+  }
+}
+
 @media (max-width: 700px) {
+  .resume-section-nav {
+    gap: 4px;
+    padding: 6px;
+  }
+
+  .resume-section-nav a {
+    min-height: 38px;
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+
+  .resume-section__header h2 {
+    scroll-margin-top: 122px;
+  }
+
   .resume-hero {
     grid-template-columns: 1fr;
     gap: 18px;
@@ -348,29 +455,6 @@
 
   .resume-section__header p {
     margin-top: 5px;
-  }
-
-  .resume-timeline {
-    margin-left: 6px;
-    padding-left: 20px;
-  }
-
-  .resume-timeline__item::before {
-    left: -28px;
-  }
-
-  .resume-card__summary {
-    display: block;
-    padding: 19px 45px 19px 18px;
-  }
-
-  .resume-card__summary span {
-    display: block;
-  }
-
-  .resume-card__date {
-    width: fit-content;
-    margin-top: 8px;
   }
 
   .resume-card__body {
