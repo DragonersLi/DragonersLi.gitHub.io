@@ -1,0 +1,98 @@
+.small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.hdrNameBg {
+	 background:#ffffff url(../images/hdrNameBg.gif) repeat-x;
+}
+
+.citystyle{
+	position:relative;
+	top:0px;
+	left:0px;
+	text-align:left;
+}
+
+#theClockLayer{
+	position:relative;
+	height:180px;
+	left:20px;
+	text-align:center;
+}
+
+#wclock{
+	position:absolute;
+	left:100px;
+	top:100px;
+	display:none;
+	background-color:#CCCCCC;
+	width:175px;
+}
+
+.importBox{
+	width:125px;
+	border:1px solid #666666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+.layerPopup {
+	border:3px solid #95a5ff;
+	background:#fffff5 url(../images/layerPopupBg.gif) ;
+	position:absolute;
+}
+
+.datestyle{
+	margin-top:20px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:120px;
+	text-align:center;
+	font-family:arial,sans-serif;
+	font-size:10px;
+	color:#000000;
+}
+
+.ampmstyle{
+	margin-top:23px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:20px;
+	text-align:center;
+	font-family:arial,sans-serif;
+	font-size:10px;
+	color:#000000;
+}
+
+.facestyle{
+	margin-top:10px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:15px;
+	height:15px;
+	text-align:center;
+	font-family:arial,sans-serif;
+	font-size:10px;
+	color:#000000;
+}
+
+.handsanddotsstyle{
+	margin-top:10px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:2px;
+	height:2px;
+	font-size:2px;
+	background-color:#000000;
+}
+
+.mailClientBg {
+	background-color:#efefff;
+	background-image:url(../images/layerPopupBg.gif);
+}

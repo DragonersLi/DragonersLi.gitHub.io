@@ -55,7 +55,7 @@
   object-fit: cover;
   object-position: 50% 25%;
   box-shadow: 0 14px 34px rgba(3, 34, 39, .34);
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 .resume-hero__portrait-wrap figcaption {

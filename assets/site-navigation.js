@@ -481,7 +481,9 @@
 
             extractPageConfig(page.document);
             if (mode === 'push') {
-                window.history.pushState(stateWithScroll(null, 0), '', url.href);
+                var nextState = stateWithScroll(null, 0);
+                nextState.siteNavigationFrom = window.location.href;
+                window.history.pushState(nextState, '', url.href);
             }
             var replacement = document.importNode(page.content, true);
             rememberExplicitTargets(replacement);

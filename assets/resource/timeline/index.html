@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>职业时间轴 · 李世龙</title>
+  <meta name="description" content="李世龙的工作与项目经历时间轴；内容与本站简历同步。">
+  <link rel="icon" href="/assets/static/img/favicon.ico">
+  <link rel="stylesheet" href="./timeline.css">
+  <script src="./timeline.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero__top">
+        <a class="back-link" href="/">← 返回首页</a>
+      </div>
+      <div class="hero__main">
+        <div>
+          <h1>职业时间轴</h1>
+          <p class="hero__intro" id="hero-intro">工作经历与项目实践，按时间倒序排列。</p>
+          <div class="hero__meta" id="hero-meta" aria-label="个人信息"></div>
+        </div>
+        <div id="hero-portrait-slot"></div>
+      </div>
+    </header>
+
+    <nav class="section-nav" aria-label="时间轴导航">
+      <a href="#advantages">个人优势</a>
+      <a href="#work">工作经历 <span id="work-count"></span></a>
+      <a href="#projects">项目经历 <span id="project-count"></span></a>
+    </nav>
+
+    <p class="load-state" id="load-state" role="status">正在读取最新简历内容…</p>
+
+    <section class="section" id="advantages" aria-labelledby="advantages-heading" hidden>
+      <div class="section__heading">
+        <h2 id="advantages-heading">个人优势</h2>
+      </div>
+      <ul class="advantages" id="advantages-list"></ul>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-heading" hidden>
+      <div class="section__heading">
+        <h2 id="work-heading">工作经历</h2>
+        <p>点击节点展开或收起详情</p>
+      </div>
+      <div class="timeline" id="work-list"></div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-heading" hidden>
+      <div class="section__heading">
+        <h2 id="projects-heading">项目经历</h2>
+        <p>点击节点展开或收起详情</p>
+      </div>
+      <div class="timeline" id="project-list"></div>
+    </section>
+
+  </main>
+  <dialog class="portrait-preview" id="portrait-preview" aria-label="简历头像大图">
+    <button class="portrait-preview__close" type="button" aria-label="关闭头像大图">×</button>
+    <img alt="李世龙简历头像大图">
+  </dialog>
+</body>
+</html>

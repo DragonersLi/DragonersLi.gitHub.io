@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://www.zhangxinxu.com/sp/slide/share-intro.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta charset="utf-8">
+
+<title>让我过来讲故事，哦，不不，自我介绍</title>
+
+<link rel="stylesheet" href="./intro.css">
+
+</head>
+
+
+
+<body>
+
+<div id="container" class="container">
+
+	<!-- 场景0 
+
+      加载提示
+
+    -->
+
+    <div id="screen0" class="screen screen_load">
+
+    	<span id="screenLoad" class="ani_load abs_center ani_prog finish"><img src="./43.gif" align="absmiddle"> 充电中...</span>
+
+    </div>
+
+    <script>
+
+		var screenActive = document.getElementById("screen0");
+
+		screenActive && screenActive.classList.add("active");
+
+	</script>
+
+	<!-- 场景1
+
+      路边钓鱼，太阳高高挂
+
+    -->
+
+    <div id="screen1" class="screen screen_sun active">
+
+    	<sun></sun>
+
+    </div>
+
+    <!-- 场景2
+
+      太阳小哥仓皇逃窜
+
+      警车横空出世
+
+      被掳走了
+
+     -->
+
+	<div id="screen2" class="screen screen_car" data-call="fnAudioPlay">
+
+        <audio src="./brake.mp3" preload="auto" data-delay="200"></audio>
+
+    	<sun></sun><car></car>
+
+    </div>
+
+    <!-- 场景3-6
+
+      警察叔叔问话
+
+    -->
+
+    <div id="screen3" class="screen screen_ask slidedown"></div> 
+
+    <div id="screen4" class="screen screen_ask">
+
+    	<dialog class="dialog_me" open="">我说阿sir, 不就是在路边钓个鱼嘛，有必要把我铐起来吗？</dialog>
+
+    </div> 
+
+    <div id="screen5" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open="">钓你妹啊！在这极端高温天气，就算你被地表80°的马路烤成焦炭，也不关偶们鸟事。抓你来是因为你跟我们要通缉的人100%的相似！</dialog>
+
+    </div> 
+
+    <div id="screen6" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="">敢不敢拿过来给我瞅瞅？</dialog>
+
+    </div> 
+
+    <!-- 场景7
+
+      传说中的相似度100%<br>
+
+      坑爹啊
+
+    -->
+
+    <div id="screen7" class="screen screen_match" data-call="fnAudioPlay">
+
+    	<audio src="./haliluya.mp3" preload="auto" data-delay="300"></audio>
+
+		<div class="head_match">
+
+       		<img src="./intro-5.jpg"><img src="./intro-6.jpg">
+
+		</div>
+
+		<h6 class="head_percent"><strong>100%</strong>相似</h6>
+
+		<img src="./intro-7.jpg" class="head_keng" height="263" width="300">
+
+    </div>
+
+    <!-- 场景8-?
+
+      继续问话
+
+      基本信息透露
+
+    -->
+
+	<div id="screen8" class="screen screen_ask slidedown">
+
+		<dialog class="dialog_jc" open="">所以现在对你做身份调查，必须老实交代，不然……</dialog>
+
+	</div>
+
+    <div id="screen9" class="screen screen_ask" data-call="fnAudioPlay">
+
+    	<audio src="./break.mp3" preload="auto"></audio>
+
+        <div id="otherwise"><img class="egg_broke" src="./intro-8.jpg"><img class="sweat_down" src="./intro-9.png"></div>
+
+    </div>
+
+    <div id="screen10" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open="">报上姓名、生日、爱好、从哪里来到哪里去？</dialog>
+
+    </div>
+
+    <div id="screen11" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="">本人名叫李世龙; 88年人士，射手座；喜欢钓鱼、爬山、上网，以及养鱼；来自安徽，去往充满挑战与激情的道路上。</dialog>
+
+    </div>
+
+    <div id="screen12" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open="">然后呢？这点信息可不能说明你不是我们要通缉的人！</dialog>
+
+    </div>
+
+    <div id="screen13" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="">我是PHP程序猿！</dialog>
+
+    </div>
+
+    <div id="screen14" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open="">慢！“程序猿”，是不是码代码的猴子？</dialog>
+
+    </div>
+
+    <div id="screen15" class="screen screen_ask">
+
+        <dialog class="dialog_me" open=""><img src="./intro-tuxie.gif"></dialog>
+
+    </div>
+
+    <div id="screen16" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="">“程序猿”指是一种非常特殊的、可以从事程序开发、维护的物种，是人类在科技研究上的一种新兴进化，拥有无与伦比的耐力、超越时代的智商、横穿社会的苦逼相和低于人类平均寿命的显著特点。</dialog>
+
+    </div>
+
+    <div id="screen17" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open="">恩，继续……</dialog>
+
+    </div>
+
+    <div id="screen18" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="">目前住在西湖区，每周可以抓龙虾钓鱼，心情倍儿爽。</dialog>
+
+    </div>
+
+    <div id="screen19" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open="">别说些有的没的，大家都很忙，说点有意思的……</dialog>
+
+    </div>
+
+    <div id="screen20" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="">喜欢画画，以前有专门研习，水彩居多，同学都说画得不错哦！</dialog>
+
+    </div>
+
+    <div id="screen21" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open="">是吗？那给大家展示一下~~</dialog>
+
+    </div>
+
+    <div id="screen22" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="" data-open="./large_5424o171.jpg">我就献丑展示下如何画一只羊!<p style="color:#cd0000; font-size:12px;">翻页后直接点击右下角红色“下一步”</p></dialog>
+
+    </div>
+
+    <!-- 场景5 
+
+      画一只羊
+
+    -->
+
+    <div id="screen23" class="screen screen_sheep">
+
+    	<h3 class="draw_title">如何画一只羊</h3>
+
+        <div class="draw_sheep">
+
+        	<span id="drawDescr" class="draw_descr">第一步：画一个U型</span>
+
+        	<img id="drawImg" src="./intro-sheep.jpg">
+
+       	</div>
+
+        <div class="draw_operate">
+
+        	<input id="drawPrev" class="draw_prev" value="上一步" disabled="disabled" type="button">
+
+            <span id="drawStepNum">1</span>/7
+
+            <input id="drawNext" class="draw_next" value="下一步" highlight="" type="button">
+
+        </div>
+
+        <script>var dataDrawStep = ["第一步：画一个U型", "第二步：添加两个点", "第三步：周围云朵走起", "第四步：画腿", "第五步：小心地绘制阴影", "第六步：使用白色蜡笔上色", "第七步：添加水彩画作为背景。大功告成，简单到掉渣！"];</script>
+
+    </div>
+
+    <!-- 场景24-29 
+
+      国标的吐槽
+
+    -->
+
+    <div id="screen24" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open=""><img src="./intro-tuxie.gif"></dialog>
+
+    </div>
+
+    <div id="screen25" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="">以前苦学过绘画技术，是个好苗子。毕业后专注于技术，就没再练过。</dialog>
+
+    </div>
+
+    <div id="screen26" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open="">机会难得，必须要秀两段！</dialog>
+
+    </div>
+
+    <div id="screen27" class="screen screen_ask">
+
+        <dialog class="dialog_me" open=""><img src="./intro-nimei.png" class="alignleft">我cow，长官，我被拷着呢！跳飞机啊！</dialog>
+
+    </div>
+
+    <div id="screen28" class="screen screen_ask">
+
+        <dialog class="dialog_jc" open=""><img src="./193.gif" align="absbottom"> 唉，就会空口说白话，无法证明自己身份，来人，给我拖出去，……</dialog>
+
+    </div>
+
+    <div id="screen29" class="screen screen_ask">
+
+        <dialog class="dialog_me" open="">
+
+        	<img src="./intro-wait.jpg" class="head_cover">
+
+            <strong class="head_ask">??</strong>等一下！
+
+        </dialog>
+
+    </div>
+
+    
+
+    <!--  
+
+      场景30
+
+      故事发展线路选择
+
+    -->
+
+    <div id="screen30" class="screen screen_choose slideright">
+
+    	<strong class="story_title">
+
+        	<i class="story_brace"></i>
+
+        	为挽救主人公，请正确选择故事走向：
+
+        </strong>
+
+        <ol class="story_ol">
+
+            <li><a href="#screen31">吐槽技术</a></li>
+
+            <li><a href="#screen38">自曝八卦</a></li>
+
+        </ol>
+
+    </div>
+
+    <!-- 场景31 
+
+      选择的确认，其实是希望引导到八卦
+
+      因为本次分享主要是自我介绍，而非技术展示
+
+    -->
+
+    <div id="screen31" class="screen screen_chance" data-call="fnGoSetDate">
+
+    	<div class="go_hungli">
+
+        	<time>
+
+                <strong id="goDate" class="go_date">2015年8月20日</strong>
+
+                <sup id="goDay" class="go_day">星期四</sup>
+
+            </time>
+
+        </div>
+
+        <script>var fnGoSetDate = function() {
+
+			var date = new Date(), day = date.getDay();
+
+			var arrDay = ["天", "一", "二", "三", "四", "五", "六"];
+
+			$("#goDate").innerHTML = date.toLocaleDateString();
+
+			$("#goDay").innerHTML = "星期" + arrDay[day];
+
+		};</script>
+
+        
+
+        <!-- 右半侧 -->
+
+        <div class="go_remind cell">
+
+        	<p><strong>友情提示：</strong><br>程序员老黄历显示——这是楼主自画的心目中的女神，您是？</p>
+
+            <p><input type="button" value="继续走，管他呢"></p>
+
+            <p>or</p>
+
+            <p><a href="#screen30" type="button" highlight="">宁可信其有，返回</a></p>
+
+        </div>
+
+    </div>
+
+    <!-- 场景32
+
+      时间轴 
+
+      技术证明
+
+      技术成长历程
+
+      ps/flash/as2/as3/css/js/php/mysql→HTML/JS/CSS 
+
+      所有这些全部都是自学，因此，学习能力毋庸置疑
+
+      学生时代，小义工部logo以及工作证设计；兼职PPT设计以及flash课件制作；以及大大小小网站制作等。
+
+      正式工作后，专注前端技术，有广度有深度以及前瞻性 喜欢研究与分享 有很多首创的前端技术方法（点点点，两端对齐，垂直居中，absolute对齐，letter-spacing隐藏，first-letter双背景等很多），推广了很多理念，如鑫三无原则；打破了很多常规，如CSS reset, 通俗CSS命名以及固定布局理念等 国内访问量最大的前端技术博客
+
+      帮助了很多新人的成长
+
+      
+
+      虽然我有计算机背景，但我的互联网从业是设计带进门的，以前我认为是劣势，后来通过思考为何我的博客为何受欢迎，发现，情感化的东西会对人的成长、事物的发展起到深远的影响。因此，加入大家这个设计团队，我有种重回故里，如鱼得水的感觉，我相信在之后的配合中会擦除不一样的火花的。
+
+    -->   
+
+    <div id="screen32" class="screen screen_tech" data-call="fnImageLazyload">
+
+    	<div class="tech_timeline timeline J_timeline" title="后面历史拖动可见">
+
+        	<ul class="timeline_top">
+  
+                <li>                	
+
+                   
+
+                    <div class="timeline_year"><strong>2012</strong><sup>年</sup><strong>2</strong><sup>月</sup> - <strong>2012</strong><sup>年</sup><strong>6</strong><sup>月</sup></div>
+                    <div class="timeline_con"><img data-src="./js1.jpg"></div>
+                </li>
+                <li>                    
+
+                    <div class="timeline_year"><strong>2012</strong><sup>年</sup><strong>6</strong><sup>月</sup> - <strong>2014</strong><sup>年</sup><strong>6</strong><sup>月</sup></div>
+
+                    <div class="timeline_con"><img data-src="./js2.jpg"></div>
+
+                </li>
+                   <li>                	
+                    <div class="timeline_year"><strong>2015</strong><sup>年</sup>-未来</div>
+                    <div class="timeline_con"  ><img data-src="./js3.jpg"></div>
+
+                   
+
+                </li>
+            </ul>
+
+            <ul class="timeline_bottom"> 
+			 <li>                	
+                    <div class="timeline_year"><strong>1988.12.12年 - 未来</strong> </div>
+                    <div class="timeline_con"  > <img data-src="./intro-tear.gif"><img data-src="./intro-tear.gif"><img data-src="./intro-tear.gif"></div> 
+                </li>
+            </ul>
+
+        </div>
+
+        <h4 class="tect_title">技术成长史</h4>
+
+    </div>
+
+    
+
+    <div id="screen33" class="screen screen_ask"><dialog class="dialog_jc" open="">毫无特色，完全不能表明自己身份。你已经没有机会了，来人，给我拖出去，……</dialog></div>
+
+    <div id="screen34" class="screen screen_ask"><dialog class="dialog_jc" open=""><strong style="font-size:8em;">放了！</strong></dialog></div>
+
+    <div id="screen35" class="screen screen_letgo">
+
+    	<img src="./intro-go.png" class="abs_center letgo_img" height="431" width="682">
+
+    </div>
+
+    <div id="screen36" class="screen screen_bad">
+
+    	<h1 class="bad_end">这其实是个糟糕的结局！</h1>
+
+        <p class="bad_end_reason"><img src="./22.gif" align="absmiddle"> 糟糕？<a href="#screen38">点击这里寻找答案</a>。</p>
+
+    </div>
+
+    
+
+    <!-- 场景37 结束致辞 -->
+
+    <div id="screen37" class="screen screen_last" data-call="fnScreenDisPlay|fnAudioPlay">
+
+    	<audio src="./ending.mp3" preload="auto"></audio>
+
+    	<div class="ani_last">
+
+            <p>策划：Dragoners.Li</p>
+
+            <p>监制：李世龙</p>
+
+            <p>撰稿：李世龙</p>
+
+            <p>编辑：李世龙</p>
+
+            <p>制作：李世龙</p>
+
+            <p>音效：李世龙</p>
+
+            <p>导演：Dragoners.Li</p>
+
+            <p>鸣谢单位：杭州搬砖科技有限公司</p>
+
+            <p>鸣谢：Dragoners.Li</p>
+
+            <p>特别鸣谢：李世龙</p>
+
+            <p>日期：2015-08-20</p>
+
+            <div class="ani_last_full"><img src="./intro-draw.jpg"></div>
+
+            <div class="ani_last_full">
+
+            	<img src="./20130808142737297.jpg">
+
+                <h4>鸣谢单位</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <!-- 场景38 
+
+      自曝八卦，实际是个人性格、生活经历等
+
+      热爱艺术与生活，刚入大学那会儿，异常敏感与细腻，对于艺术创作很好；但是对于人际交往不利
+
+      有研读人格心理学与社会心理学，尤其人格心理学，对于自身的性格形成有了准确认识，于是有了强大的心理
+
+      大学被同学称为“行为艺术家”，特立独行，比方说，走路走着走着回突然停住，扮演时空静止。毕业后，逐渐收敛，但仍有后遗症，本分享可能就看出点气息。
+
+      绘画、舞蹈、设计是大学课余爱好；篮球班级队长，带队拿过院冠军；
+
+      文字表达功力非常自信；口头表达有长足进步，但远远不够，尤其需要即兴表达的场合。
+
+      作为技术人，我认为自己最大的优势是情感化思维以及感性认知。
+
+      作为学习者，我认为自己的最大的优势是超级勤奋。
+
+      大学四年没谈恋爱，现在非单身。
+
+      我大学自学的前大半程都是与设计打交道，为何后来改到做技术了呢？两点：一是当时团队有名设计很厉害的女生，黄雅娜，工业设计年级第一，看到其设计的东西，再看看自己设计的东西；感觉，我这辈子是达不到这个高度的。因为，感觉到缺少了某些东西——设计理论。创作的冲动与热情并不代表才华。
+
+      因此，凭直觉选择了web前端。把设计、flash等都依然舍弃了。事实证明，我的选择是对的——因为，我朝着自己的选择坚定不移地走下来了！
+
+    -->
+
+    <div id="screen38" class="screen screen_bagua" data-call="fnImageLazyload">
+
+    	<div class="bagua_timeline timeline J_timeline" title="后面历史拖动可见">
+
+        	<ul class="timeline_top">
+
+            	<li>
+
+                	<div class="timeline_year"><strong>1988.12.12</strong><sub></sub></div>
+
+                    <div class="timeline_con">出生</div>
+
+                </li>
+
+                <li>
+
+                	<div class="timeline_year"><strong>2004.8.20</strong><sub></sub></div>
+
+                    <div class="timeline_con">此处省略1w字。。。</div>
+
+                </li>
+
+                <li>                    
+
+                    <div class="timeline_year"><strong>2007.6</strong><sub></sub></div>
+
+                    <div class="timeline_con">此处省略1w字。。。</div>
+
+                </li>
+
+                <li>                    
+
+                    <div class="timeline_year"><strong>2007-2009</strong><sub></sub></div>
+
+                    <div class="timeline_con">此处省略2w字。。。</div>
+
+                </li>
+
+                <li>                    
+
+                    <div class="timeline_year"><strong>2010-2011</strong><sub></sub></div>
+ 
+                    <div class="timeline_con">此处省略2w字。。。 </div>
+
+                </li>
+
+                <li>                    
+
+                    <div class="timeline_year"><strong>2011-2012</strong><sub></sub></div>
+ 
+
+                    <div class="timeline_con">此处省略2w字。。。<img src="./18.gif" align="absmiddle"></div>
+
+                </li>
+
+                <li>                    
+
+                    <div class="timeline_year"><strong>2012.2</strong><sub></sub></div>
+
+                    <div class="timeline_con">此处省略1w字。。。</div>
+
+                </li>
+
+                <li>                    
+
+                    <div class="timeline_year"><strong>2012.6</strong><sub></sub></div>
+
+                    <div class="timeline_con">此处省略1w字。。。</div>
+ 
+
+                </li> 
+                <li style="margin-left:100px;">                    
+
+                    <div class="timeline_year"><strong>2014</strong><sub></sub></div>
+
+                    <div class="timeline_con">此处省略1w字。。。</div>
+
+                </li>
+
+                <li style="margin-left:100px;">                    
+
+                    <div class="timeline_year"><strong>2015</strong><sub></sub></div>
+
+                    <div class="timeline_con">此处省略1w字。。。</div>
+
+                </li>
+                
+                <li style="margin-left:100px;">                    
+
+                    <div class="timeline_year"><strong>2015-08-20</strong><sub></sub></div>
+
+                    <div class="timeline_con">即将升级！</div>
+
+                </li>
+
+            </ul>
+
+            <ul class="timeline_bottom">
+
+            	<li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！<br/><img src="./5.gif" align="absmiddle"></div>
+
+ 
+                </li>
+
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！<br/><img src="./5.gif" align="absmiddle"></div>
+
+ 
+                </li>
+
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！<br/><img src="./5.gif" align="absmiddle"></div>
+
+ 
+                </li>
+
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！ </div>
+
+ 
+                    <div class="timeline_con"><img data-src="./intro-yumen.gif"></div>
+
+                    <div class="timeline_year"><strong>2005</strong><sup>年</sup></div>
+
+                </li>
+
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！<br/><img data-src="./9.png"></div> 
+ 
+                </li>
+
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！</div>
+
+                    <div class="timeline_con"><img data-src="./intro-fail.jpg"></div>
+
+ 
+                </li>
+
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！</div>
+
+                    <div class="timeline_con"><img data-src="./intro-tear.gif"></div>
+
+ 
+                </li>
+
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！<br/><img data-src="./3.gif"></div>
+ 
+                </li>
+
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！<br/><img data-src="./7.jpg"></div>
+ 
+                </li>
+                <li>                	
+
+                    <div class="timeline_con">我的人生充满了悲剧！<br/><img data-src="./intro-improve.jpg"></div>
+ 
+                </li>
+
+            </ul>
+
+        </div>
+
+        <h4 class="tect_title">个人八卦史</h4>
+
+    </div>
+
+    <div id="screen39" class="screen screen_ask"><dialog class="dialog_jc" open=""><img class="head_cry" src="./intro-cry.png">太棒了！精彩绝伦，有高潮，有转折，感天动地泣鬼神。什么都不用说了，你就是我们要通缉的人！</dialog></div>
+
+    <div id="screen40" class="screen screen_ask"><dialog class="dialog_me" open=""><img class="head_cover" src="./intro-qiaoba.png">别开玩笑了！</dialog></div>
+
+    <div id="screen41" class="screen screen_ask">
+
+    	<dialog class="dialog_jc" open="">
+
+    		<img class="head_qq" src="./intro-qq.png">我其实是FBI派来的卧底，专门为其寻找合适的人才！
+
+            <p>我看你骨骼惊奇，是万里挑一的人才，不如你就否加入我们，一起拯救世界，维护全宇宙和平！</p>
+
+        </dialog>
+
+    </div>
+
+    <div id="screen42" class="screen screen_letgo">
+
+    	<img src="./intro-zhaopin.png" class="abs_center letgo_img" height="431" width="682">
+
+    </div>
+
+    
+
+    <!-- 场景43 结束致辞 -->
+
+    <div id="screen43" class="screen screen_last" data-call="fnScreenDisPlay|fnAudioPlay">
+
+    	<audio src="./ending.mp3" preload="auto"></audio>
+
+    	<div class="ani_last">
+
+            <p>策划：Dragoners.Li</p>
+
+            <p>监制：李世龙</p>
+
+            <p>撰稿：李世龙</p>
+
+            <p>编辑：李世龙</p>
+
+            <p>制作：李世龙</p>
+
+            <p>音效：李世龙</p>
+
+            <p>导演：Dragoners.Li</p>
+
+            <p>鸣谢单位：杭州搬砖科技有限公司</p>
+
+            <p>鸣谢：Dragoners.Li</p>
+
+            <p>特别鸣谢：Dragoners.Li</p>
+
+            <p>日期：2015-08-20</p>
+
+            <div class="ani_last_full"> 
+            	<img src="./20130808142737297.jpg"> 
+                <h4>鸣谢单位
+				<p><a href="">重新走一遭</a></p></h4>
+				<p style="text-align:right;color:red;margin-bottom:5px;">QQ:18668219910</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 这是控制播放的按钮 -->
+
+    <a href="javascript:" id="control" class="control active" title="点击播放"></a>
+
+</div>
+
+
+
+<script src="./intro.js"></script>
+
+
+
+
+
+</body></html>

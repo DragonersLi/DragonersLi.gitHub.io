@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://qd.cc/index.php/Lover/aboutme.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+ 
+<title>php求职简历</title> 
+
+<script type="text/javascript" src="./jquery-timezone.js"></script>  
+<style>
+/*初始化CSS-开始*/
+body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea, dt, dl, dd, em {
+	margin:0;
+	padding:0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	font-family: inherit;
+}
+ol, ul, li {
+	list-style: none;
+}
+img {
+	border: 0;
+}
+ 
+a:link {
+	text-decoration:none;
+	color:#333;
+	-webkit-transition:color .7s ease-in-out;
+	-moz-transition:color .3s ease-in-out;
+	-o-transition:color .3s ease-in-out;
+	transition:color .3s ease-in-out;
+}
+a:visited {
+	text-decoration:none;
+	color:#333;
+}
+a:hover {
+	color:#777;
+}
+a:active {
+}
+
+::-webkit-scrollbar{width:10px;height:12px;}
+::-webkit-scrollbar-button:vertical{display:none;}
+::-webkit-scrollbar-track:vertical{background-color:black;}
+::-webkit-scrollbar-track-piece{background:#FFFFFF;}
+::-webkit-scrollbar-thumb:vertical{background-color:#CCC;}
+::-webkit-scrollbar-thumb:vertical:hover{background-color:#999;}
+::-webkit-scrollbar-corner:vertical{background-color:#535353;}
+::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00;}
+
+.cl { zoom: 1; }
+.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+
+/*布局开始*/
+footer{width:100%; text-align:center; margin:0px auto;}
+.main{width:100%;  margin:0 auto; background: url(./line.gif) repeat-y 179px 0; padding-bottom:100px;}
+header{margin:5px 0 55px 0; height:75px;}
+header h1{text-align:center; font-size:62px; color:#666; letter-spacing:2px; text-shadow:1px 1px 2px #CCC; position:relative; display:none;}
+
+.history_year{ background: url(./clock.gif) no-repeat 150px top; margin-bottom:20px;}
+.history_year>span{font-size:18px; color:#F70;}
+.history_month{ height:100%; padding-top:20px; padding-bottom:10px;}
+.history_month>span{font-size:16px; color:#F70;}
+
+.title_year{font-size:24px; font-weight:bold; color: #00bbff; display:inline-block; padding:15px 105px 15px 0; cursor:pointer; background: url(./arr.gif) no-repeat 130px 30px; margin-bottom:50px;}
+.title_mouth{ font-size:18px; font-weight:bold; color:#3CC; cursor:pointer; padding:12px 77px 10px 60px; background: url(./clock2.gif) no-repeat 166px 10px;}
+
+
+.main ul li{ margin-bottom:10px; margin-top:12px; padding-top:10px; background: url(./dot.gif) no-repeat 172px 24px; min-height:28px; padding-bottom:8px;}
+.main article{ margin-left:230px; color:#787878;}
+.history_day ul>:first-child>:first-child{color:#1db702;}
+.history_day ul>:first-child>:first-child>em{color:#a8dda3;}
+.main ul li time{color:#c3c3c3; font-size:18px; margin:9px 80px 11px 105px; float:left; cursor:pointer; text-align:right;}
+.main ul li time em{display:block; font-size:10px; padding-right:1px; color:#d0d0d0;}
+.main article h2{margin-bottom:5px;}
+.main article h2 a{font-size:28px; color:#727272;}
+.main article h2 a:hover{color:#444;}
+.main article img{max-height:125px !important; max-width:115px !important; background:#FFF; padding:4px; border:1px solid rgba(0,0,0,0.2); margin:6px 10px 0 0;box-shadow: 0 1px 3px rgba(0,0,0,0.1);}
+.main article img:hover{border:1px solid #5ECB4C;}
+#infscr-loading {z-index: 100;position: fixed;left: 47.5%; bottom: 35px; opacity:0.9;}
+ 
+</style>
+
+<script>$(function(){
+$("h1").fadeOut(900).animate({height:'toggle'}).show(3600);
+$(".title_year").nextAll().hide().slideDown(1400);
+
+fold_div();//绑定折叠事件
+colorbox();//绑定弹层事件
+
+
+$('.main').infinitescroll({
+  navSelector  : '#pagenav',
+  nextSelector : '#pagenav a',
+  itemSelector : ".history_year", 
+  debug        : false, 
+  loadingImg   : "./loading.gif",
+  loadingText  : "Loading new posts...",
+  animate      : false,
+  donetext     : "I think we've hit the end, Guy",
+  maxPage      : '1',
+  //animate      : true, 这个开启
+  //extraScrollPx: 200,  这个才有效
+  loading: {
+	   
+		      finishedMsg: 'No more pages to load.',//结束显示信息
+			  img: './loading3.gif',//loading图片
+			  msgText: "",//加载提示文字
+		        }
+				
+},function(){
+$('.main').find('*').unbind();//解除事件再从新绑定
+fold_div();
+colorbox();
+});
+
+
+//the end big$
+})
+
+ 
+
+
+//绑定折叠
+function fold_div(){
+$(".title_year,.title_mouth,.title_day,time").bind('click',function(){ 
+$(this).nextAll().slideToggle();
+});
+	} 
+</script>
+ 
+
+ 
+</head><body> 
+ 
+<section class="main">
+<!--year-->
+<div class="history_year">
+<a class="title_year">1988-2011</a>
+<span style="display: none; font-size: 44px;">时光轴</span>
+ 
+<!--month-->
+<div style="display: none;" class="history_month">
+<a class="title_mouth"> secret.</a><span>  </span>
+<article>
+<h2><p style="color:blue;font-size:25px"><img src="./lishilong.gif"></p>
+<a class="cboxElement" style="color:black;font-size:15px">  
+姓    名：	李世龙	<br>
+性    别：	男<br>
+出生日期：	1988年12月12日	<br>
+身份证号：	341221198712123411	<br>
+居 住 地：	杭州-西湖区<br>
+工作年限：	二年以上<br>
+电子邮件：	L865196792@sina.com<br>
+手    机：	18668219910<br>
+户    口：	阜阳<br>
+身    高：	178cm<br>
+婚姻状况：	未婚<br>
+政治面貌：	群众<br>
+学    历：  小学及以下<br>
+关 键 词：	PHP程序员<br>
+QQ：</a><a href="http://wpa.qq.com/msgrd?v=3&uin=865196792&site=qq&menu=yes" target="_blank">13486122400</a>，<a href="http://wpa.qq.com/msgrd?v=3&uin=2412243038&site=qq&menu=yes" target="_blank">18668219910</a><br>
+
+
+
+
+</h2> </article>
+<!--month-->
+<!--day-->
+<div class="history_day">
+<ul>
+<!--<li  class="title_day time"><time  >隐藏<em>1988-2010</em></time>-->
+<article>
+<h2><p style="color:blue;font-size:25px"></p>
+<a class="cboxElement" style="color:black;font-size:15px"></a></h2> </article>
+
+
+</ul>
+</div>
+<!--day end-->
+</div>
+<!--month end-->
+</div>
+<!--year end-->
+
+ 
+<!--year-->
+<div class="history_year">
+<a class="title_year">2011 Year</a>
+<span style="display: none;">I'm a PHPER </span>
+<!--year-->
+<!--month-->
+<div style="display: none;" class="history_month">
+<a class="title_mouth">10 month.</a><span></span>
+<!--month-->
+<!--day-->
+<div class="history_day">
+<ul>
+<li class="title_day time"><time>10.01<em>2011</em></time>
+<article>
+<h2><p style="color:blue;font-size:25px">开始自学HTML+CSS+JAVASCRIPT网页设计</p>
+<a class="cboxElement" style="color:black;font-size:15px"> 主要看:<br>韩顺平的传智播客<br>张恩民的PHP100<br>李文凯的兄弟连THINKPHP视频教程入门</a></h2>
+ <span style="color:blue;font-size:25px; ">   杭州达内互联网学院</span>    <span style="color:red; margin-left:30px;">培训： </span>   <span style="color:blue;font-size:25px;margin-left:30px;">  PHP工程师	</span>
+
+</article>
+</li>
+</ul>
+</div>
+<!--day end-->
+</div>
+<!--month end-->
+</div>
+<!--year end-->
+
+<!--year-->
+<div class="history_year">
+<a class="title_year">2012 Year</a>
+<span style="display: none;">开始PHP程序员生涯</span>
+<!--year--> 
+ 
+<!--month-->
+<div style="display: none;" class="history_month">
+<a class="title_mouth">06 Month</a><span>第一份PHP工作：</span>
+<!--month-->
+<!--day-->
+<div class="history_day">
+<ul>
+<li class="title_day time"><time>简介：<em>2012</em></time>
+<article>
+<h2><p style="color:blue;font-size:25px">杭州圣代网络科技有限公司</p>
+<a class="cboxElement" style="color:black;font-size:15px">
+所属行业：	互联网软件开发<br>
+所属部门： 网络信息部<br>
+工作内容： php网站开发及维护<br>
+工作性质： 外包
+ </a></h2> 
+
+</article>
+</li>
+
+<li class="title_day time"><time>工作<em>2012</em></time>
+<article>
+<h2><p style="color:blue;font-size:25px">工作内容：</p>
+<a class="cboxElement" style="color:black;font-size:15px"> 
+
+ 
+1.通达OA二次开发:crm，商业地产，it连锁，项目管理，报表统计等模块的开发。根据需求文档，设计数据库，代码实现功能，编写操作文档<br> 
+2.it.com.cn上一百七十多万数据迁移到crm，有效数据筛选，数据库优化等。<br> 
+3.楼友会订餐网:用YII框架开发订餐网，负责程序开发，调试和测试，日常维护等工作<br>
+PC网站地址：   </a><a href="http://em.com.cn/" style="text-decoration: underline;" target="_black">点击查看</a><br>
+4.楼友会订餐网（手机版）: WAP手机版订餐网，负责整个手机版的程序开发还有测试 <br>
+wap版地址：  <a href="http://em.com.cn/index.php?r=shop/index/index&c=mobile" style="text-decoration: underline;" target="_black">点击查看</a><br>
+
+
+</h2> 
+
+</article>
+</li>
+</ul>
+</div>
+<!--day end-->
+</div>
+<!--month end-->
+</div>
+<!--year end-->
+
+
+
+<!--year-->
+<div class="history_year">
+<a class="title_year">2013 Year</a>
+<span style="display: none;"> </span>
+<!--year-->
+<!--month-->
+<div style="display: none;" class="history_month">
+<a class="title_mouth">06 Month</a><span>第二份工作：</span>
+ 
+ 
+<!--day-->
+<div class="history_day">
+<ul>
+<li class="title_day time"><time>简介：<em>2013</em></time>
+<article>
+<h2><p style="color:blue;font-size:25px">上海旭高时装有限公司</p>
+<a class="cboxElement" style="color:black;font-size:15px">
+所属行业：	互联网/电子商务<br>
+所属部门： 集团公司电商部<br>
+工作内容： 软件开发及维护<br>
+工作性质： 全职<br>
+薪资待遇：</a><a href="http://www.mophper.com./gz.png" target="_black" style="color:red;">点击查看</a>
+</h2>  
+</article>
+</li>
+
+
+<li class="title_day time"><time>工作<em>2013</em></time>
+<article>
+<h2><p style="color:blue;font-size:25px">工作内容：</p>
+<a class="cboxElement" style="color:black;font-size:15px"> 
+ 
+1.线下实体店主推款商品展示前后台的开发。前台主要用到js特效，后台用的是tp框架<br>
+2.摩高app手机软件开发：开发此款手机软件人员共三位。ios和android人员各一位，我主要负责服务端的开发.<br>
+3.负责整个摩高app手机后台管理系统开发<br>
+4.负责整个shopex二次开发，把摩高app手机管理系统集成到官网后台<br>
+5.研究天猫商品数据导入京东，一号店，当当等后台，提高商品录入效率。<br>
+6.帮助美工装修各个店铺效果。<br>
+7.研究天品网，聚美优品和efast的数据对接，订单下载至efast，由efast统一发货，再把发货单号统一上传，完成整个下单和发货流程。<br>
+8.公司更换后台系统，研究mssql数据库数据更新至mysql数据库。<br>
+9.仿</a><a href="http://www.doudou52.com/" style="text-decoration: underline;" target="_black">http://www.doudou52.com/</a>博客网站开发了此网站<br>
+10.公司微信帐号目前是用的是编辑者模式，为了以后发展需求，学习和研究开发者模式，申请了自己的公众账号进行开发测试：sadie-angelover<br><img alt="sadie-angelover" src="http://www.mophper.com./weixin.jpg"><br>
+ <!--
+网站地址：   <a href='http://112.124.2.145/mogao/home.php' style="text-decoration: underline;" target="_black">商品展示</a><br>
+软件下载：   <a href='http://112.124.2.145/index.php/article-help_babyhelp-62.html' style="text-decoration: underline;" target="_black">android和ios软件下载地址</a><br>  
+网站地址：<a href='http://112.124.2.145/mobile/admin/index.php/Index/logout' style="text-decoration: underline;" target="_black">摩高app后台管理系统</a><br>
+网站地址：<a href='http://112.124.2.145' style="text-decoration: underline;" target="_black">摩高官网</a><br> -->
+</h2> 
+
+</article>
+</li>
+
+</ul>
+</div>
+<!--day end-->
+</div>
+<!--month end-->
+<!--month-->
+<div style="display: none;" class="history_month">
+<a class="title_mouth">04 Month</a><span>第三份工作：</span>
+ 
+ 
+<!--day-->
+<div class="history_day">
+<ul>
+<li class="title_day time"><time>简介：<em>2014</em></time>
+<article>
+<h2><p style="color:blue;font-size:25px">易特旗下杭州久尚科技</p>
+<a class="cboxElement" style="color:black;font-size:15px">
+所属行业：	互联网/广告联盟<br>
+所属部门： 技术部<br>
+工作内容： dede仿站和写采集程序<br>
+工作性质： 全职<br>
+薪资待遇：</a><a href="#" target="_black" style="color:red;">点击查看</a>
+</h2>  
+</article>
+</li>
+
+
+<li class="title_day time"><time>工作<em>2014</em></time>
+<article>
+<h2><p style="color:blue;font-size:25px">工作内容：</p>
+<a class="cboxElement" style="color:black;font-size:15px"> 
+ 
+1.主要是织梦仿站和网站的维护。和写数据采集程序。<br>  
+2.织梦仿站：仿</a><a href="http://www.dowei.com/" style="text-decoration: underline;" target="_black">http://www.dowei.com/</a>写了五维娱乐 
+<a href="http://yule.5w.com/" style="text-decoration: underline;" target="_black">http://yule.5w.com/</a><br>
+ </h2> 
+
+</article>
+</li>
+
+</ul>
+</div>
+<!--day end-->
+</div>
+<!--month end-->
+</div>
+<!--year end-->
+
+<!--year-->
+<div class="history_year">
+<a class="title_year">2014 Year</a>
+<span style="display: none;"></span>
+<!--year-->
+<!--month-->
+<div style="display: none;" class="history_month">
+<a class="title_mouth">06 Month</a><span>求职意向：</span>
+<!--month-->
+ 
+</div>
+<!--month end-->
+
+ 
+<!--day-->
+<div class="history_day" style="display: none;">
+<ul>
+<li class="title_day time"><time>求职：<em>2014</em></time>
+<article> 
+<h2><p style="color:blue;font-size:25px"> </p>
+<a class="cboxElement" style="color:black;font-size:15px">  
+到岗时间：	一周以内<br>
+工作性质：	全职<br>
+希望行业：	互联网/软件开发<br>
+目标地点：	杭州西湖区<br>
+期望薪水：	6000-8000/月<br>
+目标职能：	网站/软件<span style="color:red;">开发</span> <br>
+
+
+
+
+</a></h2> 
+</article>
+</li>
+</ul>
+</div>
+<!--day end-->
+</div>
+<!--month end-->
+
+
+<!--month-->
+<div style="display: block;" class="history_month">
+<a class="title_mouth">06 Month</a><span>自我评价</span>
+<!--month-->
+<!--day-->
+<div class="history_day">
+<ul>
+<li class="title_day time"><time>专业：<em>2014</em></time>
+<article> 
+<h2><p style="color:blue;font-size:25px">专业技能：</p>
+<a class="cboxElement" style="color:black;font-size:15px">  
+1、了解Apache、MySQL、PHP等软件的编译安装和优化配置;<br>
+2、了解虚拟机安装和Linux系统常用命令,有过linux下使用vim编辑器开发经验;<br>
+3、了解前端开发语言（js、jquery、css）;<br>
+4、熟悉PHP编程，了解单例模式和工厂模式等OOP思想<br>
+5、熟悉php,mysql和mssql;有百万级别数据的查询和操作经验。有索引优化经验，熟悉事务和存储过程。<br>
+6、了解常用PHP开源框架,使用过YII框架和TP框架开发过项目;对CI和ZF也有了解。<br>
+7、有过通达OA二次开发,dedeCMS，shopnc，shopex二次开发的经验。<br>
+8、根据需求文档设计数据库，编写开发操作文档;<br>
+9、熟练使用notpad,sublime,editplus,zendstudio,eclipce等常用开发工具;<br>
+10、有过短信，支付，地图，天气等数据接口的开发经验;<br>
+11、参与过软件开发，研究过微信接口开发; <br>
+12、了解正则表达式，写过小偷程序。 <br> 
+</a></h2> 
+</article>
+</li>
+</ul>
+</div>
+<!--day end-->
+<!--day-->
+<div class="history_day">
+<ul>
+<li class="title_day time"><time>评价：<em>2014</em></time>
+<article> 
+<h2><p style="color:blue;font-size:25px">自我评价：</p>
+<a class="cboxElement" style="color:black;font-size:15px"> 
+本人性格随和,责任心强,热爱技术，喜欢钻研!有耐心和毅力，学习和动手能力较强，适应能力及抗压能力也可以。<br>
+能刻苦耐劳，态度乐观！能在工作中不断学习，提升自己专业技能。 
+
+
+
+
+</a></h2> 
+</article>
+</li>
+</ul>
+</div>
+<!--day end-->
+</div>
+<!--month end-->
+
+<!--year end-->
+
+ 
+</section>
+<!-- .main end生命不息，奋斗不止！ ----Dragoners.Li-->
+<h1 style="font-size: 44px; margin: 0px auto; color: red; display: block;"><div id="div" style="margin-left:100px;color:red;font-size:26pt;">  心</div>
+<script language="JavaScript1.2"> 
+var message="  心跳不停，梦想不止！  " 
+var message=message+" 我们可以停止呼吸，但是不能停止思考！！ " 
+
+i="0" 
+var temptitle="" 
+var speed="100" //速度：值大速度慢，值小速度快！
+function titler(){
+
+if (!document.all&&!document.getElementById)
+return
+document.getElementById("div").innerHTML=temptitle+message.charAt(i) 
+temptitle=temptitle+message.charAt(i) 
+i++
+if(i==message.length) 
+{
+i="0" 
+temptitle="" 
+}
+setTimeout("titler()",speed) 
+}
+
+window.onload=titler();
+</script></h1>  
+</body></html>

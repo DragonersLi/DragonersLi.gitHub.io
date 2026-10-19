@@ -1,0 +1,21 @@
+.timeline-embed-page {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  margin: 0;
+  background: #f4f7f5;
+}
+
+.timeline-embed-frame {
+  display: block;
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  border: 0;
+  background: #f4f7f5;
+}
+
+@media (max-width: 800px) {
+  .timeline-embed-page,
+  .timeline-embed-frame {
+    min-height: calc(100vh - 50px);
+  }
+}

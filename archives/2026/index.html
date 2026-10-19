@@ -6,20 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dragonersli.github.io">
-  <title>Archives: 2026 | すせなの筆記❤</title>
+  <title>Archives: 2026 | すせなの技术博客❤</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="すせなの技术博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="すせなの技术博客">
 <meta property="og:url" content="https://dragonersli.github.io/archives/2026/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="すせなの技术博客">
+<meta property="og:description" content="すせなの技术博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="DragonersLi">
+<meta property="article:tag" content="碼農筆記、修煉道場">
 <meta name="twitter:card" content="summary">
   
   
     <link rel="icon" href="/assets/static/img/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.3e410a.css">
+<link rel="stylesheet" type="text/css" href="/./article-back.css">
+
   <style type="text/css">
     #container.show {
       background: linear-gradient(200deg,#ccc,#000);
@@ -38,7 +43,7 @@
 <!--</script>-->
 <!-- 分享按钮 Baidu Button END -->
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="すせなの技术博客" type="application/atom+xml">
 </head>
 
 <!--jquery文件-->
@@ -206,13 +211,289 @@ $(function(){
       
 <div class="overlay" style="background: #4d4d4d">
   <!--日期时间 start-->
-  <span id='nowTime' style="color:white;margin-top:5px;">
-    <SCRIPT>
-        setInterval("nowTime.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
-    </SCRIPT>
-</span>
+  <div class="overlay-clock-line">
+    <span id="nowTime"></span>
+    <button
+      type="button"
+      class="overlay-clock-link"
+      id="worldClockTrigger"
+      title="显示世界时钟"
+      aria-label="显示世界时钟"
+      aria-controls="worldClockPopover"
+      aria-expanded="false"
+    >
+      <img
+        class="overlay-clock-icon"
+        src="/assets/resource/time/images/btnL3Clock.gif"
+        width="24"
+        height="24"
+        alt=""
+      >
+    </button>
+  </div>
+  <div class="world-clock-popover" id="worldClockPopover" role="dialog" aria-label="世界时钟" hidden>
+    <iframe
+      id="worldClockFrame"
+      src="/assets/resource/time/index.html"
+      title="世界时钟"
+      scrolling="no"
+    ></iframe>
+  </div>
+  <style>
+    .overlay-clock-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 5px 8px 0;
+      white-space: nowrap;
+    }
+
+    .overlay-clock-line #nowTime {
+      flex: none;
+      color: #fff;
+      line-height: 1.25;
+    }
+
+    .overlay-clock-link {
+      display: inline-flex;
+      flex: none;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 4px;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .overlay-clock-link:hover,
+    .overlay-clock-link:focus-visible {
+      background: rgba(255, 255, 255, 0.14);
+      outline: none;
+    }
+
+    .overlay-clock-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+
+    .world-clock-popover {
+      position: fixed;
+      top: 44px;
+      left: 100px;
+      z-index: 10000002;
+      width: 181px;
+      height: 225px;
+      overflow: hidden;
+      background: #fffff5;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    }
+
+    .world-clock-popover[hidden] {
+      display: none;
+    }
+
+    .world-clock-popover iframe {
+      display: block;
+      width: 181px;
+      height: 225px;
+      border: 0;
+      background: #fffff5;
+    }
+
+    #header .header-nav {
+      position: relative;
+    }
+
+    #header .header-nav .social {
+      display: grid;
+      grid-template-columns: repeat(5, 38px);
+      justify-content: center;
+      gap: 12px 10px;
+      width: 100%;
+      margin: 10px auto 0;
+      padding: 12px 0 4px;
+    }
+
+    #header .header-nav .social a {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      margin: 0;
+      border: 0;
+      border-radius: 50%;
+      color: #fff;
+      line-height: 1;
+      opacity: 1;
+      filter: saturate(.82);
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, .28),
+        0 4px 10px rgba(54, 69, 79, .13);
+      transition:
+        transform .22s cubic-bezier(.2, .8, .2, 1),
+        filter .22s ease,
+        box-shadow .22s ease;
+    }
+
+    #header .header-nav .social a:hover,
+    #header .header-nav .social a:focus-visible {
+      border: 0;
+      opacity: 1;
+      filter: saturate(1.05);
+      transform: translateY(-3px);
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, .34),
+        0 8px 16px rgba(54, 69, 79, .2);
+      outline: none;
+    }
+
+    #header .header-nav .social a:focus-visible {
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, .38),
+        0 0 0 3px rgba(136, 172, 219, .36),
+        0 8px 16px rgba(54, 69, 79, .18);
+    }
+
+    #header .header-nav .social a:active {
+      transform: translateY(-1px) scale(.96);
+    }
+
+    #header .header-nav .social a i {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+      line-height: 1;
+    }
+
+    #header .header-nav .social a.douyin {
+      border: 0;
+      background: #3f4247;
+    }
+
+    #header .header-nav .social a.douyin:hover,
+    #header .header-nav .social a.douyin:focus-visible {
+      border: 0;
+    }
+
+    .icon-douyin {
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      background: url('/assets/static/img/douyin.svg') center / contain no-repeat;
+      vertical-align: middle;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #header .header-nav .social a {
+        transition: none;
+      }
+
+      #header .header-nav .social a:hover,
+      #header .header-nav .social a:focus-visible,
+      #header .header-nav .social a:active {
+        transform: none;
+      }
+    }
+
+    .overlay-daily-quote {
+      min-height: 42px;
+      margin: 9px 12px 0;
+      overflow: hidden;
+      color: rgba(255, 255, 255, 0.94);
+      font-size: 13px;
+      line-height: 1.6;
+      text-align: left;
+      overflow-wrap: anywhere;
+    }
+
+    .overlay-daily-quote .typed-cursor {
+      color: rgba(255, 255, 255, 0.72);
+    }
+  </style>
+  <script>
+    (function () {
+      var clock = document.getElementById('nowTime');
+      var trigger = document.getElementById('worldClockTrigger');
+      var popover = document.getElementById('worldClockPopover');
+      var frame = document.getElementById('worldClockFrame');
+
+      function updateClock() {
+        var now = new Date();
+        clock.textContent = now.toLocaleString() + ' 星期' + '日一二三四五六'.charAt(now.getDay());
+      }
+
+      updateClock();
+      setInterval(updateClock, 1000);
+
+      function closeWorldClock() {
+        popover.hidden = true;
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+
+      function prepareWorldClock() {
+        var frameDocument = frame.contentDocument;
+        if (!frameDocument) return;
+
+        frameDocument.body.style.margin = '0';
+        frameDocument.body.style.overflow = 'hidden';
+
+        Array.prototype.forEach.call(frameDocument.body.children, function (child) {
+          if (child.id !== 'wclock' && child.tagName !== 'SCRIPT') {
+            child.style.display = 'none';
+          }
+        });
+
+        var worldClock = frameDocument.getElementById('wclock');
+        if (worldClock) {
+          worldClock.style.display = 'block';
+          worldClock.style.left = '0';
+          worldClock.style.top = '0';
+        }
+
+        var closeButton = frameDocument.querySelector('#wclock img[src$="close.gif"]');
+        if (closeButton) {
+          closeButton.addEventListener('click', closeWorldClock);
+        }
+      }
+
+      function openWorldClock() {
+        popover.hidden = false;
+        trigger.setAttribute('aria-expanded', 'true');
+        prepareWorldClock();
+      }
+
+      frame.addEventListener('load', prepareWorldClock);
+      trigger.addEventListener('click', function () {
+        if (popover.hidden) {
+          openWorldClock();
+        } else {
+          closeWorldClock();
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && !popover.hidden) {
+          closeWorldClock();
+          trigger.focus();
+        }
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!popover.hidden && !popover.contains(event.target) && !trigger.contains(event.target)) {
+          closeWorldClock();
+        }
+      });
+    }());
+  </script>
   <!--日期时间 end-->
-  <p style="color:white;font-size:6px;margin:2%;"><span class="write-top"></span><span class="typed-cursor typed-cursor--blink"></span></p>
+  <p class="overlay-daily-quote"><span class="write-top"></span><span class="typed-cursor typed-cursor--blink"></span></p>
   <!--每日一语-->
   <script>
     $(function(){
@@ -226,6 +507,11 @@ $(function(){
 
 
   <!-- 头像效果-start -->
+        <style>
+          .ih-item.circle.effect .info .info-back {
+            padding: 12%;
+          }
+        </style>
         <div class="ih-item circle effect right_to_left">
             <a href="/aboutme" title="DragonersLi" class="blog-button">
                 <div class="img"><img src="/assets/static/img/avatar.png" title="DragonersLi" class="js-avatar"></div>
@@ -239,7 +525,7 @@ $(function(){
   <!-- 头像效果-end -->
 
      <!-- 作者 start -->
-      	<hgroup>
+		<hgroup>
           <h1 class="header-author" >
             <a href="/" id="neon">
             DragonersLi
@@ -254,7 +540,7 @@ $(function(){
   道場 ጿ ኈ ቼ ዽ ጿ ኈ
   
   <a href="/articles">
-    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ3级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ3级"></span>
+    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ7级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ7级"></span>
   </a>
 </p>
 <!-- 标签 end -->
@@ -288,6 +574,8 @@ $(function(){
           
         <li style="display:inline;"><a href="/videos">视频</a></li>
           
+        <li style="display:inline;"><a href="/timeline">时间轴</a></li>
+          
         <li style="display:inline;"><a href="/aboutme">关于</a></li>
           
       </ul>
@@ -307,7 +595,7 @@ $(function(){
     			
         
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">すせなの道場</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">技術博客</a>
     			
         
 		</nav>
@@ -317,53 +605,55 @@ $(function(){
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=865196792&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
+					<a class="qq" target="_blank" rel="noopener noreferrer" href="http://wpa.qq.com/msgrd?v=3&uin=865196792&site=qq&menu=yes" title="qq" aria-label="qq"><i class="icon-qq" aria-hidden="true"></i></a>
 		        
-					<a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2uLs7_vj7O3j6Jqrq-S5tbc" title="mail"><i class="icon-mail"></i></a>
+					<a class="mail" target="_blank" rel="noopener noreferrer" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2uLs7_vj7O3j6Jqrq-S5tbc" title="mail" aria-label="mail"><i class="icon-mail" aria-hidden="true"></i></a>
 		        
-					<a class="weixin" target="_blank" href="/assets/static/img/wechat.JPG" title="weixin"><i class="icon-weixin"></i></a>
+					<a class="weixin" target="_blank" rel="noopener noreferrer" href="/assets/static/img/wechat.JPG" title="weixin" aria-label="weixin"><i class="icon-weixin" aria-hidden="true"></i></a>
 		        
-					<a class="wechatofficialaccounts" target="_blank" href="/assets/static/img/wechatofficialaccounts.png" title="wechatofficialaccounts"><i class="icon-wechatofficialaccounts"></i></a>
+					<a class="wechatofficialaccounts" target="_blank" rel="noopener noreferrer" href="/assets/static/img/wechatofficialaccounts.png" title="wechatofficialaccounts" aria-label="wechatofficialaccounts"><i class="icon-wechatofficialaccounts" aria-hidden="true"></i></a>
 		        
-					<a class="alipay" target="_blank" href="/assets/static/img/zhifubao.png" title="alipay"><i class="icon-alipay"></i></a>
+					<a class="alipay" target="_blank" rel="noopener noreferrer" href="/assets/static/img/zhifubao.png" title="alipay" aria-label="alipay"><i class="icon-alipay" aria-hidden="true"></i></a>
 		        
-					<a class="weibo" target="_blank" href="http://weibo.com/1313974201" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" rel="noopener noreferrer" href="http://weibo.com/1313974201" title="weibo" aria-label="weibo"><i class="icon-weibo" aria-hidden="true"></i></a>
 		        
-					<a class="lofter" target="_blank" href="https://sadie-angelover.lofter.com/" title="lofter"><i class="icon-lofter"></i></a>
+					<a class="lofter" target="_blank" rel="noopener noreferrer" href="https://sadie-angelover.lofter.com/" title="lofter" aria-label="lofter"><i class="icon-lofter" aria-hidden="true"></i></a>
 		        
-					<a class="bilibili" target="_blank" href="https://space.bilibili.com/288174270" title="bilibili"><i class="icon-bilibili"></i></a>
+					<a class="bilibili" target="_blank" rel="noopener noreferrer" href="https://space.bilibili.com/288174270" title="bilibili" aria-label="bilibili"><i class="icon-bilibili" aria-hidden="true"></i></a>
 		        
-					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+					<a class="rss" target="_blank" rel="noopener noreferrer" href="/atom.xml" title="rss" aria-label="rss"><i class="icon-rss" aria-hidden="true"></i></a>
 		        
-					<a class="jianshu" target="_blank" href="http://www.jianshu.com/u/0df2b10bd23e" title="jianshu"><i class="icon-jianshu"></i></a>
+					<a class="jianshu" target="_blank" rel="noopener noreferrer" href="http://www.jianshu.com/u/0df2b10bd23e" title="jianshu" aria-label="jianshu"><i class="icon-jianshu" aria-hidden="true"></i></a>
 		        
-					<a class="douban" target="_blank" href="https://www.douban.com/people/DragonersLi" title="douban"><i class="icon-douban"></i></a>
+					<a class="douban" target="_blank" rel="noopener noreferrer" href="https://www.douban.com/people/DragonersLi" title="douban" aria-label="douban"><i class="icon-douban" aria-hidden="true"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/DragonersLi" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="zhihu" target="_blank" rel="noopener noreferrer" href="http://www.zhihu.com/people/DragonersLi" title="zhihu" aria-label="zhihu"><i class="icon-zhihu" aria-hidden="true"></i></a>
 		        
-					<a class="juejin" target="_blank" href="https://juejin.im/user/595d9bca6fb9a06bb8747f6f" title="juejin"><i class="icon-juejin"></i></a>
+					<a class="juejin" target="_blank" rel="noopener noreferrer" href="https://juejin.im/user/595d9bca6fb9a06bb8747f6f" title="juejin" aria-label="juejin"><i class="icon-juejin" aria-hidden="true"></i></a>
 		        
-					<a class="segmentfault" target="_blank" href="https://segmentfault.com/u/dragonersli" title="segmentfault"><i class="icon-segmentfault"></i></a>
+					<a class="segmentfault" target="_blank" rel="noopener noreferrer" href="https://segmentfault.com/u/dragonersli" title="segmentfault" aria-label="segmentfault"><i class="icon-segmentfault" aria-hidden="true"></i></a>
 		        
-					<a class="geekbang" target="_blank" href="https://time.geekbang.org/" title="geekbang"><i class="icon-geekbang"></i></a>
+					<a class="geekbang" target="_blank" rel="noopener noreferrer" href="https://time.geekbang.org/" title="geekbang" aria-label="geekbang"><i class="icon-geekbang" aria-hidden="true"></i></a>
 		        
-					<a class="lagou" target="_blank" href="https://edu.lagou.com/" title="lagou"><i class="icon-lagou"></i></a>
+					<a class="lagou" target="_blank" rel="noopener noreferrer" href="https://edu.lagou.com/" title="lagou" aria-label="lagou"><i class="icon-lagou" aria-hidden="true"></i></a>
 		        
-					<a class="oschina" target="_blank" href="https://www.oschina.net/" title="oschina"><i class="icon-oschina"></i></a>
+					<a class="oschina" target="_blank" rel="noopener noreferrer" href="https://my.oschina.net/u/3005274" title="oschina" aria-label="oschina"><i class="icon-oschina" aria-hidden="true"></i></a>
 		        
-					<a class="gitee" target="_blank" href="https://gitee.com/DragonersLi" title="gitee"><i class="icon-gitee"></i></a>
+					<a class="gitee" target="_blank" rel="noopener noreferrer" href="https://gitee.com/DragonersLi" title="gitee" aria-label="gitee"><i class="icon-gitee" aria-hidden="true"></i></a>
 		        
-					<a class="github" target="_blank" href="https://DragonersLi.github.io/" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" rel="noopener noreferrer" href="https://github.com/DragonersLi" title="github" aria-label="github"><i class="icon-github" aria-hidden="true"></i></a>
 		        
-					<a class="nowcoder" target="_blank" href="https://www.nowcoder.com/" title="nowcoder"><i class="icon-nowcoder"></i></a>
+					<a class="nowcoder" target="_blank" rel="noopener noreferrer" href="https://www.nowcoder.com/users/348481" title="nowcoder" aria-label="nowcoder"><i class="icon-nowcoder" aria-hidden="true"></i></a>
 		        
-					<a class="leetcode" target="_blank" href="https://leetcode-cn.com/u/dragonersli/" title="leetcode"><i class="icon-leetcode"></i></a>
+					<a class="leetcode" target="_blank" rel="noopener noreferrer" href="https://leetcode-cn.com/u/dragonersli/" title="leetcode" aria-label="leetcode"><i class="icon-leetcode" aria-hidden="true"></i></a>
 		        
-					<a class="csdn" target="_blank" href="https://blog.csdn.net/u012496733" title="csdn"><i class="icon-csdn"></i></a>
+					<a class="csdn" target="_blank" rel="noopener noreferrer" href="https://blog.csdn.net/u012496733" title="csdn" aria-label="csdn"><i class="icon-csdn" aria-hidden="true"></i></a>
 		        
-					<a class="gitchat" target="_blank" href="https://gitbook.cn/" title="gitchat"><i class="icon-gitchat"></i></a>
+					<a class="gitchat" target="_blank" rel="noopener noreferrer" href="https://gitbook.cn/" title="gitchat" aria-label="gitchat"><i class="icon-gitchat" aria-hidden="true"></i></a>
 		        
-					<a class="stackoverflow" target="_blank" href="https://stackoverflow.com/" title="stackoverflow"><i class="icon-stackoverflow"></i></a>
+					<a class="stackoverflow" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/24038564/dragonersli" title="stackoverflow" aria-label="stackoverflow"><i class="icon-stackoverflow" aria-hidden="true"></i></a>
+		        
+					<a class="douyin" target="_blank" rel="noopener noreferrer" href="https://www.douyin.com/user/MS4wLjABAAAAvUqU7GRrHevAhc_WW-_xGw-XPKhFbO1DsnfuLKq7Ge8" title="douyin" aria-label="douyin"><i class="icon-douyin" aria-hidden="true"></i></a>
 		        
 			</div>
 		</nav>
@@ -373,18 +663,13 @@ $(function(){
 </div>
 
 
-
-
-
-
-
       <div class="aplayer"  data-fixed="true"  data-volume="0.5" data-id="1330849396" data-server="tencent" data-type="playlist"  data-autoplay="true" ></div>
 
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav" >
-  	<div class="overlay js-overlay"  style="background: #4d4d4d"></div>
+	<div class="overlay js-overlay"  style="background: #4d4d4d"></div>
 	<div class="btnctn js-mobile-btnctn" >
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -407,7 +692,7 @@ $(function(){
   道場 ጿ ኈ ቼ ዽ ጿ ኈ
   
   <a href="/articles">
-    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ3级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ3级"></span>
+    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ7级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ7级"></span>
   </a>
 </p>
 <!-- 标签 end -->
@@ -434,58 +719,62 @@ $(function(){
 			
 				
 			
+				
+			
 			
 
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=865196792&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
+						<a class="qq" target="_blank" rel="noopener noreferrer" href="http://wpa.qq.com/msgrd?v=3&uin=865196792&site=qq&menu=yes" title="qq" aria-label="qq"><i class="icon-qq" aria-hidden="true"></i></a>
           
-						<a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2uLs7_vj7O3j6Jqrq-S5tbc" title="mail"><i class="icon-mail"></i></a>
+						<a class="mail" target="_blank" rel="noopener noreferrer" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2uLs7_vj7O3j6Jqrq-S5tbc" title="mail" aria-label="mail"><i class="icon-mail" aria-hidden="true"></i></a>
           
-						<a class="weixin" target="_blank" href="/assets/static/img/wechat.JPG" title="weixin"><i class="icon-weixin"></i></a>
+						<a class="weixin" target="_blank" rel="noopener noreferrer" href="/assets/static/img/wechat.JPG" title="weixin" aria-label="weixin"><i class="icon-weixin" aria-hidden="true"></i></a>
           
-						<a class="wechatofficialaccounts" target="_blank" href="/assets/static/img/wechatofficialaccounts.png" title="wechatofficialaccounts"><i class="icon-wechatofficialaccounts"></i></a>
+						<a class="wechatofficialaccounts" target="_blank" rel="noopener noreferrer" href="/assets/static/img/wechatofficialaccounts.png" title="wechatofficialaccounts" aria-label="wechatofficialaccounts"><i class="icon-wechatofficialaccounts" aria-hidden="true"></i></a>
           
-						<a class="alipay" target="_blank" href="/assets/static/img/zhifubao.png" title="alipay"><i class="icon-alipay"></i></a>
+						<a class="alipay" target="_blank" rel="noopener noreferrer" href="/assets/static/img/zhifubao.png" title="alipay" aria-label="alipay"><i class="icon-alipay" aria-hidden="true"></i></a>
           
-						<a class="weibo" target="_blank" href="http://weibo.com/1313974201" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" rel="noopener noreferrer" href="http://weibo.com/1313974201" title="weibo" aria-label="weibo"><i class="icon-weibo" aria-hidden="true"></i></a>
           
-						<a class="lofter" target="_blank" href="https://sadie-angelover.lofter.com/" title="lofter"><i class="icon-lofter"></i></a>
+						<a class="lofter" target="_blank" rel="noopener noreferrer" href="https://sadie-angelover.lofter.com/" title="lofter" aria-label="lofter"><i class="icon-lofter" aria-hidden="true"></i></a>
           
-						<a class="bilibili" target="_blank" href="https://space.bilibili.com/288174270" title="bilibili"><i class="icon-bilibili"></i></a>
+						<a class="bilibili" target="_blank" rel="noopener noreferrer" href="https://space.bilibili.com/288174270" title="bilibili" aria-label="bilibili"><i class="icon-bilibili" aria-hidden="true"></i></a>
           
-						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+						<a class="rss" target="_blank" rel="noopener noreferrer" href="/atom.xml" title="rss" aria-label="rss"><i class="icon-rss" aria-hidden="true"></i></a>
           
-						<a class="jianshu" target="_blank" href="http://www.jianshu.com/u/0df2b10bd23e" title="jianshu"><i class="icon-jianshu"></i></a>
+						<a class="jianshu" target="_blank" rel="noopener noreferrer" href="http://www.jianshu.com/u/0df2b10bd23e" title="jianshu" aria-label="jianshu"><i class="icon-jianshu" aria-hidden="true"></i></a>
           
-						<a class="douban" target="_blank" href="https://www.douban.com/people/DragonersLi" title="douban"><i class="icon-douban"></i></a>
+						<a class="douban" target="_blank" rel="noopener noreferrer" href="https://www.douban.com/people/DragonersLi" title="douban" aria-label="douban"><i class="icon-douban" aria-hidden="true"></i></a>
           
-						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/DragonersLi" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="zhihu" target="_blank" rel="noopener noreferrer" href="http://www.zhihu.com/people/DragonersLi" title="zhihu" aria-label="zhihu"><i class="icon-zhihu" aria-hidden="true"></i></a>
           
-						<a class="juejin" target="_blank" href="https://juejin.im/user/595d9bca6fb9a06bb8747f6f" title="juejin"><i class="icon-juejin"></i></a>
+						<a class="juejin" target="_blank" rel="noopener noreferrer" href="https://juejin.im/user/595d9bca6fb9a06bb8747f6f" title="juejin" aria-label="juejin"><i class="icon-juejin" aria-hidden="true"></i></a>
           
-						<a class="segmentfault" target="_blank" href="https://segmentfault.com/u/dragonersli" title="segmentfault"><i class="icon-segmentfault"></i></a>
+						<a class="segmentfault" target="_blank" rel="noopener noreferrer" href="https://segmentfault.com/u/dragonersli" title="segmentfault" aria-label="segmentfault"><i class="icon-segmentfault" aria-hidden="true"></i></a>
           
-						<a class="geekbang" target="_blank" href="https://time.geekbang.org/" title="geekbang"><i class="icon-geekbang"></i></a>
+						<a class="geekbang" target="_blank" rel="noopener noreferrer" href="https://time.geekbang.org/" title="geekbang" aria-label="geekbang"><i class="icon-geekbang" aria-hidden="true"></i></a>
           
-						<a class="lagou" target="_blank" href="https://edu.lagou.com/" title="lagou"><i class="icon-lagou"></i></a>
+						<a class="lagou" target="_blank" rel="noopener noreferrer" href="https://edu.lagou.com/" title="lagou" aria-label="lagou"><i class="icon-lagou" aria-hidden="true"></i></a>
           
-						<a class="oschina" target="_blank" href="https://www.oschina.net/" title="oschina"><i class="icon-oschina"></i></a>
+						<a class="oschina" target="_blank" rel="noopener noreferrer" href="https://my.oschina.net/u/3005274" title="oschina" aria-label="oschina"><i class="icon-oschina" aria-hidden="true"></i></a>
           
-						<a class="gitee" target="_blank" href="https://gitee.com/DragonersLi" title="gitee"><i class="icon-gitee"></i></a>
+						<a class="gitee" target="_blank" rel="noopener noreferrer" href="https://gitee.com/DragonersLi" title="gitee" aria-label="gitee"><i class="icon-gitee" aria-hidden="true"></i></a>
           
-						<a class="github" target="_blank" href="https://DragonersLi.github.io/" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" rel="noopener noreferrer" href="https://github.com/DragonersLi" title="github" aria-label="github"><i class="icon-github" aria-hidden="true"></i></a>
           
-						<a class="nowcoder" target="_blank" href="https://www.nowcoder.com/" title="nowcoder"><i class="icon-nowcoder"></i></a>
+						<a class="nowcoder" target="_blank" rel="noopener noreferrer" href="https://www.nowcoder.com/users/348481" title="nowcoder" aria-label="nowcoder"><i class="icon-nowcoder" aria-hidden="true"></i></a>
           
-						<a class="leetcode" target="_blank" href="https://leetcode-cn.com/u/dragonersli/" title="leetcode"><i class="icon-leetcode"></i></a>
+						<a class="leetcode" target="_blank" rel="noopener noreferrer" href="https://leetcode-cn.com/u/dragonersli/" title="leetcode" aria-label="leetcode"><i class="icon-leetcode" aria-hidden="true"></i></a>
           
-						<a class="csdn" target="_blank" href="https://blog.csdn.net/u012496733" title="csdn"><i class="icon-csdn"></i></a>
+						<a class="csdn" target="_blank" rel="noopener noreferrer" href="https://blog.csdn.net/u012496733" title="csdn" aria-label="csdn"><i class="icon-csdn" aria-hidden="true"></i></a>
           
-						<a class="gitchat" target="_blank" href="https://gitbook.cn/" title="gitchat"><i class="icon-gitchat"></i></a>
+						<a class="gitchat" target="_blank" rel="noopener noreferrer" href="https://gitbook.cn/" title="gitchat" aria-label="gitchat"><i class="icon-gitchat" aria-hidden="true"></i></a>
           
-						<a class="stackoverflow" target="_blank" href="https://stackoverflow.com/" title="stackoverflow"><i class="icon-stackoverflow"></i></a>
+						<a class="stackoverflow" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/24038564/dragonersli" title="stackoverflow" aria-label="stackoverflow"><i class="icon-stackoverflow" aria-hidden="true"></i></a>
+          
+						<a class="douyin" target="_blank" rel="noopener noreferrer" href="https://www.douyin.com/user/MS4wLjABAAAAvUqU7GRrHevAhc_WW-_xGw-XPKhFbO1DsnfuLKq7Ge8" title="douyin" aria-label="douyin"><i class="icon-douyin" aria-hidden="true"></i></a>
           
 				</div>
 			</nav>
@@ -494,23 +783,25 @@ $(function(){
 <!--				<ul style="width: 70%">-->
 <!--				-->
 <!--				-->
-<!--					<li style="width: 11.11111111111111%"><a href="/">主页</a></li>-->
+<!--					<li style="width: 10%"><a href="/">主页</a></li>-->
 <!--		        -->
-<!--					<li style="width: 11.11111111111111%"><a href="/articles">搜索</a></li>-->
+<!--					<li style="width: 10%"><a href="/articles">搜索</a></li>-->
 <!--		        -->
-<!--					<li style="width: 11.11111111111111%"><a href="/categories">分类</a></li>-->
+<!--					<li style="width: 10%"><a href="/categories">分类</a></li>-->
 <!--		        -->
-<!--					<li style="width: 11.11111111111111%"><a href="/tags">标签</a></li>-->
+<!--					<li style="width: 10%"><a href="/tags">标签</a></li>-->
 <!--		        -->
-<!--					<li style="width: 11.11111111111111%"><a href="/history">历史</a></li>-->
+<!--					<li style="width: 10%"><a href="/history">历史</a></li>-->
 <!--		        -->
-<!--					<li style="width: 11.11111111111111%"><a href="/photos">相册</a></li>-->
+<!--					<li style="width: 10%"><a href="/photos">相册</a></li>-->
 <!--		        -->
-<!--					<li style="width: 11.11111111111111%"><a href="/musics">音乐</a></li>-->
+<!--					<li style="width: 10%"><a href="/musics">音乐</a></li>-->
 <!--		        -->
-<!--					<li style="width: 11.11111111111111%"><a href="/videos">视频</a></li>-->
+<!--					<li style="width: 10%"><a href="/videos">视频</a></li>-->
 <!--		        -->
-<!--					<li style="width: 11.11111111111111%"><a href="/aboutme">关于</a></li>-->
+<!--					<li style="width: 10%"><a href="/timeline">时间轴</a></li>-->
+<!--		        -->
+<!--					<li style="width: 10%"><a href="/aboutme">关于</a></li>-->
 <!--		        -->
 <!--				</ul>-->
 <!--			</nav>-->
@@ -594,7 +885,295 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <section class="home-search" aria-label="文章搜索">
+  <div class="home-search__inner">
+    <label class="home-search__field" for="home-search-input">
+      <i class="icon-search" aria-hidden="true"></i>
+      <input id="home-search-input" type="search" placeholder="搜索标题、正文、标签或分类…" aria-label="搜索站内文章" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false">
+    </label>
+    <p class="home-search__summary">共收录 <strong>7</strong> 篇文章，输入关键词即可快速筛选。</p>
+  </div>
+</section>
+
+<section id="home-search-empty" class="home-search-empty" aria-live="polite" hidden>
+  <span class="home-search-empty__text"></span><span class="typed-cursor typed-cursor--blink"></span>
+</section>
+
+<style>
+  .home-search {
+    margin: 30px 30px 0;
+    padding-right: 60px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+  }
+  .home-search__inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 200px;
+    padding: 20px 0;
+  }
+  .home-search__field {
+    display: flex;
+    align-items: center;
+    flex: 1 1 520px;
+    min-width: 260px;
+    min-height: 46px;
+    padding: 0 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    color: #999;
+    box-sizing: border-box;
+    transition: border-color .2s ease, box-shadow .2s ease;
+  }
+  .home-search__field:focus-within {
+    border-color: #88acdb;
+    box-shadow: 0 0 0 3px rgba(136, 172, 219, .16);
+  }
+  .home-search__field .icon-search {
+    flex: 0 0 auto;
+    margin-right: 12px;
+    font-size: 18px;
+  }
+  #home-search-input {
+    width: 100%;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #555;
+    font-size: 16px;
+    line-height: 44px;
+    appearance: none;
+  }
+  #home-search-input::placeholder { color: #aaa; }
+  .home-search__summary {
+    flex: 0 0 auto;
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+  .home-search__summary strong {
+    color: #88acdb;
+    font-variant-numeric: tabular-nums;
+  }
+  .home-search-highlight {
+    display: inline;
+    padding: 1px 3px;
+    border-radius: 3px;
+    background: #ffe08a !important;
+    box-shadow: inset 0 -1px 0 rgba(209, 75, 114, .35);
+    color: #d81b60 !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: #d81b60;
+  }
+  .home-search-empty {
+    min-height: 190px;
+    margin: 0 30px 80px;
+    padding: 30px 60px;
+    background: #fff;
+    color: deeppink;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .home-search-empty:not([hidden]) {
+    display: grid;
+    place-content: center;
+  }
+  .home-search-empty .typed-cursor { display: inline; }
+  .home-search ~ .archives-wrap[hidden] { display: none !important; }
+  .home-search ~ .archives-wrap .archive-article[hidden] { display: none !important; }
+  @media screen and (max-width: 800px) {
+    .home-search {
+      margin: 10px 10px 0;
+      padding: 10px;
+    }
+    .home-search__inner {
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+      margin-left: 0;
+      padding: 0;
+      flex-direction: column;
+    }
+    .home-search__field {
+      flex: none;
+      min-width: 0;
+    }
+    .home-search__summary {
+      padding: 0 2px;
+      font-size: 13px;
+      white-space: normal;
+    }
+    .home-search-empty {
+      min-height: 150px;
+      margin: 10px 10px 30px;
+      padding: 24px 16px;
+    }
+  }
+</style>
+
+<script>
+  (function initHomeSearch() {
+    var input = document.getElementById('home-search-input');
+    var empty = document.getElementById('home-search-empty');
+    if (!input || !empty || input.dataset.searchBound === 'true') return;
+
+    input.dataset.searchBound = 'true';
+    var indexByPath = {};
+    var loading = null;
+    var emptyTyping = null;
+
+    function normalizePath(url) {
+      try {
+        return new URL(url, window.location.href).pathname.replace(/\/+$/, '') || '/';
+      } catch (error) {
+        return url;
+      }
+    }
+
+    function loadIndex() {
+      if (loading) return loading;
+      loading = fetch('/atom.xml', { credentials: 'same-origin' })
+        .then(function(response) {
+          if (!response.ok) throw new Error('搜索索引加载失败');
+          return response.text();
+        })
+        .then(function(text) {
+          var xml = new DOMParser().parseFromString(text, 'application/xml');
+          Array.prototype.forEach.call(xml.querySelectorAll('entry'), function(entry) {
+            var categories = Array.prototype.map.call(entry.querySelectorAll('category'), function(category) {
+              return category.getAttribute('term') || '';
+            }).join(' ');
+            var url = (entry.querySelector('id') || {}).textContent || '';
+            indexByPath[normalizePath(url)] = [
+              (entry.querySelector('title') || {}).textContent || '',
+              (entry.querySelector('content') || {}).textContent || '',
+              categories
+            ].join(' ').toLowerCase();
+          });
+        })
+        .catch(function() { indexByPath = {}; });
+      return loading;
+    }
+
+    function stopEmptyTyping() {
+      if (emptyTyping && typeof emptyTyping.destroy === 'function') emptyTyping.destroy();
+      emptyTyping = null;
+      empty.hidden = true;
+      var text = empty.querySelector('.home-search-empty__text');
+      if (text) text.textContent = '';
+    }
+
+    function showEmptyTyping() {
+      empty.hidden = false;
+      var selector = '#home-search-empty .home-search-empty__text';
+      if (window.Typed) {
+        emptyTyping = new Typed(selector, {
+          strings: ['您搜的内容从地球消失了！...', '您搜的内容去火星了！...', 'https://dragonersli.github.io'],
+          startDelay: 300,
+          typeSpeed: 80,
+          backDelay: 2000,
+          loop: true
+        });
+      } else {
+        empty.querySelector('.home-search-empty__text').textContent = '没有找到相关内容。';
+      }
+    }
+
+    function clearHighlights() {
+      Array.prototype.forEach.call(document.querySelectorAll('.home-search-highlight'), function(mark) {
+        mark.replaceWith(document.createTextNode(mark.textContent));
+      });
+    }
+
+    function highlightElement(element, keywords) {
+      if (!element || !keywords.length) return;
+      var pattern = keywords
+        .slice()
+        .sort(function(left, right) { return right.length - left.length; })
+        .map(function(keyword) { return keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); })
+        .join('|');
+      if (!pattern) return;
+
+      var expression = new RegExp('(' + pattern + ')', 'gi');
+      var walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+      var textNodes = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+      textNodes.forEach(function(node) {
+        if (!expression.test(node.nodeValue)) {
+          expression.lastIndex = 0;
+          return;
+        }
+        expression.lastIndex = 0;
+        var fragment = document.createDocumentFragment();
+        var cursor = 0;
+        node.nodeValue.replace(expression, function(match, captured, offset) {
+          fragment.appendChild(document.createTextNode(node.nodeValue.slice(cursor, offset)));
+          var mark = document.createElement('mark');
+          mark.className = 'home-search-highlight';
+          mark.textContent = match;
+          fragment.appendChild(mark);
+          cursor = offset + match.length;
+          return match;
+        });
+        fragment.appendChild(document.createTextNode(node.nodeValue.slice(cursor)));
+        node.parentNode.replaceChild(fragment, node);
+      });
+    }
+
+    function filterArchives(query) {
+      var keywords = query.trim().toLowerCase().split(/[\s\-]+/).filter(Boolean);
+      var visibleCount = 0;
+      var archiveSections = Array.prototype.slice.call(document.querySelectorAll('.home-search ~ .archives-wrap'));
+      stopEmptyTyping();
+      clearHighlights();
+
+      archiveSections.forEach(function(section) {
+        var sectionCount = 0;
+        Array.prototype.forEach.call(section.querySelectorAll('.archive-article'), function(article) {
+          var link = article.querySelector('.archive-article-title');
+          var path = link ? normalizePath(link.getAttribute('href')) : '';
+          var haystack = indexByPath[path] || article.textContent.toLowerCase();
+          var matched = !keywords.length || keywords.every(function(keyword) {
+            return haystack.indexOf(keyword) !== -1;
+          });
+          article.hidden = !matched;
+          if (matched) {
+            sectionCount += 1;
+            visibleCount += 1;
+            Array.prototype.forEach.call(article.querySelectorAll('.archive-article-title, .article-tag-list-link, .article-category-link'), function(element) {
+              highlightElement(element, keywords);
+            });
+          }
+        });
+        section.hidden = sectionCount === 0;
+      });
+
+      if (keywords.length && visibleCount === 0) showEmptyTyping();
+    }
+
+    input.addEventListener('focus', loadIndex, { once: true });
+    input.addEventListener('input', function() {
+      var query = input.value;
+      if (!query.trim()) {
+        filterArchives('');
+        return;
+      }
+      loadIndex().then(function() {
+        if (input.value === query) filterArchives(query);
+      });
+    });
+  })();
+</script>
+
+
   
   
     
@@ -618,7 +1197,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
       
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2026/10/18/readme/job/">李世龙的求职简历</a>
+      <a class="archive-article-title" href="/2026/10/18/readme/job/">个人求职简历</a>
     </h1>
   
 
@@ -683,7 +1262,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
       
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2026/10/12/readme/51/">仿51信用卡免息期工具</a>
+      <a class="archive-article-title" href="/2026/10/12/readme/51/">仿51信用卡免息期工具💳</a>
     </h1>
   
 
@@ -704,11 +1283,11 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">51</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">51</a>
         		</li>
       		
 		</ul>
@@ -877,7 +1456,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
     
       
         <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')">
-          <a href="javascript:void(0)" q-class="active:friends">すせなの道場</a>
+          <a href="javascript:void(0)" q-class="active:friends">技術博客</a>
         </li>
       
     
@@ -904,11 +1483,19 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
           <ul class="article-tag-list" q-show="showTags" >
             
             <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color3">PHP</a>
+              <a href="javascript:void(0)" class="js-tag color2">js</a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color2">Go</a>
+              <a href="javascript:void(0)" class="js-tag color2">51</a>
+            </li>
+            
+            <li class="article-tag-list-item">
+              <a href="javascript:void(0)" class="js-tag color3">php</a>
+            </li>
+            
+            <li class="article-tag-list-item">
+              <a href="javascript:void(0)" class="js-tag color2">go</a>
             </li>
             
             <li class="article-tag-list-item">
@@ -932,19 +1519,11 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             </li>
             
             <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color0">DevOps</a>
-            </li>
-            
-            <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color2">51</a>
+              <a href="javascript:void(0)" class="js-tag color0">devops</a>
             </li>
             
             <li class="article-tag-list-item">
               <a href="javascript:void(0)" class="js-tag color3">job</a>
-            </li>
-            
-            <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color2">js</a>
             </li>
             
             <div class="clearfix"></div>
@@ -1317,13 +1896,34 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
     	</section>
     
   <!--友情链接-->
-    <!--每日一语-->
+    <!-- 一言接口写入隐藏节点，友链区仍由原来的打字效果展示。 -->
+    <span id="hitokoto" hidden></span>
     <script>
       $(function(){
-        hitokoto(urlType = 0,dataType = 'text',element = '.write-friend', strings=["期待下一个加入的是你！...", "以上大佬若有幸看到，麻烦把广告费结一下！谢谢！","https://dragonersli.github.io"],startDelay = 500,typeSpeed = 80,backDelay = 2000,loop = true);
+        if (!document.querySelector('.write-friend')) return;
+
+        var quoteScript = document.createElement('script');
+        var started = false;
+        function startFriendWords() {
+          if (started) return;
+          started = true;
+          var quote = document.getElementById('hitokoto').textContent.trim() || '一言暂时无法加载';
+          new Typed('.write-friend', {
+            strings: ['期待下一个加入的是你！...', quote, 'https://dragonersli.github.io'],
+            startDelay: 500,
+            typeSpeed: 80,
+            backDelay: 2000,
+            loop: true
+          });
+        }
+        quoteScript.src = 'https://v1.hitokoto.cn/?encode=js&select=%23hitokoto';
+        quoteScript.onload = startFriendWords;
+        quoteScript.onerror = startFriendWords;
+        document.head.appendChild(quoteScript);
+        setTimeout(startFriendWords, 5000);
       });
     </script>
-    <!--每日一语-->
+    <!-- 每日一语 -->
 
     <!--关于我 class="aboutme-wrap"-->
     
@@ -1372,6 +1972,10 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
         <li >视频</li>
       </a>
       
+      <a href="/timeline" class="color9">
+        <li >时间轴</li>
+      </a>
+      
       <a href="/aboutme" class="color8">
         <li >关于</li>
       </a>
@@ -1389,11 +1993,11 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
               </li>
               
               <li class="article-tag-list-item">
-                <a href="/categories/boss直聘" class="color0">boss直聘</a>
+                <a href="/categories/51信用卡" class="color5">51信用卡</a>
               </li>
               
               <li class="article-tag-list-item">
-                <a href="/categories/51信用卡" class="color5">51信用卡</a>
+                <a href="/categories/boss直聘" class="color0">boss直聘</a>
               </li>
               
               <div class="clearfix"></div>
@@ -1401,7 +2005,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <!--category标签-->
             <!--文章归档-->
             <div>
-              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a><span class="archive-list-count">1</span></li></ul>
+              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a><span class="archive-list-count">4</span></li></ul>
             </div>
             <!--文章归档-->
           </div>

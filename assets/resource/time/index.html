@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>admin   vtigercrm</title>
+	
+	<!-- 时间时间样式 Start -->
+	<style type="text/css">@import url("css/style.css");</style>
+	<!-- 时间时间样式 End -->
+	
+	<!-- 世界时间JS Start -->
+	<script language="JavaScript" type="text/javascript" src="js/general.js"></script>
+	<script language="javascript" type="text/javascript" src="js/prototype.js"></script>
+	<!-- 世界时间JS End -->
+	
+	<!-- 世界时间JS 拖动层 Start -->
+	<script language="javascript" type="text/javascript" src="js/dom-drag.js"></script>
+	<!-- 世界时间JS 拖动层 End -->
+
+</head>
+	<body leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 class=small>
+	
+
+	
+
+<div id="wclock" style="z-index:10000001;" class="layerPopup">
+	<table class="mailClientBg" align="center" border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tr style="cursor:move;" >
+		<td style="text-align:left;" id="Handle"><b>世界时间</b></td>
+		<td align="right">
+			<a href="javascript:;">
+				<img src="images/close.gif" border="0"  onClick="fninvsh('wclock')" hspace="5" align="absmiddle">
+			</a>
+		</td>
+	</tr>
+	</table>
+	<table class="hdrNameBg" align="center" border="0" cellpadding="2" cellspacing="0" width="100%">
+	<tr>
+	<td nowrap="nowrap" colspan="2">
+	<div style="background-image: url(images/clock_bg.gif); background-repeat: no-repeat; background-position: 4px 38px;" id="theClockLayer">
+<div id="theCities" class="citystyle">
+<form action="" name="frmtimezone">
+<input name="PHPSESSID" value="162c0ab587f6c555aaaa30d681b61f7c" type="hidden">
+<select name="clockcity" size="1" class="importBox small"   id="clockcity" style="width:125px;"  onchange="lcl(this.selectedIndex,this.options[0].selected)">
+<option value="0" selected="selected">z-中国</option>
+<option value="-18">a-阿拉斯加</option>
+<option value="-11">a-阿根廷</option>
+<option value="-7">a-奥地利</option>
+<option value="-11">b-巴西</option>
+<option value="0">w-汶莱</option>
+<option value="-12">z-智利</option>
+<option value="-13">g-哥伦比亚</option>
+<option value="-14">g-哥斯达黎加</option>
+<option value="-7">d-丹麦</option>
+<option value="-6">a-埃及</option>
+<option value="-6">f-芬兰</option>
+<option value="-7">f-法国</option>
+<option value="-6">x-希腊</option>
+<option value="2">g-关岛</option>
+<option value="-18">x-夏威夷</option>
+<option value="0">m-马来西亚</option>
+<option value="-2.5">y-印度</option>
+<option value="-4.5">y-伊朗</option>
+<option value="-6">y-以色列</option>
+<option value="-18">y-意大利</option>
+<option value="1">r-日本</option>
+<option value="1">h-韩国</option>
+<option value="-4.5">k-科威特</option>
+<option value="-7">h-荷兰</option>
+<option value="4">x-新西兰</option>
+<option value="-3">b-巴基斯坦</option>
+<option value="-7">n-挪威</option>
+<option value="-12">b-巴拉圭</option>
+<option value="-13">m-秘鲁</option>
+<option value="0">f-菲律宾</option>
+<option value="-6">b-波兰</option>
+<option value="-8">p-葡萄牙</option>
+<option value="-12">b-波多黎各</option>
+<option value="-5">l-罗马尼亚</option>
+<option value="-6">l-卢旺达</option>
+<option value="-5">s-沙特阿拉伯</option>
+<option value="0">x-新加坡</option>
+<option value="-6">n-南非共和国</option>
+<option value="-7">x-西班牙</option>
+<option value="-2.5">s-斯里兰卡</option>
+<option value="-6">s-史瓦济兰</option>
+<option value="-7">r-瑞典</option>
+<option value="-7">r-瑞士</option>
+<option value="-1">t-泰国</option>
+<option value="-5">t-土耳其</option>
+<option value="-7">y-英国</option>
+<option value="-11">w-乌拉圭</option>
+<option value="-7">f-梵帝冈</option>
+<option value="-7">d-德国</option>
+</select>
+</form>
+</div>
+<!-- 时间指针 Start 必须放在此处 -->
+<script type="text/javascript" src="js/clock.js"></script>
+<!-- 时间指针 End 必须放在此处 -->
+
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script>
+	var theHandle = document.getElementById("Handle");
+	var theRoot   = document.getElementById("wclock");
+	Drag.init(theHandle, theRoot);
+</script>
+
+
+
+<TABLE border=0 cellspacing=0 cellpadding=0 width=100% class=small>
+<tr>
+		<td class="small">
+			<!-- Calendar Clock Calculator and Chat -->
+				<table border=0 cellspacing=0 cellpadding=5>
+				<tr>
+					 <td style="padding-right:0px">
+					 <a href="javascript:;"><img src="images/btnL3Clock.gif" alt="显示世界时钟..." title="显示世界时钟..." border=0 onClick="fnvshobj(this,'wclock');">
+					 </a>
+					 </td> 
+				</tr>
+				</table>
+		</td>
+
+</tr>
+</TABLE>
+</body>
+</html>
