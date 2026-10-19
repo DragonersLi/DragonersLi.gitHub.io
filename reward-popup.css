@@ -1,0 +1,23 @@
+/* Keep the article reward tooltip readable without changing other tooltips. */
+.page-reward .tooltip-top .tooltip-inner {
+  background: #000;
+}
+.page-reward .tooltip-top .tooltip-text {
+  border-bottom-color: #000;
+}
+.page-reward .tooltip-top .tooltip-content::after {
+  border-top-color: #000;
+}
+.page-reward .reward-p {
+  color: #f00;
+  text-shadow: none;
+}
+.page-reward .reward-p .icon {
+  color: #f00;
+}
+.page-reward .reward-type {
+  color: #ffd700;
+}
+.page-reward .reward-type {
+  font-weight: 700;
+}
