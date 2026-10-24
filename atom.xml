@@ -56,9 +56,9 @@
     <category term="51信用卡" scheme="https://dragonersli.github.io/categories/51%E4%BF%A1%E7%94%A8%E5%8D%A1/"/>
     
     
-    <category term="51" scheme="https://dragonersli.github.io/tags/51/"/>
-    
     <category term="js" scheme="https://dragonersli.github.io/tags/js/"/>
+    
+    <category term="51" scheme="https://dragonersli.github.io/tags/51/"/>
     
   </entry>
   
@@ -67,9 +67,9 @@
     <link href="https://dragonersli.github.io/2016/06/18/readme/solar/"/>
     <id>https://dragonersli.github.io/2016/06/18/readme/solar/</id>
     <published>2016-06-18T12:13:14.000Z</published>
-    <updated>2026-10-19T01:21:44.791Z</updated>
+    <updated>2026-10-24T15:22:27.232Z</updated>
     
-    <content type="html"><![CDATA[<style>  .solar-article-frame {    display: block;    width: 100%;    height: clamp(620px, 78vh, 820px);    border: 0;    background: #181818;  }  @media (max-width: 767px) {    .solar-article-frame {      width: calc(100% + 20px);      height: 680px;      margin-left: -10px;    }  }</style><iframe  class="solar-article-frame"  src="/assets/resource/solar/index.html"  title="太阳系行星动画"  loading="eager"  scrolling="no"></iframe><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .solar-article-frame {    display: block;    width: 100%;    height: clamp(310px, 39vh, 410px);    border: 0;    background: #181818;  }  @media (max-width: 767px) {    .solar-article-frame {      width: calc(100% + 20px);      height: 340px;      margin-left: -10px;    }  }</style><iframe  class="solar-article-frame"  src="/assets/resource/solar/index.html"  title="太阳系行星动画"  loading="eager"  scrolling="no"></iframe><hr>]]></content>
     
     
       
@@ -79,7 +79,7 @@
   .solar-article-frame {
     display: block;
     width: 100%;
-    height: clamp(620px, 78vh, 820px);
+    height: clamp(310px, 39vh, 410px);
     border: 0;
     background:</summary>
       
@@ -94,11 +94,74 @@
   </entry>
   
   <entry>
-    <title>见缝插针小游戏🎮</title>
+    <title>猫抓老鼠🐈‍⬛</title>
+    <link href="https://dragonersli.github.io/2015/12/23/readme/cat/"/>
+    <id>https://dragonersli.github.io/2015/12/23/readme/cat/</id>
+    <published>2015-12-22T19:44:00.000Z</published>
+    <updated>2026-10-24T15:55:11.829Z</updated>
+    
+    <content type="html"><![CDATA[<style>  .cat-post { color: #39473d; }  .cat-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .cat-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: .02em;  }  .cat-post__intro p:last-child {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .cat-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #526d4e;    box-shadow: 0 8px 28px rgba(37, 51, 40, .08);  }  .cat-post__frame {    display: block;    width: 100%;    height: auto;    min-height: 160px;    aspect-ratio: 950 / 306;    border: 0;  }  .cat-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .cat-post__footer p { margin: 0; }  .cat-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .cat-post__footer a:hover,  .cat-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .cat-post__intro { padding: 16px 18px; }    .cat-post__eyebrow { font-size: 15px; }  }</style><section class="cat-post" aria-label="猫抓老鼠互动动画">  <div class="cat-post__intro">    <p class="cat-post__eyebrow">猫抓老鼠 · 无需 Flash 插件</p>  </div>  <div class="cat-post__viewer">    <iframe class="cat-post__frame" src="/cat/cat.html" title="猫抓老鼠互动动画" loading="lazy" allowfullscreen></iframe>  </div>  <div class="cat-post__footer">  </div></section><hr>]]></content>
+    
+    
+    <summary type="html">猫抓老鼠互动动画</summary>
+    
+    
+    
+    <category term="技术栈" scheme="https://dragonersli.github.io/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+    
+    
+    <category term="js" scheme="https://dragonersli.github.io/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>荷塘金鱼🐟</title>
+    <link href="https://dragonersli.github.io/2015/10/28/readme/fish/"/>
+    <id>https://dragonersli.github.io/2015/10/28/readme/fish/</id>
+    <published>2015-10-28T05:24:00.000Z</published>
+    <updated>2026-10-24T15:18:23.934Z</updated>
+    
+    <content type="html"><![CDATA[<style>  .fish-post { color: #39473d; }  .fish-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .fish-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: .02em;  }  .fish-post__intro p:last-child {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .fish-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #92a065;    box-shadow: 0 8px 28px rgba(37, 51, 40, .08);  }  .fish-post__frame {    display: block;    width: 100%;    height: auto;    min-height: 85px;    aspect-ratio: 1280 / 325;    border: 0;  }  .fish-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .fish-post__footer p { margin: 0; }  .fish-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .fish-post__footer a:hover,  .fish-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .fish-post__intro { padding: 16px 18px; }    .fish-post__eyebrow { font-size: 15px; }  }</style><section class="fish-post" aria-label="荷塘金鱼互动动画">  <div class="fish-post__intro">    <p class="fish-post__eyebrow">荷塘金鱼 · 无需 Flash 插件</p>    <p>在荷塘里看看金鱼，用鼠标或触摸屏与画面互动。首次载入可能需要几秒钟。</p>  </div>  <div class="fish-post__viewer">    <iframe class="fish-post__frame" src="/fish/fish.html" title="荷塘金鱼互动动画" loading="lazy" allowfullscreen></iframe>  </div>  <div class="fish-post__footer">   </div></section><hr>]]></content>
+    
+    
+    <summary type="html">荷塘金鱼互动动画</summary>
+    
+    
+    
+    <category term="技术栈" scheme="https://dragonersli.github.io/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+    
+    
+    <category term="js" scheme="https://dragonersli.github.io/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>flash小游戏</title>
+    <link href="https://dragonersli.github.io/2015/10/23/readme/flash/"/>
+    <id>https://dragonersli.github.io/2015/10/23/readme/flash/</id>
+    <published>2015-10-23T05:24:00.000Z</published>
+    <updated>2026-10-24T16:17:00.444Z</updated>
+    
+    <content type="html"><![CDATA[<style>  .flash-post {    color: #3e4b46;  }  .flash-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .flash-post__intro .flash-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: 0.02em;  }  .flash-post__intro p {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .flash-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #f5f6f2;    box-shadow: 0 8px 28px rgba(37, 51, 40, 0.08);  }  .flash-post__frame {    display: block;    width: 100%;    height: 670px;    border: 0;  }  .flash-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .flash-post__footer p {    margin: 0;  }  .flash-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .flash-post__footer a:hover,  .flash-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .flash-post__intro {      padding: 16px 18px;    }    .flash-post__intro .flash-post__eyebrow {      font-size: 15px;    }    .flash-post__frame {      height: 760px;    }  }</style><section class="flash-post" aria-label="Flash 互动动画馆">  <div class="flash-post__intro">    <p class="flash-post__eyebrow">12 款经典互动动画 · 无需 Flash 插件</p>    <p>点击右侧或下方的名称切换游戏，用鼠标或触摸屏与画面互动。首次载入可能需要几秒钟。</p>  </div>  <div class="flash-post__viewer">    <iframe      class="flash-post__frame"      src="/flash/flash.html"      title="12 个 Flash 小游戏与互动动画"      loading="lazy"      allowfullscreen    ></iframe>  </div>  <div class="flash-post__footer">   </div></section><script data-pjax>  (function () {    var frame = document.querySelector('.flash-post__frame');    var observer;    if (!frame || frame.dataset.heightReady) return;    frame.dataset.heightReady = 'true';    function fitFrame() {      var page = frame.contentDocument;      var main = page && page.querySelector('main');      if (main) frame.style.height = Math.ceil(main.getBoundingClientRect().bottom + 2) + 'px';    }    function watchContent() {      var page = frame.contentDocument;      var main = page && page.querySelector('main');      if (!main) return;      if (observer) observer.disconnect();      fitFrame();      if ('ResizeObserver' in window) {        observer = new ResizeObserver(fitFrame);        observer.observe(main);      }    }    frame.addEventListener('load', watchContent);    if (frame.contentDocument && frame.contentDocument.readyState === 'complete') watchContent();  }());</script><hr>]]></content>
+    
+    
+    <summary type="html">flash小游戏🎮</summary>
+    
+    
+    
+    <category term="技术栈" scheme="https://dragonersli.github.io/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+    
+    
+    <category term="js" scheme="https://dragonersli.github.io/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>见缝插针🎮</title>
     <link href="https://dragonersli.github.io/2015/10/18/readme/game/"/>
     <id>https://dragonersli.github.io/2015/10/18/readme/game/</id>
     <published>2015-10-18T02:30:00.000Z</published>
-    <updated>2026-10-18T07:50:48.238Z</updated>
+    <updated>2026-10-24T16:09:39.901Z</updated>
     
     <content type="html"><![CDATA[<style>  .game-article-frame {    display: block;    width: 100%;    max-width: 360px;    height: 535px;    margin: 12px auto 24px;    border: 0;    background: #fff;  }</style><iframe  class="game-article-frame"  title="见缝插针小游戏，点击或触摸画布发射针"  loading="eager"  scrolling="no"  srcdoc='<!doctype html><html lang="zh-CN"><head>  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <style>    html, body { margin: 0; padding: 0; overflow: hidden; background: #fff; text-align: center; user-select: none; }    .title { margin: 0 0 4px; color: #000; font: 24px Microsoft YaHei, sans-serif; letter-spacing: 4px; }    canvas { display: block; max-width: 100%; height: auto; margin: 0 auto; border-top: 1px solid #000; background: #fff; touch-action: manipulation; }  </style></head><body>  <div class="title">见缝插针</div>  <canvas id="canvas1" width="320" height="480"></canvas>  <script src="/assets/resource/game/MyCtx.min.js"></script>  <script src="/assets/resource/game/aa.cc.min.js"></script></body></html>'></iframe><hr>]]></content>
     

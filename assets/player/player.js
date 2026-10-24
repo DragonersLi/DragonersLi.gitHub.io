@@ -71,8 +71,8 @@ var lzxPlayerInit = function () {
         '            <div class="artiststyle">\n' +
         '                <i class="fa fa-user"></i>\n' +
         '                <span class="artist"></span>\n' +
-        '                <span class="moshi">\n' +
-        '                    <i class="loop fa fa-random current"></i> 随机播放</span>\n' +
+        '                <span class="moshi" role="button" tabindex="0" aria-label="播放模式：随机播放，点击切换">\n' +
+        '                    <i class="random fa fa-random current"></i> 随机播放</span>\n' +
         '            </div>\n' +
         '            <div class="artiststyle">\n' +
         '                <i class="fa fa-folder"></i>\n' +
@@ -199,6 +199,7 @@ var lzxPlayerInit = function () {
         songId = 0,
         songTotal = 0,
         random = true,
+        playMode = 'random',
         rateIsDown = false,
         rateMouse = {},
         rateTouch = {},
@@ -391,45 +392,30 @@ var lzxPlayerInit = function () {
         lzxMedia.next();
         $.cookie("auto_playre", "yes");
     });
-    //随机播放按钮事件
-    $('.random', $player).click(function () {
-        $(this).addClass(cur);
-        $('.loop', $player).removeClass(cur);
-        random = true;
-        lzxTips.show('随机播放');
-        $songFrom2.html('<i class="random fa fa-random current"></i> 随机播放')
-        $.cookie("random_play", true)
-    });
-    //顺序播放按钮事件
-    $('.loop', $player).click(function () {
-        $(this).addClass(cur);
-        $('.random', $player).removeClass(cur);
-        random = false;
-        lzxTips.show('顺序播放');
-        $songFrom2.html('<i class="loop fa fa-retweet"></i> 顺序播放')
-        $.cookie("random_play", false)
-    });
-
-    //模式开关
-    $('.moshi',$player).click(function(){
-        $(this).addClass(cur); 
-        if($('.artiststyle .moshi>i').is('.loop')){ 
-            $('.artiststyle .moshi>i').removeClass('loop').addClass('random'); //移除顺序，添加随机
-            random = true;
-            lzxTips.show('随机播放');
-            $songFrom2.html('<i class="random fa fa-random current"></i> 随机播放')
-            $.cookie("random_play", true)
-            console.log('random');
-        }else if($('.artiststyle .moshi>i').is('.random')){ 
-            $('.artiststyle .moshi>i').removeClass('random').addClass('loop'); //移除随机，添加顺序
-            random = false;
-            lzxTips.show('顺序播放');
-            $songFrom2.html('<i class="loop fa fa-retweet"></i> 顺序播放')
-            $.cookie("random_play", false)
-            console.log('loop');
+    function setPlayMode(mode, persist) {
+        var labels = { random: '随机播放', sequence: '顺序播放', single: '单曲循环' };
+        var icons = {
+            random: '<i class="random fa fa-random current" aria-hidden="true"></i>',
+            sequence: '<i class="loop fa fa-retweet current" aria-hidden="true"></i>',
+            single: '<svg class="single-loop-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V7a2 2 0 0 1 2-2h13m-3-3 3 3-3 3M20 15v2a2 2 0 0 1-2 2H5m3-3-3 3 3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text class="single-loop-number" x="12" y="15" text-anchor="middle">1</text></svg>'
+        };
+        playMode = labels[mode] ? mode : 'random';
+        random = playMode === 'random';
+        audio.loop = playMode === 'single';
+        $songFrom2.html(icons[playMode] + ' ' + labels[playMode])
+            .attr('aria-label', '播放模式：' + labels[playMode] + '，点击切换');
+        if (persist) {
+            $.cookie('play_mode', playMode, { path: '/' });
+            $.cookie('random_play', random, { path: '/' });
+            lzxTips.show(labels[playMode]);
         }
+    }
 
-
+    // 模式开关：随机 → 顺序 → 单曲循环 → 随机。
+    $songFrom2.on('click keydown', function (event) {
+        if (event.type === 'keydown' && event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        setPlayMode(playMode === 'random' ? 'sequence' : playMode === 'sequence' ? 'single' : 'random', true);
     });
 
     //音量组件拖动事件
@@ -771,25 +757,13 @@ var lzxPlayerInit = function () {
                 },autoPopupPlayer * 1000)
             }
 
-            if ($.cookie("random_play") != null) {
-                if ($.cookie("random_play") == "true") {
-                    $('.loop', $player).removeClass(cur);
-                    $('.random', $player).addClass(cur);
-                    $songFrom2.html('<i class="random fa fa-random"></i> 随机播放');
-                    random = true;
-                } else {
-                    $('.loop', $player).addClass(cur);
-                    $('.random', $player).removeClass(cur);
-                    $songFrom2.html('<i class="loop fa fa-retweet"></i> 顺序播放');
-                    random = false;
-                }
+            var savedMode = $.cookie('play_mode');
+            if (savedMode === 'random' || savedMode === 'sequence' || savedMode === 'single') {
+                setPlayMode(savedMode, false);
+            } else if ($.cookie('random_play') != null) {
+                setPlayMode($.cookie('random_play') === 'true' ? 'random' : 'sequence', false);
             } else {
-                if (randomPlayer != 1) {
-                    $('.loop', $player).addClass(cur);
-                    $('.random', $player).removeClass(cur);
-                    random = false;
-                    $songFrom2.html('<i class="loop fa fa-retweet"></i> 顺序播放');
-                }
+                setPlayMode(randomPlayer == 1 ? 'random' : 'sequence', false);
             }
 
             if ($.cookie("lzx_player_volume") == '0.666') {

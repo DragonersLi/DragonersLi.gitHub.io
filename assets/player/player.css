@@ -134,7 +134,28 @@ ul, li {
 }
 
 #lzxPlayer .player .infos .moshi {
-    float: right
+    float: right;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+#lzxPlayer .player .infos .moshi:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+    border-radius: 2px
+}
+
+#lzxPlayer .single-loop-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    overflow: visible
+}
+
+#lzxPlayer .single-loop-number {
+    fill: currentColor;
+    font: 700 16px Arial, sans-serif
 }
 
 #lzxPlayer .player .infos .geci {

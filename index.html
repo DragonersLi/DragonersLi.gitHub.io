@@ -502,6 +502,14 @@ $(function(){
 
   <!-- 头像效果-start -->
         <style>
+          .left-col .ih-item.circle.effect.right_to_left .img {
+            transform-origin: 50% 50%;
+          }
+
+          .left-col .ih-item.circle.effect.right_to_left a:hover .img {
+            transform: translateX(-100%) scaleX(-1);
+          }
+
           .ih-item.circle.effect .info .info-back {
             padding: 12%;
           }
@@ -534,7 +542,7 @@ $(function(){
   道場 ጿ ኈ ቼ ዽ ጿ ኈ
   
   <a href="/favorites">
-    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ7级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ7级"></span>
+    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ10级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ10级"></span>
   </a>
 </p>
 <!-- 标签 end -->
@@ -674,7 +682,7 @@ $(function(){
   道場 ጿ ኈ ቼ ዽ ጿ ኈ
   
   <a href="/favorites">
-    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ7级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ7级"></span>
+    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ10级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ10级"></span>
   </a>
 </p>
 <!-- 标签 end -->
@@ -877,7 +885,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
       <i class="icon-search" aria-hidden="true"></i>
       <input id="home-search-input" type="search" placeholder="搜索标题、正文、标签或分类…" aria-label="搜索站内文章" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false">
     </label>
-    <p class="home-search__summary" aria-live="polite">共收录 <strong>7</strong> 篇文章，输入关键词即可快速筛选。</p>
+    <p class="home-search__summary" aria-live="polite">共收录 <strong>10</strong> 篇文章，输入关键词即可快速筛选。</p>
   </div>
 </section>
 
@@ -1031,6 +1039,15 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
     var emptyAnimation = null;
     var animationLoading = null;
     var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var animationVisible = true;
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function(entries) {
+        animationVisible = entries[0].isIntersecting;
+        if (!emptyAnimation) return;
+        if (animationVisible && !empty.hidden && !reducedMotion) emptyAnimation.play();
+        else emptyAnimation.pause();
+      }).observe(empty);
+    }
 
     function loadAnimationPlayer() {
       if (window.lottie) return Promise.resolve(window.lottie);
@@ -1050,7 +1067,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
 
     function showEmptyAnimation() {
       if (emptyAnimation) {
-        if (!reducedMotion) emptyAnimation.play();
+        if (!reducedMotion && animationVisible) emptyAnimation.play();
         return;
       }
       if (animationLoading) return;
@@ -1067,7 +1084,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
           container: container,
           renderer: 'svg',
           loop: !reducedMotion,
-          autoplay: !reducedMotion && !empty.hidden,
+          autoplay: !reducedMotion && animationVisible && !empty.hidden,
           animationData: result[1]
         });
         if (reducedMotion) emptyAnimation.goToAndStop(0, true);
@@ -1335,11 +1352,11 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">51</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">51</a>
         		</li>
       		
 		</ul>
@@ -1453,6 +1470,189 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
   <div class="archive-article-inner">
     <header class="archive-article-header">
       	<div class="article-meta">
+	      	<a href="/2015/12/23/readme/cat/" class="archive-article-date">
+  	<time datetime="2015-12-22T19:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-23</time>
+</a>
+        </div>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2015/12/23/readme/cat/">猫抓老鼠🐈‍⬛</a>
+    </h1>
+  
+
+
+
+
+      <div style="margin:10px 0 0;float:left;">
+        <!--文章阅读量-->
+         
+        <!--文章阅读量-->
+        </div>
+
+
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术栈/" class="article-tag-list-link color4">技术栈</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2015/10/28/readme/fish/" class="archive-article-date">
+  	<time datetime="2015-10-28T05:24:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-28</time>
+</a>
+        </div>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2015/10/28/readme/fish/">荷塘金鱼🐟</a>
+    </h1>
+  
+
+
+
+
+      <div style="margin:10px 0 0;float:left;">
+        <!--文章阅读量-->
+         
+        <!--文章阅读量-->
+        </div>
+
+
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术栈/" class="article-tag-list-link color4">技术栈</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2015/10/23/readme/flash/" class="archive-article-date">
+  	<time datetime="2015-10-23T05:24:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-23</time>
+</a>
+        </div>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2015/10/23/readme/flash/">flash小游戏</a>
+    </h1>
+  
+
+
+
+
+      <div style="margin:10px 0 0;float:left;">
+        <!--文章阅读量-->
+         
+        <!--文章阅读量-->
+        </div>
+
+
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术栈/" class="article-tag-list-link color4">技术栈</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
 	      	<a href="/2015/10/18/readme/game/" class="archive-article-date">
   	<time datetime="2015-10-18T02:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-18</time>
 </a>
@@ -1460,7 +1660,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
       
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/18/readme/game/">见缝插针小游戏🎮</a>
+      <a class="archive-article-title" href="/2015/10/18/readme/game/">见缝插针🎮</a>
     </h1>
   
 
@@ -1889,6 +2089,10 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
           <ul class="article-tag-list" q-show="showTags" >
             
             <li class="article-tag-list-item">
+              <a href="javascript:void(0)" class="js-tag color2">js</a>
+            </li>
+            
+            <li class="article-tag-list-item">
               <a href="javascript:void(0)" class="js-tag color3">php</a>
             </li>
             
@@ -1922,10 +2126,6 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             
             <li class="article-tag-list-item">
               <a href="javascript:void(0)" class="js-tag color2">51</a>
-            </li>
-            
-            <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color2">js</a>
             </li>
             
             <li class="article-tag-list-item">
@@ -2371,15 +2571,15 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <ul class="article-tag-list" style="display: block;">
               
               <li class="article-tag-list-item">
-                <a href="/categories/技术栈" class="color3">技术栈(5)</a>
-              </li>
-              
-              <li class="article-tag-list-item">
-                <a href="/categories/51信用卡" class="color5">51信用卡(1)</a>
+                <a href="/categories/技术栈" class="color3">技术栈(8)</a>
               </li>
               
               <li class="article-tag-list-item">
                 <a href="/categories/boss直聘" class="color0">boss直聘(1)</a>
+              </li>
+              
+              <li class="article-tag-list-item">
+                <a href="/categories/51信用卡" class="color5">51信用卡(1)</a>
               </li>
               
               <div class="clearfix"></div>
@@ -2387,7 +2587,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <!--category标签-->
             <!--文章归档-->
             <div>
-              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a><span class="archive-list-count">4</span></li></ul>
+              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a><span class="archive-list-count">7</span></li></ul>
             </div>
             <!--文章归档-->
           </div>

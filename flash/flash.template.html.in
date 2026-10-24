@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>HTML5 互动动画馆</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, sans-serif; color: #253328; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f6f2; }
+    main { max-width: 1100px; margin: auto; padding: 32px 20px 48px; }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 40px); }
+    .intro { margin: 0 0 24px; color: #57665a; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 20px; align-items: start; }
+    .stage, .catalog { min-width: 0; background: #fff; border: 1px solid #dce4da; border-radius: 16px; box-shadow: 0 8px 28px #2533280d; }
+    .stage { padding: 16px; }
+    .stage-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .stage-head h2 { margin: 0; font-size: 22px; }
+    .stage-head span { color: #6d796f; font-size: 13px; }
+    #player { width: 100%; aspect-ratio: 4 / 3; min-height: 260px; overflow: hidden; border-radius: 10px; background: #edf2e8; }
+    #player ruffle-player { display: block; width: 100%; height: 100%; }
+    #status { min-height: 1.5em; margin: 12px 0 0; color: #5e6b60; font-size: 14px; }
+    .catalog { padding: 12px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .catalog button { min-height: 46px; border: 1px solid #dce4da; border-radius: 9px; background: #f9fbf7; color: inherit; font: inherit; cursor: pointer; }
+    .catalog button:hover, .catalog button:focus-visible { border-color: #6c9a6b; background: #eef5ec; }
+    .catalog button[aria-pressed="true"] { border-color: #467b4b; background: #dcefdc; font-weight: 700; }
+    @media (max-width: 720px) { .layout { grid-template-columns: 1fr; } .catalog { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 420px) { main { padding: 24px 12px; } .catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .single-embed, .single-embed body { background: transparent; }
+    .single-embed main { max-width: none; padding: 0; }
+    .single-embed h1, .single-embed .intro, .single-embed .stage-head, .single-embed .catalog, .single-embed #status { display: none; }
+    .single-embed .layout { display: block; }
+    .single-embed .stage { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+    .single-embed #player { min-height: 0; height: 100vh; aspect-ratio: auto; border-radius: 0; background: transparent; }
+  </style>
+  <!-- EMBEDDED_ENGINE -->
+</head>
+<body>
+  <main>
+    <h1>HTML5 互动动画馆</h1>
+    <p class="intro">选择一个动画后，用鼠标或触摸屏与它互动。首次加载需要几秒钟。</p>
+    <div class="layout">
+      <section class="stage" aria-label="动画播放器">
+        <div class="stage-head"><h2 id="title">蜘蛛</h2><span>HTML5 互动播放</span></div>
+        <div id="player"></div>
+        <p id="status" role="status" aria-live="polite">正在加载动画…</p>
+      </section>
+      <nav class="catalog" aria-label="选择动画">
+        <button type="button" data-file="spider.swf" aria-pressed="true">蜘蛛</button>
+        <button type="button" data-file="treefrog.swf" aria-pressed="false">青蛙</button>
+        <button type="button" data-file="newtonsCradle.swf" aria-pressed="false">牛顿摆</button>
+        <button type="button" data-file="hamster.swf" aria-pressed="false">仓鼠</button>
+        <button type="button" data-file="ballclock.swf" aria-pressed="false">滚球</button>
+        <button type="button" data-file="turtle.swf" aria-pressed="false">乌龟</button>
+        <button type="button" data-file="discDrop.swf" aria-pressed="false">中奖</button>
+        <button type="button" data-file="stingray.swf" aria-pressed="false">魟鱼</button>
+        <button type="button" data-file="dog.swf" aria-pressed="false">狗狗</button>
+        <button type="button" data-file="penguins.swf" aria-pressed="false">企鹅</button>
+        <button type="button" data-file="fish.swf" aria-pressed="false">金鱼</button>
+        <button type="button" data-file="pendulumClockV2.swf" aria-pressed="false">钟表</button>
+      </nav>
+    </div>
+  </main>
+  <!-- EMBEDDED_SWFS -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const buttons = [...document.querySelectorAll('.catalog button')];
+      const container = document.getElementById('player');
+      const status = document.getElementById('status');
+      const title = document.getElementById('title');
+      const embeddedSwfs = JSON.parse(document.getElementById('embedded-swfs').textContent);
+      const embedType = new URLSearchParams(location.search).get('embed');
+      const externalSwf = embedType === 'fish' ? '/fish/79553.swf' : embedType === 'cat' ? '/cat/top.swf' : null;
+      if (externalSwf) document.documentElement.classList.add('single-embed');
+      if (embedType === 'cat') document.documentElement.classList.add('cat-embed');
+      async function play(button) {
+        buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+        title.textContent = button.textContent;
+        status.textContent = '正在加载动画…';
+        try {
+          const source = window.RufflePlayer?.newest();
+          if (!source) throw new Error('Ruffle 未加载');
+          const player = source.createPlayer();
+          player.style.width = '100%';
+          player.style.height = '100%';
+          container.replaceChildren(player);
+          const encoded = embeddedSwfs[button.dataset.file];
+          if (!encoded) throw new Error('动画数据不存在');
+          const bytes = Uint8Array.from(atob(encoded), character => character.charCodeAt(0));
+          await player.ruffle().load({ data: bytes });
+          status.textContent = '动画已就绪。可点击、拖动或触摸画面互动；如看到播放按钮，请先点击。';
+        } catch (error) {
+          status.textContent = `无法播放：${error.message}`;
+        }
+      }
+      buttons.forEach(button => button.addEventListener('click', () => play(button)));
+      if (externalSwf) {
+        (async () => {
+          try {
+            const source = window.RufflePlayer?.newest();
+            if (!source) throw new Error('Ruffle 未加载');
+            const player = source.createPlayer();
+            player.style.width = '100%';
+            player.style.height = '100%';
+            container.replaceChildren(player);
+            const response = await fetch(externalSwf);
+            if (!response.ok) throw new Error('动画文件无法读取');
+            // 金鱼原舞台只有 895×220；铺满容器后，整个画面都能接收互动。
+            await player.ruffle().load({data: new Uint8Array(await response.arrayBuffer()), wmode: 'transparent', scale: 'exactFit', forceScale: true});
+          } catch (error) {
+            status.style.display = 'block';
+            status.textContent = `无法播放动画：${error.message}`;
+          }
+        })();
+      } else {
+        play(buttons[0]);
+      }
+    });
+  </script>
+</body>
+</html>

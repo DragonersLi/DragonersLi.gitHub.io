@@ -2,7 +2,7 @@ $(function () {
     var $wrapper = $('#wrapper');
 
     function centerSolarSystem() {
-        var scale = Math.min(1, window.innerWidth / 1100);
+        var scale = Math.min(1, (window.innerWidth - 24) / 1100);
 
         $wrapper.css({
             opacity: 1,
