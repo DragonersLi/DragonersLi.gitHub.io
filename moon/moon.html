@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111c36">
+  <link rel="icon" href="data:,">
+  <title>不同的团圆，相同的思念</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; }
+    body {
+      color: #fff5df;
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: radial-gradient(circle at 50% 25%, #385477 0, #172949 38%, #0b1428 80%);
+      overflow-x: hidden;
+    }
+    body::before, body::after { content: ""; position: fixed; inset: 0; pointer-events: none; }
+    body::before {
+      background-image: radial-gradient(#fff 1px, transparent 1px), radial-gradient(#d9e9ff 1px, transparent 1px);
+      background-size: 83px 91px, 137px 113px; background-position: 7px 23px, 43px 68px;
+      animation: twinkle-near 5.7s ease-in-out infinite alternate;
+    }
+    body::after {
+      background-image: radial-gradient(#ffe8ae 1px, transparent 1px), radial-gradient(#fff 1px, transparent 1px);
+      background-size: 191px 157px, 239px 211px; background-position: 61px 37px, 101px 89px;
+      animation: twinkle-far 8.3s ease-in-out -3s infinite alternate;
+    }
+    .page { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 52px 20px 42px; text-align: center; }
+    .eyebrow { margin: 0 0 10px; color: #e8c98d; font-size: 13px; letter-spacing: .28em; }
+    h1 { margin: 0; font-size: clamp(26px, 6vw, 40px); font-weight: 500; letter-spacing: .08em; }
+    .intro { margin: 12px 0 0; color: #d9e0ed; font-size: 15px; }
+    .moon-wrap { position: relative; width: min(66vw, 290px); margin: 28px 0 12px; }
+    .moon-wrap::before { content: ""; position: absolute; inset: 8%; border-radius: 50%; box-shadow: 0 0 75px 28px rgba(255, 228, 168, .35); }
+    .moon { position: relative; display: block; width: 100%; filter: drop-shadow(0 0 18px rgba(255,240,197,.55)); animation: float 6s ease-in-out infinite; }
+    .wish { width: min(100%, 560px); padding: 19px 22px; border: 1px solid rgba(255,240,203,.25); border-radius: 22px; background: rgba(255,255,255,.08); backdrop-filter: blur(8px); }
+    .wish h2 { margin: 0 0 12px; font-size: clamp(19px, 5vw, 25px); font-weight: 500; }
+    .wish p { margin: 8px 0; line-height: 1.8; color: #ecedf5; }
+    .wish strong { color: #ffdc94; font-weight: 600; }
+    @keyframes float { 50% { transform: translateY(-10px); } }
+    @keyframes twinkle-near { from { opacity: .2; } to { opacity: .75; } }
+    @keyframes twinkle-far { from { opacity: .6; } to { opacity: .15; } }
+    @media (prefers-reduced-motion: reduce) {
+      .moon, body::before, body::after { animation: none; }
+      body::before { opacity: .55; }
+      body::after { opacity: .35; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" id="page">
+    <p class="eyebrow">明月寄相思</p>
+    <h1>不同的团圆，相同的思念</h1>
+    <p class="intro">海上生明月，天涯共此时</p>
+    <div class="moon-wrap"><img class="moon" src="./moon.png" alt="皎洁的圆月"></div>
+    <section class="wish" aria-label="节日祝福"> 
+      <p>无论此刻我们相隔多远，都愿这轮明月照亮你的归途。</p>
+      <p>把思念写在月光里，愿你平安、喜乐、团圆。</p>
+    </section>
+  </main>
+  <script>
+    (function () {
+      const params = new URLSearchParams(location.search);
+      const name = (params.get('username') || '').trim().slice(0, 30);
+      if (name) {
+        document.getElementById('recipient').textContent = name;
+        document.title = name + '：不同的团圆，相同的思念';
+      }
+    })();
+  </script>
+</body>
+</html>
