@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="陌上花开，女孩沿着花田间的铁轨奔跑。">
+  <title>陌上花开</title>
+  <link rel="icon" href="data:,">
+  <style>
+    html, body { margin: 0; }
+    body { background: #fff; }
+
+    .banner {
+      height: 313px;
+      background: url("./godgirl.jpg") center top no-repeat;
+    }
+    .hero {
+      position: relative;
+      width: min(100%, 950px);
+      margin: 0 auto;
+    }
+    .hero img { display: block; width: 100%; height: auto; }
+    .title {
+      position: absolute;
+      top: 35%;
+      left: 12.1%;
+      margin: 0;
+      color: #6d5887;
+      font: 300 24px/1.2 "Microsoft YaHei", "PingFang SC", sans-serif;
+      text-decoration: underline;
+    }
+    .corner-animation {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 140px;
+      height: 87px;
+    }
+    .corner-animation img {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .corner-hover { opacity: 0; }
+    .corner-animation:hover .corner-idle { opacity: 0; }
+    .corner-animation:hover .corner-hover { opacity: 1; }
+
+    @media (max-width: 950px) {
+      .banner { height: auto; aspect-ratio: 950 / 313; background-size: auto 100%; }
+      .title { font-size: clamp(16px, 2.53vw, 24px); }
+    }
+    @media (max-width: 600px) {
+      .corner-animation { width: 90px; height: 56px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <div class="hero">
+      <img src="./top-animation.webp" alt="女孩沿着花田间的铁轨奔跑" width="950" height="313">
+      
+    </div>
+  </header>
+  <div class="corner-animation" aria-hidden="true">
+    <img class="corner-idle" src="./corner-idle.webp" alt="" width="140" height="87">
+    <a href="/godgirl/"><img class="corner-hover" src="./corner-hover.webp" alt="" width="140" height="87"></a>
+  </div>
+</body>
+</html>

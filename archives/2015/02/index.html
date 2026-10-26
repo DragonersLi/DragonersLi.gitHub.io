@@ -6,26 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dragonersli.github.io">
-  <title>愿意温柔待花开，愿意慈悲等风来！ | すせなの技术博客❤</title>
+  <title>Archives: 2015/2 | すせなの技术博客❤</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#about-id .aboutcon {     overflow: hidden;   }    #about-id .about-zalgo {     position: relative;     top: 280px;     margin: 0;   }    @media (max-width: 767px) {     #about-id .about-zalgo {">
-<meta property="og:type" content="article">
-<meta property="og:title" content="愿意温柔待花开，愿意慈悲等风来！">
-<meta property="og:url" content="https://dragonersli.github.io/2015/05/12/readme/index/index.html">
+  <meta name="description" content="すせなの技术博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="すせなの技术博客">
+<meta property="og:url" content="https://dragonersli.github.io/archives/2015/02/index.html">
 <meta property="og:site_name" content="すせなの技术博客">
-<meta property="og:description" content="#about-id .aboutcon {     overflow: hidden;   }    #about-id .about-zalgo {     position: relative;     top: 280px;     margin: 0;   }    @media (max-width: 767px) {     #about-id .about-zalgo {">
+<meta property="og:description" content="すせなの技术博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2015-05-11T19:30:06.000Z">
-<meta property="article:modified_time" content="2026-10-19T01:22:17.557Z">
 <meta property="article:author" content="DragonersLi">
-<meta property="article:tag" content="php">
-<meta property="article:tag" content="go">
-<meta property="article:tag" content="nodejs">
-<meta property="article:tag" content="vue">
-<meta property="article:tag" content="uniapp">
-<meta property="article:tag" content="java">
-<meta property="article:tag" content="python">
-<meta property="article:tag" content="devops">
+<meta property="article:tag" content="碼農筆記、修煉道場">
 <meta name="twitter:card" content="summary">
   
   
@@ -34,9 +25,7 @@
   <link rel="stylesheet" type="text/css" href="/./main.3e410a.css">
 
   <link rel="stylesheet" href="/article-back.css">
-  
-    <link rel="stylesheet" href="/reward-popup.css">
-  
+  <link rel="stylesheet" href="/reward-popup.css?v=2">
   <style type="text/css">
     #container.show {
       background: linear-gradient(200deg,#ccc,#000);
@@ -553,7 +542,7 @@ $(function(){
   道場 ጿ ኈ ቼ ዽ ጿ ኈ
   
   <a href="/favorites">
-    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ11级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ11级"></span>
+    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ14级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ14级"></span>
   </a>
 </p>
 <!-- 标签 end -->
@@ -693,7 +682,7 @@ $(function(){
   道場 ጿ ኈ ቼ ዽ ጿ ኈ
   
   <a href="/favorites">
-    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ11级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ11级"></span>
+    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ14级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ14级"></span>
   </a>
 </p>
 <!-- 标签 end -->
@@ -890,237 +879,421 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-readme/index" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-          <div class="article-title-row">
-            
-<a class="article-back-link" href="/" aria-label="返回上一页">
-  <i class="icon-back" aria-hidden="true"></i>
-  <span>返回</span>
-</a>
+            <section class="home-search" aria-label="文章搜索">
+  <div class="home-search__inner">
+    <label class="home-search__field" for="home-search-input">
+      <i class="icon-search" aria-hidden="true"></i>
+      <input id="home-search-input" type="search" placeholder="搜索标题、正文、标签或分类…" aria-label="搜索站内文章" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false">
+    </label>
+    <p class="home-search__summary" aria-live="polite">共收录 <strong>14</strong> 篇文章，输入关键词即可快速筛选。</p>
+  </div>
+</section>
+
+<section id="home-search-empty" class="home-search-empty" aria-live="polite" hidden>
+  <div class="home-search-empty__animation" role="img" aria-label="没有找到文章的动态插画"></div>
+  <div class="home-search-empty__message"><span class="home-search-empty__text"></span><span class="typed-cursor typed-cursor--blink"></span></div>
+</section>
+
+<style>
+  .home-search {
+    margin: 30px 30px 0;
+    padding-right: 60px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+  }
+  .home-search__inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 200px;
+    padding: 20px 0;
+  }
+  .home-search__field {
+    display: flex;
+    align-items: center;
+    flex: 1 1 520px;
+    min-width: 260px;
+    min-height: 46px;
+    padding: 0 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    color: #999;
+    box-sizing: border-box;
+    transition: border-color .2s ease, box-shadow .2s ease;
+  }
+  .home-search__field:focus-within {
+    border-color: #88acdb;
+    box-shadow: 0 0 0 3px rgba(136, 172, 219, .16);
+  }
+  .home-search__field .icon-search {
+    flex: 0 0 auto;
+    margin-right: 12px;
+    font-size: 18px;
+  }
+  #home-search-input {
+    width: 100%;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #555;
+    font-size: 16px;
+    line-height: 44px;
+    appearance: none;
+  }
+  #home-search-input::placeholder { color: #aaa; }
+  .home-search__summary {
+    flex: 0 0 auto;
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+  .home-search__summary strong {
+    color: #d32f2f;
+    font-variant-numeric: tabular-nums;
+  }
+  .home-search-highlight {
+    display: inline;
+    padding: 1px 3px;
+    border-radius: 3px;
+    background: #ffe08a !important;
+    box-shadow: inset 0 -1px 0 rgba(209, 75, 114, .35);
+    color: #d81b60 !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: #d81b60;
+  }
+  .home-search-empty {
+    min-height: 310px;
+    margin: 0 30px 80px;
+    padding: 28px 24px 36px;
+    background: #fff;
+    color: #344b68;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .home-search-empty:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .home-search-empty__animation { width: min(100%, 260px); height: 260px; }
+  .home-search-empty__animation svg { width: 100%; height: 100%; }
+  .home-search-empty__message { min-height: 1.7em; line-height: 1.7; }
+  .home-search-empty .typed-cursor { display: inline; }
+  .home-search ~ .archives-wrap[hidden] { display: none !important; }
+  .home-search ~ .archives-wrap .archive-article[hidden] { display: none !important; }
+  @media screen and (max-width: 800px) {
+    .home-search {
+      margin: 10px 10px 0;
+      padding: 10px;
+    }
+    .home-search__inner {
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+      margin-left: 0;
+      padding: 0;
+      flex-direction: column;
+    }
+    .home-search__field {
+      flex: none;
+      min-width: 0;
+    }
+    .home-search__summary {
+      padding: 0 2px;
+      font-size: 13px;
+      white-space: normal;
+    }
+    .home-search-empty {
+      min-height: 250px;
+      margin: 10px 10px 30px;
+      padding: 20px 16px 28px;
+    }
+    .home-search-empty__animation { width: min(100%, 200px); height: 200px; }
+  }
+  @media screen and (max-width: 480px) {
+    .home-search-empty { min-height: 210px; margin-bottom: 150px; padding: 14px 16px 20px; gap: 4px; }
+    .home-search-empty__animation { width: 140px; height: 140px; }
+  }
+</style>
+
 <script>
-(function () {
-  var links = document.querySelectorAll('.article-back-link:not([data-back-ready])');
-  var index;
+  (function initHomeSearch() {
+    var input = document.getElementById('home-search-input');
+    var empty = document.getElementById('home-search-empty');
+    var summary = document.querySelector('.home-search__summary');
+    if (!input || !empty || !summary || input.dataset.searchBound === 'true') return;
 
-  function isLocalReferrer() {
-    if (!document.referrer) {
-      return false;
+    input.dataset.searchBound = 'true';
+    var totalSummary = summary.innerHTML;
+    var indexByPath = {};
+    var loading = null;
+    var emptyTyping = null;
+    var emptyAnimation = null;
+    var animationLoading = null;
+    var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var animationVisible = true;
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function(entries) {
+        animationVisible = entries[0].isIntersecting;
+        if (!emptyAnimation) return;
+        if (animationVisible && !empty.hidden && !reducedMotion) emptyAnimation.play();
+        else emptyAnimation.pause();
+      }).observe(empty);
     }
-    try {
-      return new URL(document.referrer).origin === window.location.origin;
-    } catch (error) {
-      return false;
-    }
-  }
 
-  function goBack(event) {
-    if (event.currentTarget.hasAttribute('data-home-only')) return;
-    var state = window.history.state || {};
-    if (state.siteNavigationFrom || isLocalReferrer()) {
-      event.preventDefault();
-      window.history.back();
+    function loadAnimationPlayer() {
+      if (window.lottie) return Promise.resolve(window.lottie);
+      if (window.homeSearchLottieLoading) return window.homeSearchLottieLoading;
+      window.homeSearchLottieLoading = new Promise(function(resolve, reject) {
+        var script = document.createElement('script');
+        script.src = '/assets/lottie/lottie_light.min.js';
+        script.onload = function() { resolve(window.lottie); };
+        script.onerror = reject;
+        document.head.appendChild(script);
+      }).catch(function(error) {
+        window.homeSearchLottieLoading = null;
+        throw error;
+      });
+      return window.homeSearchLottieLoading;
     }
-  }
 
-  for (index = 0; index < links.length; index += 1) {
-    links[index].setAttribute('data-back-ready', 'true');
-    links[index].addEventListener('click', goBack);
-  }
-}());
+    function showEmptyAnimation() {
+      if (emptyAnimation) {
+        if (!reducedMotion && animationVisible) emptyAnimation.play();
+        return;
+      }
+      if (animationLoading) return;
+      animationLoading = Promise.all([
+        loadAnimationPlayer(),
+        fetch('/assets/lottie/idle.json', { credentials: 'same-origin' }).then(function(response) {
+          if (!response.ok) throw new Error('空结果动画加载失败');
+          return response.json();
+        })
+      ]).then(function(result) {
+        var container = empty.querySelector('.home-search-empty__animation');
+        if (!container || !container.isConnected || !result[0]) return;
+        emptyAnimation = result[0].loadAnimation({
+          container: container,
+          renderer: 'svg',
+          loop: !reducedMotion,
+          autoplay: !reducedMotion && animationVisible && !empty.hidden,
+          animationData: result[1]
+        });
+        if (reducedMotion) emptyAnimation.goToAndStop(0, true);
+      }).catch(function() {
+        // 动画加载失败时仍保留原来的文字提示。
+      }).then(function() { animationLoading = null; });
+    }
+
+    function normalizePath(url) {
+      try {
+        return new URL(url, window.location.href).pathname.replace(/\/+$/, '') || '/';
+      } catch (error) {
+        return url;
+      }
+    }
+
+    function loadIndex() {
+      if (loading) return loading;
+      loading = fetch('/atom.xml', { credentials: 'same-origin' })
+        .then(function(response) {
+          if (!response.ok) throw new Error('搜索索引加载失败');
+          return response.text();
+        })
+        .then(function(text) {
+          var xml = new DOMParser().parseFromString(text, 'application/xml');
+          Array.prototype.forEach.call(xml.querySelectorAll('entry'), function(entry) {
+            var categories = Array.prototype.map.call(entry.querySelectorAll('category'), function(category) {
+              return category.getAttribute('term') || '';
+            }).join(' ');
+            var url = (entry.querySelector('id') || {}).textContent || '';
+            indexByPath[normalizePath(url)] = [
+              (entry.querySelector('title') || {}).textContent || '',
+              (entry.querySelector('content') || {}).textContent || '',
+              categories
+            ].join(' ').toLowerCase();
+          });
+        })
+        .catch(function() { indexByPath = {}; });
+      return loading;
+    }
+
+    function stopEmptyTyping() {
+      if (emptyTyping && typeof emptyTyping.destroy === 'function') emptyTyping.destroy();
+      emptyTyping = null;
+      empty.hidden = true;
+      if (emptyAnimation) emptyAnimation.pause();
+      var text = empty.querySelector('.home-search-empty__text');
+      if (text) text.textContent = '';
+    }
+
+    function showEmptyTyping() {
+      empty.hidden = false;
+      showEmptyAnimation();
+      var selector = '#home-search-empty .home-search-empty__text';
+      if (window.Typed) {
+        emptyTyping = new Typed(selector, {
+          strings: ['您搜的内容从地球消失了！...', '您搜的内容去火星了！...', 'https://dragonersli.github.io'],
+          startDelay: 300,
+          typeSpeed: 80,
+          backDelay: 2000,
+          loop: true
+        });
+      } else {
+        empty.querySelector('.home-search-empty__text').textContent = '没有找到相关内容。';
+      }
+    }
+
+    function clearHighlights() {
+      Array.prototype.forEach.call(document.querySelectorAll('.home-search-highlight'), function(mark) {
+        mark.replaceWith(document.createTextNode(mark.textContent));
+      });
+    }
+
+    function highlightElement(element, keywords) {
+      if (!element || !keywords.length) return;
+      var pattern = keywords
+        .slice()
+        .sort(function(left, right) { return right.length - left.length; })
+        .map(function(keyword) { return keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); })
+        .join('|');
+      if (!pattern) return;
+
+      var expression = new RegExp('(' + pattern + ')', 'gi');
+      var walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+      var textNodes = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+      textNodes.forEach(function(node) {
+        if (!expression.test(node.nodeValue)) {
+          expression.lastIndex = 0;
+          return;
+        }
+        expression.lastIndex = 0;
+        var fragment = document.createDocumentFragment();
+        var cursor = 0;
+        node.nodeValue.replace(expression, function(match, captured, offset) {
+          fragment.appendChild(document.createTextNode(node.nodeValue.slice(cursor, offset)));
+          var mark = document.createElement('mark');
+          mark.className = 'home-search-highlight';
+          mark.textContent = match;
+          fragment.appendChild(mark);
+          cursor = offset + match.length;
+          return match;
+        });
+        fragment.appendChild(document.createTextNode(node.nodeValue.slice(cursor)));
+        node.parentNode.replaceChild(fragment, node);
+      });
+    }
+
+    function filterArchives(query) {
+      var keywords = query.trim().toLowerCase().split(/[\s\-]+/).filter(Boolean);
+      var visibleCount = 0;
+      var archiveSections = Array.prototype.slice.call(document.querySelectorAll('.home-search ~ .archives-wrap'));
+      stopEmptyTyping();
+      clearHighlights();
+
+      archiveSections.forEach(function(section) {
+        var sectionCount = 0;
+        Array.prototype.forEach.call(section.querySelectorAll('.archive-article'), function(article) {
+          var link = article.querySelector('.archive-article-title');
+          var path = link ? normalizePath(link.getAttribute('href')) : '';
+          var haystack = indexByPath[path] || article.textContent.toLowerCase();
+          var matched = !keywords.length || keywords.every(function(keyword) {
+            return haystack.indexOf(keyword) !== -1;
+          });
+          article.hidden = !matched;
+          if (matched) {
+            sectionCount += 1;
+            visibleCount += 1;
+            Array.prototype.forEach.call(article.querySelectorAll('.archive-article-title, .article-tag-list-link, .article-category-link'), function(element) {
+              highlightElement(element, keywords);
+            });
+          }
+        });
+        section.hidden = sectionCount === 0;
+      });
+
+      summary.innerHTML = keywords.length
+        ? '共搜索到 <strong>' + visibleCount + '</strong> 篇符合关键词的文章'
+        : totalSummary;
+      if (keywords.length && visibleCount === 0) showEmptyTyping();
+    }
+
+    input.addEventListener('focus', loadIndex, { once: true });
+    input.addEventListener('input', function() {
+      var query = input.value;
+      if (!query.trim()) {
+        filterArchives('');
+        return;
+      }
+      loadIndex().then(function() {
+        if (input.value === query) filterArchives(query);
+      });
+    });
+  })();
 </script>
 
-            
+
   
-    <h1 class="article-title" itemprop="name">
-      愿意温柔待花开，愿意慈悲等风来！
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2015" class="archive-year">2015</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2015/02/14/readme/flash/" class="archive-article-date">
+  	<time datetime="2015-02-14T02:02:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-02-14</time>
+</a>
+        </div>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2015/02/14/readme/flash/">flash小游戏🎮</a>
     </h1>
   
 
 
-          </div>
-        
-        
-        <a href="/2015/05/12/readme/index/" class="archive-article-date">
-  	<time datetime="2015-05-11T19:30:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-05-12</time>
-</a>
-        
+
+
+      <div style="margin:10px 0 0;float:left;">
         <!--文章阅读量-->
-        
-          <span id="busuanzi_container_page_pv" style="float:right;margin-right:5%;color:grey;">阅读:<span id="busuanzi_value_page_pv" style="color:red;"></span>次</span>
-        
+         
         <!--文章阅读量-->
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-<style>
-  #about-id .aboutcon {
-    overflow: hidden;
-  }
-
-  #about-id .about-zalgo {
-    position: relative;
-    top: 280px;
-    margin: 0;
-  }
-
-  @media (max-width: 767px) {
-    #about-id .about-zalgo {
-      top: 300px;
-    }
-  }
-</style>
-<strong id="about-id">
-        <div class="aboutcon" style="background:url(/assets/static/img/about_bg.jpg) 100% 100%;margin:20px;width:90%;height:800px;color:#333;opacity:0.8">
-           <h1 style="text-shadow:0.1em 0.1em 0.2em #000;color:#fff;font-weight:bold;">Just Do It</h1>
-            <div>
-
-              <p id="bling" style="color:white;">DRY（Don’t Repeat Yourself）  愿以温柔待花开,愿以慈悲等风来！</p>
-
-              <p style="color:white;">
-                <span class="write-aboutme"></span>
-              </p>
-              <p class="about-zalgo" style="text-align: center;">
-                ̷̸̨̀͒̏̃ͦ̈́̾̀́̎͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̷̸̡̡̨̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̀͒̏̃ͦ̈́̾̀́̎̚͜͟͢҉̵̶͚̼͉͖̺̥͔͇̰̹̮͙͉̻̼̭̻͕̮͇ͨͬͪ͗̇̑̽͋̀̋̊͌ͧͨͭ̓̅͐ͥ̂̔̊ͧ͊҉̶̵̷̞̩̦̳̺̳̬̬̩̣̫͇̯̥͖͍͕̠̦̼̗ͯ̽͌̔ͪͯ́́͋̍ͨ̿̿̎͒ͤ̓̅̀͂ͧ͋̏ͫͣ̔͘͜͠͏̶̵̸̸̸̶̸̶̧̧̡̢̡̛̛̥̺͓̘̺͎̜̥͕͈̝̫͎̺̮̱̤̠̠͖̳̻̥̣̪͍͕͇̮͙̹̪͈̼̩̯̪͕̯̫̹̥͔͚͙̦̩͚̭̥͉̰̝̺͍̭̤̹̘̮̪͖͖͉̲̯͕̜̭̙̺̬̘͉̻͍̝̦͖̣̜͖̱͚̞̞̝̝̭̖͕͓͕͇̖̜̭̠͖̼̯̼̠̹͔̲͔̟͕̱̘̹̗͙̪̥̳͓̳͖̞̻͉͈̮̯̲̘̱̱̞̜̖̞̣̱ͮͧͫ͂͒ͤͣ̌̽ͨͪ͒̄̄̉̒̊ͩ̅͆̒̎̇̆͆ͪ̈́͛̉̍̏́̄̈́̽̔̍̎̂ͬ̆͗͌̔ͫ͆̀́͑̈́ͤ́ͯ̇ͧ̾͂̐̋̉̊ͦͥͫͧ͆ͨ̽̒̃͊̒̎͊̇̽̓̒ͬ̐̈́̀́́̍̈́̆̉ͭͪ̾ͭ̈́͛͑̽͐ͬ̈ͧͧ̍̐̑̓ͥ̔̾͐́̎̎͛ͮ͑ͤ̃̉ͦ̍͒ͩ̃̌̎͗̈́̐̉͐͐͌̄̀̓͆̉̌̎͂ͨͩͬ̾̊͋ͪ̎̑̀͘̚͘͘̚͘͘͘̕͟͟͢͟͟͟͜͝͠͞͝͝͝͝͡ͅͅͅͅ͏͏̡̡̛̙̣͉̪̬̗̳̱̤̥̪̮̮̟̥̠͚̼͉̥ͯ̓̂́͐̄̉̇ͣ́ͪ̅̈̃̚͜͟
-              </p>
-
         </div>
-        </div>
-      </strong>
-
-<!--每日一语-->
-<script data-pjax src="/assets/static/js/eff_bling.js"></script>
-<script data-pjax>
-  $(function(){
-    eff_bling(document.getElementById('bling'));
-
-    hitokoto(urlType = 1,dataType = 'text',element = '.write-aboutme', strings = ['该用户谢绝使用百度搜寻网络。F**k GFW! 此用户不满中国大陆对互联网的审查和封锁。<br/>\n' +
-    '                此用户反对读书无用论，此用户对现有中国教育制度表示强烈不满。<br/>\n' +
-    '                Chinglish-0 This user can speak English correctly.这个用户能正确地说英文。<br/>\n' +
-    '                这个用户兴趣广泛，无所不读。这个用户对电脑程序感兴趣。<br/>\n' +
-    '                该用户使用Linux。这个用户知道0.999…就是1。<br/>\n' +
-    '                该用户不喜欢微信和QQ。这个用户认为自己过分怀旧。<br/>\n' +
-    '                这个用户很宅，这个用户戒烟限酒。<br/>\n' +
-    '                00:00↔24:00 此用户昼夜不分、罔顾时间更替。<br/>\n' +
-    '                该用户知道减税能增加自由和促进经济发展。<br/>\n' +
-    '                此用户认为对任何事物都必须抱持合理的怀疑的态度。<br/>\n' +
-    '                这个用户支持言论自由。<br/>\n' +
-    '                这个用户支持真正的男女平等，不偏袒男性或女性任何一方。<br/>\n' +
-    '                这个用户喜欢、亲近大自然。<br/>\n' +
-    '                这个用户认为知易行难。<br/>'],startDelay = 500,typeSpeed = 80,backDelay = 2000,loop = true);
-  });
-</script>
-<!--每日一语-->
 
 
-
-<hr>
-
-      
-
-      <!--版权信息-->
-
-<div class="declare">
-  <strong>本文链接：</strong>
-  <a href="https://dragonersli.github.io/2015/05/12/readme/index/" title="愿意温柔待花开，愿意慈悲等风来！">https://dragonersli.github.io/2015/05/12/readme/index/</a>
-  <br>
-  <strong>本人声明：</strong>
-  此文只作为自己日后工作学习中遇到类似问题方便快速回忆解决问题的笔记，仅供参考！<br/>
-  <strong>版权声明：</strong>
-  
-  <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-    <img alt="知识共享许可协议" title="本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。转载请注明出处！" style="border-width:0;height:16px;" src="/assets/static/img/licensebutton.png"/>
-  </a>
-  
-  本文首发于<a href="https://dragonersli.github.io" title="DragonersLi的笔记！ ">
-  すせなの技术博客
-</a>转载无需联系本人，但要注明来源本站！
-</div>
-
-<!--版权信息-->
-
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" onclick="return false;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢您请我喝咖啡！~<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/static/img/alipay.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/static/img/wechatpay.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">go</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">nodejs</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">uniapp</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">devops</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -1133,143 +1306,31 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://dragonersli.github.io/2015/05/12/readme/index/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
 
 
   
-<nav id="article-nav">
   
-    <a href="/2015/05/20/readme/love/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          初恋NA件小事❤️
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#about-id"><span class="toc-number">1.</span> <span class="toc-text">Just Do It</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
     </div>
-</aside>
+    <!--我们一直在努力！-->
+<p style="margin:0 auto;background-color:#D6D85F"><img src="/assets/static/img/footer.gif"> </p>
+<!--我们一直在努力！-->
+
+    </section>
+  
+
+    
 
 
 
-  <!--来比力评论-->
-  
-  <!--来比力评论-->
-
-  <!--评论-->
-  
-  
-  
-  <!--评论-->
-
-  
-
-  
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script>
-  var cloudTieConfig = {
-    url: "https://dragonersli.github.io/2015/05/12/readme/index/", 
-    sourceId: "readme/index",
-    productKey: "true",
-    target: "cloud-tie-wrapper"
-  };
-</script>
-<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-  
-
-  
-
-  
-
-  
+<!--pagination：[1:不显示文章内容；2:展示文章内容]-->
+<!--归档-->
+<!--标签-->
+<!--文章-->
 
 
           </div>
@@ -1343,8 +1404,8 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
 	var yiliaConfig = {
 		mathjax: "false",
 		isHome: "false",
-		isPost: "true",
-		isArchive: "false",
+		isPost: "false",
+		isArchive: "true",
 		isTag: "false",
 		isCategory: "false",
 		open_in_new: "true",
@@ -1431,6 +1492,10 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             </li>
             
             <li class="article-tag-list-item">
+              <a href="javascript:void(0)" class="js-tag color3">job</a>
+            </li>
+            
+            <li class="article-tag-list-item">
               <a href="javascript:void(0)" class="js-tag color3">php</a>
             </li>
             
@@ -1460,10 +1525,6 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             
             <li class="article-tag-list-item">
               <a href="javascript:void(0)" class="js-tag color0">devops</a>
-            </li>
-            
-            <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color3">job</a>
             </li>
             
             <div class="clearfix"></div>
@@ -1833,9 +1894,86 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
           </ul>
         </div>
   		
+        <div id="friends-live2d" class="friends-live2d" aria-label="博客看板娘">
+          <div class="friends-live2d-stage"></div>
+        </div>
     	</section>
     
   <!--友情链接-->
+    
+    <style>
+      .tools-section-friends .friends-live2d {
+        height: 370px;
+        margin: 18px 20px 0;
+        overflow: hidden;
+      }
+      .tools-section-friends .friends-live2d-stage {
+        position: relative;
+        width: 180px;
+        height: 360px;
+        margin: 0 auto;
+      }
+      .tools-section-friends canvas#live2dcanvas {
+        border: 0 !important;
+        position: absolute !important;
+        top: 0 !important;
+        bottom: auto !important;
+        left: 0 !important;
+        right: auto !important;
+        width: 180px !important;
+        height: 360px !important;
+        margin: 0 !important;
+        z-index: 1 !important;
+      }
+      @media (max-width: 600px) {
+        .tools-section-friends .friends-live2d { height: 530px; }
+        .tools-section-friends .friends-live2d-stage { width: 150px; height: 300px; }
+        .tools-section-friends canvas#live2dcanvas { width: 150px !important; height: 300px !important; }
+      }
+    </style>
+    <script>
+      (function () {
+        var host = document.getElementById('friends-live2d');
+        var stage = host && host.querySelector('.friends-live2d-stage');
+        if (!stage) return;
+
+        function placeCanvas() {
+          var canvas = document.getElementById('live2dcanvas');
+          if (!canvas) return false;
+          stage.appendChild(canvas);
+          return true;
+        }
+
+        function startWidget() {
+          var observer = new MutationObserver(function () {
+            if (placeCanvas()) observer.disconnect();
+          });
+          observer.observe(document.body, { childList: true, subtree: true });
+          window.L2Dwidget.init();
+          if (placeCanvas()) observer.disconnect();
+        }
+
+        function loadWidget() {
+          if (window.L2Dwidget) return startWidget();
+          var script = document.createElement('script');
+          script.src = '/assets/static/js/L2Dwidget.min.js';
+          script.onload = startWidget;
+          document.head.appendChild(script);
+        }
+
+        if ('IntersectionObserver' in window) {
+          var visibility = new IntersectionObserver(function (entries) {
+            if (!entries[0].isIntersecting) return;
+            visibility.disconnect();
+            loadWidget();
+          });
+          visibility.observe(host);
+        } else {
+          loadWidget();
+        }
+      }());
+    </script>
+    
     <!-- 一言接口写入隐藏节点，友链区仍由原来的打字效果展示。 -->
     <span id="friend-hitokoto" hidden></span>
     <script>
@@ -1905,15 +2043,15 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <ul class="article-tag-list" style="display: block;">
               
               <li class="article-tag-list-item">
-                <a href="/categories/技术栈" class="color3">技术栈(9)</a>
-              </li>
-              
-              <li class="article-tag-list-item">
-                <a href="/categories/51信用卡" class="color5">51信用卡(1)</a>
+                <a href="/categories/技术栈" class="color3">技术栈(12)</a>
               </li>
               
               <li class="article-tag-list-item">
                 <a href="/categories/boss直聘" class="color0">boss直聘(1)</a>
+              </li>
+              
+              <li class="article-tag-list-item">
+                <a href="/categories/51信用卡" class="color5">51信用卡(1)</a>
               </li>
               
               <div class="clearfix"></div>
@@ -1921,7 +2059,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <!--category标签-->
             <!--文章归档-->
             <div>
-              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a><span class="archive-list-count">7</span></li></ul>
+              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a><span class="archive-list-count">9</span></li></ul>
             </div>
             <!--文章归档-->
           </div>

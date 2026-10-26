@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waiting for U</title>
+  <link rel="icon" href="data:,">
+  <style>
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #cfccc7;
+    }
+
+    .scene {
+      position: relative;
+      width: min(100%, 1600px);
+      aspect-ratio: 1600 / 334;
+      overflow: hidden;
+    }
+
+    .scene img {
+      display: block;
+      position: absolute;
+      height: auto;
+    }
+
+    .background {
+      inset: 0;
+      width: 100%;
+    }
+
+    .animation {
+      top: 0;
+      left: 17.5%;
+      width: 59.375%;
+    }
+  </style>
+</head>
+<body>
+  <main class="scene" aria-label="雪中等待的男孩">
+    <img class="background" src="sinablogb.jpg" alt="雪地里的铁轨">
+    <!-- The original top.swf is preserved; this animated WebP reproduces its looping scene without Flash. -->
+    <img class="animation" src="top-animation.webp" alt="雪花飘落，男孩站在铁轨旁">
+  </main>
+</body>
+</html>

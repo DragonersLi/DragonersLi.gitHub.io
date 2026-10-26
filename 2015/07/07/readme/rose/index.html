@@ -16,7 +16,7 @@
 <meta property="og:description" content=".rose-page {     overflow: hidden;     text-align: center;   }    .rose-page canvas {     display: block;     width: min(500px, 100%);     height: auto;     margin: 0 auto;   }    .rose-page__reci">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2015-07-06T23:07:07.000Z">
-<meta property="article:modified_time" content="2026-10-19T01:21:39.399Z">
+<meta property="article:modified_time" content="2026-10-26T15:48:50.886Z">
 <meta property="article:author" content="DragonersLi">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
@@ -27,9 +27,7 @@
   <link rel="stylesheet" type="text/css" href="/./main.3e410a.css">
 
   <link rel="stylesheet" href="/article-back.css">
-  
-    <link rel="stylesheet" href="/reward-popup.css">
-  
+  <link rel="stylesheet" href="/reward-popup.css?v=2">
   <style type="text/css">
     #container.show {
       background: linear-gradient(200deg,#ccc,#000);
@@ -546,7 +544,7 @@ $(function(){
   道場 ጿ ኈ ቼ ዽ ጿ ኈ
   
   <a href="/favorites">
-    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ11级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ11级"></span>
+    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ14级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ14级"></span>
   </a>
 </p>
 <!-- 标签 end -->
@@ -686,7 +684,7 @@ $(function(){
   道場 ጿ ኈ ቼ ዽ ጿ ኈ
   
   <a href="/favorites">
-    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ11级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ11级"></span>
+    <span class="icon-daochang-1"  title="道場 ጿ ኈ ቼ ዽ ጿ ኈ14级" alt="道場 ጿ ኈ ቼ ዽ ጿ ኈ14级"></span>
   </a>
 </p>
 <!-- 标签 end -->
@@ -978,13 +976,16 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
     color: green;
     font-size: 20px;
   }
-</style>
 
+</style>
+  <div style="margin:0 0 22px;padding:20px 24px;border:1px solid #dce8dc;border-left:4px solid #65a378;border-radius:12px;background:#f6faf6;">
+    <p style="margin:0;color:#5b6b60;font-size:15px;line-height:1.75;">浏览器地址栏加上<span style="color:red;">?name=xxx</span> 改变下面<span style="color:red;">xxx</span>显示.</p> 
+  </div>
 <div class="rose-page" id="rose-page">
   <canvas id="rose-canvas" width="500" height="500"></canvas>
 
   <p>
-    <span class="rose-page__recipient" id="rose-recipient">Dragoners.Li GG</span>，送你一朵
+    <span class="rose-page__recipient" id="rose-recipient">DragonersLi</span>，送你一朵
     <span class="rose-page__flower">玫瑰</span>！ ^_^
     <span class="rose-page__wish">祝你：</span>
   </p>
@@ -1013,7 +1014,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
     root.dataset.initialized = 'true';
 
     var name = new URLSearchParams(window.location.search).get('name');
-    var recipient = name ? name + 'MM' : 'XXX';
+    var recipient = name ? name  : 'XXX';
     document.getElementById('rose-recipient').textContent = recipient;
     if (name) document.title = name + '，送你一朵玫瑰！【七夕节快乐！】';
 
@@ -1266,7 +1267,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          见缝插针🎮
+          见缝插针🪡
         
       </div>
     </a>
@@ -1502,6 +1503,10 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             </li>
             
             <li class="article-tag-list-item">
+              <a href="javascript:void(0)" class="js-tag color3">job</a>
+            </li>
+            
+            <li class="article-tag-list-item">
               <a href="javascript:void(0)" class="js-tag color3">php</a>
             </li>
             
@@ -1531,10 +1536,6 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             
             <li class="article-tag-list-item">
               <a href="javascript:void(0)" class="js-tag color0">devops</a>
-            </li>
-            
-            <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color3">job</a>
             </li>
             
             <div class="clearfix"></div>
@@ -1904,9 +1905,86 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
           </ul>
         </div>
   		
+        <div id="friends-live2d" class="friends-live2d" aria-label="博客看板娘">
+          <div class="friends-live2d-stage"></div>
+        </div>
     	</section>
     
   <!--友情链接-->
+    
+    <style>
+      .tools-section-friends .friends-live2d {
+        height: 370px;
+        margin: 18px 20px 0;
+        overflow: hidden;
+      }
+      .tools-section-friends .friends-live2d-stage {
+        position: relative;
+        width: 180px;
+        height: 360px;
+        margin: 0 auto;
+      }
+      .tools-section-friends canvas#live2dcanvas {
+        border: 0 !important;
+        position: absolute !important;
+        top: 0 !important;
+        bottom: auto !important;
+        left: 0 !important;
+        right: auto !important;
+        width: 180px !important;
+        height: 360px !important;
+        margin: 0 !important;
+        z-index: 1 !important;
+      }
+      @media (max-width: 600px) {
+        .tools-section-friends .friends-live2d { height: 530px; }
+        .tools-section-friends .friends-live2d-stage { width: 150px; height: 300px; }
+        .tools-section-friends canvas#live2dcanvas { width: 150px !important; height: 300px !important; }
+      }
+    </style>
+    <script>
+      (function () {
+        var host = document.getElementById('friends-live2d');
+        var stage = host && host.querySelector('.friends-live2d-stage');
+        if (!stage) return;
+
+        function placeCanvas() {
+          var canvas = document.getElementById('live2dcanvas');
+          if (!canvas) return false;
+          stage.appendChild(canvas);
+          return true;
+        }
+
+        function startWidget() {
+          var observer = new MutationObserver(function () {
+            if (placeCanvas()) observer.disconnect();
+          });
+          observer.observe(document.body, { childList: true, subtree: true });
+          window.L2Dwidget.init();
+          if (placeCanvas()) observer.disconnect();
+        }
+
+        function loadWidget() {
+          if (window.L2Dwidget) return startWidget();
+          var script = document.createElement('script');
+          script.src = '/assets/static/js/L2Dwidget.min.js';
+          script.onload = startWidget;
+          document.head.appendChild(script);
+        }
+
+        if ('IntersectionObserver' in window) {
+          var visibility = new IntersectionObserver(function (entries) {
+            if (!entries[0].isIntersecting) return;
+            visibility.disconnect();
+            loadWidget();
+          });
+          visibility.observe(host);
+        } else {
+          loadWidget();
+        }
+      }());
+    </script>
+    
     <!-- 一言接口写入隐藏节点，友链区仍由原来的打字效果展示。 -->
     <span id="friend-hitokoto" hidden></span>
     <script>
@@ -1976,15 +2054,15 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <ul class="article-tag-list" style="display: block;">
               
               <li class="article-tag-list-item">
-                <a href="/categories/技术栈" class="color3">技术栈(9)</a>
-              </li>
-              
-              <li class="article-tag-list-item">
-                <a href="/categories/51信用卡" class="color5">51信用卡(1)</a>
+                <a href="/categories/技术栈" class="color3">技术栈(12)</a>
               </li>
               
               <li class="article-tag-list-item">
                 <a href="/categories/boss直聘" class="color0">boss直聘(1)</a>
+              </li>
+              
+              <li class="article-tag-list-item">
+                <a href="/categories/51信用卡" class="color5">51信用卡(1)</a>
               </li>
               
               <div class="clearfix"></div>
@@ -1992,7 +2070,7 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <!--category标签-->
             <!--文章归档-->
             <div>
-              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a><span class="archive-list-count">7</span></li></ul>
+              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a><span class="archive-list-count">9</span></li></ul>
             </div>
             <!--文章归档-->
           </div>
