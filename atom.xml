@@ -67,9 +67,9 @@
     <link href="https://dragonersli.github.io/2016/10/01/readme/clock/"/>
     <id>https://dragonersli.github.io/2016/10/01/readme/clock/</id>
     <published>2016-09-30T23:23:44.000Z</published>
-    <updated>2026-10-26T10:17:00.699Z</updated>
+    <updated>2026-10-27T07:34:05.932Z</updated>
     
-    <content type="html"><![CDATA[<style>  .clock-post {    clear: both;    overflow-x: auto;    background: #ddd;  }  .clock-post__frame {    display: block;    width: 100%;    min-width: 330px;    height: 420px;    border: 0;  }</style><section class="clock-post" aria-label="动态时钟">  <iframe class="clock-post__frame" src="/clock/" title="动态时钟" loading="lazy"></iframe></section><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .clock-post {    clear: both;    overflow-x: auto;    background: #ddd;  }  .clock-post__frame {    display: block;    width: 100%;    min-width: 330px;    height: 420px;    border: 0;  }</style><section class="clock-post" aria-label="动态时钟">  <iframe class="clock-post__frame" src="/Clock/" title="动态时钟" loading="lazy" scrolling="no"></iframe></section><hr>]]></content>
     
     
     <summary type="html">钟表🕙</summary>
