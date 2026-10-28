@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<head>
+<title>ForeverLover</title>  
+</head>
+  
+<body>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./garden_dev.js"></script>
+<script type="text/javascript" src="./functions_dev.js"></script>
+  
+
+<style type="text/css"> 
+#mainDiv{width:100%;height:100%}
+#loveHeart{float:left;width:670px;height:625px}
+#garden{width:100%;height:100%}
+#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
+#words{font-family:"sans-serif";width:505px;font-size:24px;color:#666;}
+#messages{display:none;  }
+#elapseClock .digit{font-family:"digit";font-size:36px;color:red;}
+#loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:120px;text-align:right;display:block}
+#loveu .signature{margin-top:10px;font-size:20px;font-style:italic}
+#code{float:left;width:440px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
+#code .string{color:#2a36ff}
+#code .keyword{color:#7f0055;font-weight:bold}
+#code .placeholder{margin-left:15px}
+#code .space{margin-left:7px}
+#code .comments{color:#3f7f5f}
+#copyright{margin-top:10px;text-align:center;width:100%;color:#666}
+#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
+#copyright a{color:#666}
+</style> 
+
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 10px; margin-left: 119.5px;">
+			<div id="code" style="margin-top: 112.5px;">
+				<span class="comments">/**</span><br>
+				<span class="space"><span class="comments">* We are both Fudan SSers and programmers,</span><br>
+				<span class="space"><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br>
+				<span class="space"><span class="comments">*/</span><br>
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"DragonersLi"</span>);<br>
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"thin lily"</span>);<br>
+				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br>
+				i.love(u);<br>
+				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br>
+				u.accepted();<br>
+				<span class="comments">// Since then, I miss u every day.</span><br>
+				i.miss(u);<br>
+				<span class="comments">// And take care of u and our love.</span><br>
+				i.takeCareOf(u);<br>
+				<span class="comments">// You say that you won't be so easy to marry me.</span>_</span></span></span></div>
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words">
+					<div id="messages" style="cursor:crosshair;" >
+						thin lily,I first meet you :
+						<div id="elapseClock"><span class="digit"> 8</span> year <span class="digit">8</span> month <span class="digit">8</span> day <span class="digit">8</span> hr <span class="digit">8</span> min <span class="digit">8</span> sec</div>
+					</div>
+					<div id="loveu" style="display: none;">
+						Love u forever and ever.<br>
+						<div class="signature">- Dragoners.Li</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright"> </div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var displayMode = 1;
+		var together = new Date();
+		together.setFullYear(2005, 08, 20);
+		together.setHours(10);
+		together.setMinutes(02);
+		together.setSeconds(14);
+		together.setMilliseconds(23);
+		
+		$("#loveHeart").click(function(){
+			displayMode *= -1;
+			timeElapse(together, displayMode);
+		});
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together, displayMode);
+			setInterval(function () {
+				timeElapse(together, displayMode);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+ 
+</body></html>

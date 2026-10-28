@@ -1,0 +1,31 @@
+#mouse-stars {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+#mouse-stars.is-active {
+  opacity: 1;
+}
+
+#mouse-stars .mouse-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  user-select: none;
+  will-change: transform;
+}
+
+#mouse-stars .mouse-star:nth-child(1) { color: blue; font-size: 12pt; }
+#mouse-stars .mouse-star:nth-child(2) { color: red; font-size: 20pt; }
+#mouse-stars .mouse-star:nth-child(3) { color: gold; font-size: 16pt; }
+#mouse-stars .mouse-star:nth-child(4) { color: lime; font-size: 14pt; }
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  #mouse-stars { display: none; }
+}

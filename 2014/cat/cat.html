@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>猫抓老鼠</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; }
+    body { background: #526d4e; }
+    .cat-scene {
+      position: relative;
+      width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      /* 原图下方约四分之一是渐隐留白，放大后只显示街景。 */
+      background: #526d4e url('./sinablogb.jpg') center top / auto 130% no-repeat;
+    }
+    .cat-scene iframe {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="cat-scene">
+    <iframe src="/2014/flash/flash.html?embed=cat" title="猫抓老鼠互动动画" allowfullscreen></iframe>
+  </div>
+</body>
+</html>

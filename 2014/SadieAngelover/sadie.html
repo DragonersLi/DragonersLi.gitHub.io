@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://love.hackerzhou.me/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>封心葬爱</title> 
+	<style type="text/css">  
+ #loveHeart{float:left;width:670px;height:625px}
+#garden{width:100%;height:100%}
+#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
+#words{font-family:"sans-serif";width:505px;font-size:24px;color:#666;}
+#messages{display:none;  }
+#elapseClock .digit{font-family:"digit";font-size:36px;color:red;}
+#loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:120px;text-align:right;display:block}
+#loveu .signature{margin-top:10px;font-size:20px;font-style:italic}
+
+#copyright{margin-top:10px;text-align:center;width:100%;color:#666}
+#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
+#copyright a{color:#666}
+	</style> 
+	<script type="text/javascript" src=" ./jquery.js"></script>
+	<script type="text/javascript" src=" ./garden_dev.js"></script>
+    <script type="text/javascript" src=" ./functions_dev.js"></script>
+</head>
+
+<body style="background-image:url(bg1.gif);background-color:black;">
+
+<p id="div" style="margin:0  auto;color:white;font-size:10pt;">李世龙</p>
+<div   style="margin-top:110px;height:100%;width:100%;color:white;"></div> 
+ <script language="JavaScript1.2"> 
+
+var t = new Date();
+var year = t.getFullYear();       //年  
+var month = t.getMonth() + 1;     //月
+   var day = t.getDate();            //日
+   var hours = t.getHours();
+   var minutes = t.getMinutes();
+   var seconds = t.getSeconds();
+   var week = t.getDay();
+   var weekArr = new Array('周日','周一','周二','周三','周四','周五','周六');
+   week = weekArr[week];
+   var show_str ="";
+   var show_str = year + "年";
+         
+         if(month < 10)
+          show_str += "0";
+        
+         show_str += month + "月";
+        
+         if(day < 10)
+             show_str += "0";
+            
+         show_str += day + "日 ";
+   show_str +=(hours > 12) ? "下午 ": "上午 ";
+// show_str += ((hours > 12) ? hours-12 : hours);
+ // show_str += ((minutes <10) ? ":0" : ":") + minutes;
+  // show_str += ((seconds <10) ? ":0" : ":") + seconds;
+   show_str += '  '+week;
+ 
+var message=' '
+ var message=message+"test by Dragoners.Li----- " +show_str+"\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r"
+i="0" 
+var temptitle="" 
+var speed="100" //速度：值大速度慢，值小速度快！
+function titler(){
+
+if (!document.all&&!document.getElementById)
+return
+document.getElementById("div").innerHTML=temptitle+message.charAt(i)  
+temptitle=temptitle+message.charAt(i) 
+i++
+if(i==message.length) 
+{
+i="0" 
+temptitle="" 
+}
+setTimeout("titler()",speed) 
+}
+
+window.onload=titler();
+
+</script>
+ 								
+				 
+   <!--主题内容结束 -->
+  
+ 
+  
+
+
+
+
+
+<!--#code{float:left;width:440px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
+#code .string{color:#2a36ff}
+#code .keyword{color:#7f0055;font-weight:bold}
+#code .placeholder{margin-left:15px}
+#code .space{margin-left:7px}
+#code .comments{color:#3f7f5f}
+ <div style=" float:left;  width:20%;  ">
+<div   style=" margin:0 auto;color:white; width:20%;height:20px;overflow:hidden;">IIIIIIIIIIIIIIIIIIII </div>
+<div   style=" margin:0 auto; color:white; width:10%;height:625px;overflow:hidden; ">IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIIIIII </div>
+<div   style=" margin:0 auto;color:white; width:20%;height:20px;overflow:hidden;">IIIIIIIIIIIIIIIIIIIIIIII </div>
+</div> -->
+ <div id="code" >
+	 
+   <span class="comments">*	
+	
+	 <div style=" float:left;margin-left:10px; width:25%;height:600px; ">
+
+
+  <div   style=" clear:both; float:left;margin-left:40%; color:white; width:20%;height:20px;overflow:hidden;">**********</div>  
+  <div   style=" clear:both; float:left;margin-left:30%; color:white; width:10%;height:20px;overflow:hidden;">*****</div>  
+ <div   style=" float:right;margin-right:30%; color:white; width:10%;height:20px;overflow:hidden;">*****</div> 
+  <div   style=" clear:both; float:left;margin-left:25%; color:white; width:10%;height:20px;overflow:hidden;">*****</div>  
+ <div   style=" float:right;margin-right:25%; color:white; width:10%;height:20px;overflow:hidden;">*****</div> 
+ 	 
+	 
+	 
+	 
+	 
+   <div   style=" clear:both;  float:left;margin-left:20%; color:white; width:10%;height:20px;overflow:hidden;">*****</div>  
+ <div   style="              float:right;margin-right:20%; color:white; width:10%;height:20px;overflow:hidden;">*****</div> 
+ 	 
+<div   style=" clear:both;  float:left;margin-left:15%; color:white; width:10%;height:20px;overflow:hidden;">*****</div>  
+ <div   style="              float:right;margin-right:15%; color:white; width:10%;height:20px;overflow:hidden;">*****</div> 
+  <div   style=" clear:both;  float:left;margin-left:10%; color:white; width:10%;height:20px;overflow:hidden;">*****</div>  
+ <div   style="              float:right;margin-right:10%; color:white; width:10%;height:20px;overflow:hidden;">*****</div> 
+ 	 
+ <div   style=" clear:both;  float:left;margin-left:5%; color:white; width:10%;height:20px;overflow:hidden;">*****</div>  
+ <div   style="              float:right;margin-right:5%; color:white; width:10%;height:20px;overflow:hidden;">*****</div> 
+ <div   style="clear:both;float:left;margin-left:5%; color:white; width:10%;height:545px;overflow:hidden; ">*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br></div>
+  <div style="float:left; color:white; width:65%;height:545px;overflow:hidden; ">
+ <div  style="font-size:80px;margin-left:60px ;margin-right:60px ; ">李<br>世<br>龙<br>心<br>之<br>墓 
+ </div>
+ </div>	 	 
+<div   style=" float:right;margin-right:5%; color:white; width:10%;height:545px;overflow:hidden; ">*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br>*****<br></div> 
+ 
+  <div   style=" clear:both;   color:white; width:400%;height:20px;overflow:hidden;">#####################################################################################################################################################################################################################</div>  
+ 
+ </div>
+  <div style=" float:right;margin-right:0;  width:50%;height:700px; ">
+ <div style=" margin:0 auto;  width:100%;height:29%;"></div>
+  <div style=" margin:0 auto;  width:10%;height:5%; color:white;  ">&nbsp;******<br>&nbsp;&nbsp;****&nbsp;&nbsp; </div>   
+  <div style=" margin:0 auto;  width:5%;height:5%; color:white;  ">&nbsp;**&nbsp;<br>****</div> 
+  
+ <div style=" clear:both;float:left;margin-left:42%;  width:5%;height:5%; color:white;  ">&nbsp;&nbsp;***<br>***&nbsp;&nbsp;</div> 
+  <div style=" float:right; margin-right:42%;  width:5%;height:5%; color:white;  ">***&nbsp;&nbsp;<br>&nbsp;&nbsp;***</div> 
+ 
+ <div style="clear:both; float:left;margin-left:37%;  width:5%;height:5%; color:white;  ">&nbsp;&nbsp;***<br>***&nbsp;&nbsp;</div> 
+  <div style=" float:right; margin-right:37%;  width:5%;height:5%; color:white;  ">***&nbsp;&nbsp;<br>&nbsp;&nbsp;***</div> 
+  
+ <div style=" clear:both;float:left;margin-left:32%;  width:5%;height:5%; color:white;  ">&nbsp;&nbsp;***<br>***&nbsp;&nbsp;</div> 
+
+  <div style=" float:right; margin-right:32%;  width:5%;height:5%; color:white;  ">***&nbsp;&nbsp;<br>&nbsp;&nbsp;***</div> 
+   
+ <div style=" clear:both;float:left;margin-left:27%;  width:5%;height:5%; color:white;  ">&nbsp;&nbsp;***<br>***&nbsp;&nbsp;</div> 
+  <div style=" float:right; margin-right:27%;  width:5%;height:5%; color:white;  ">***&nbsp;&nbsp;<br>&nbsp;&nbsp;***</div> 
+ 
+  <div style="  clear:both; float:left;margin-left:22%;  width:5%;height:5%; color:white;  ">&nbsp;&nbsp;***<br>***&nbsp;&nbsp;</div> 
+  <div style=" float:right; margin-right:22%;  width:5%;height:5%; color:white;   ">***&nbsp;&nbsp;<br>&nbsp;&nbsp;***</div> 
+  
+  <div style="  clear:both; float:left;margin-left:17%;  width:5%;height:5%; color:white;  ">&nbsp;&nbsp;***<br>***&nbsp;&nbsp;</div> 
+ 
+ <div style=" float:right; margin-right:17%;  width:5%;height:5%; color:white;  ">***&nbsp;&nbsp;<br>&nbsp;&nbsp;***</div> 
+   
+  <div style="  clear:both; float:left;margin-left:12%;  width:5%;height:5%; color:white;  ">&nbsp;&nbsp;***<br>***&nbsp;&nbsp;</div> 
+ 
+
+ <div style=" float:right; margin-right:12%;  width:5%;height:5%; color:white;  ">***&nbsp;&nbsp;<br>&nbsp;&nbsp;***</div> 
+    
+  <div style=" clear:both; float:left;margin-left:7%;  width:5%;height:5%; color:white;  ">&nbsp;****<br>&nbsp;****</div> 
+  <div style=" width:70%;float:left;margin-left:10px;height:5%;"> </div>
+<div style="   float:right; margin-right:7%;  width:5%;height:5%; color:white;  "> ****<br>****</div>
+ 
+ <div style="  clear:both; float:left;margin-left:7%;  width:5%;height:5%; color:white;  ">&nbsp;****<br>&nbsp;****</div>
+ 
+ 
+
+ <div style=" float:right; margin-right:7%;  width:5%;height:5%; color:white;  "> ****<br> ****</div>
+
+  <div style="  clear:both; float:left;margin-left:7%;  width:5%;height:5%; color:white;  ">&nbsp;****<br>&nbsp;****</div>
+<div style=" float:right; margin-right:7%;  width:5%;height:5%; color:white;  ">****<br>****</div>
+ 
+ <div style="  clear:both; float:left;margin-left:7%;  width:5%;height:5%; color:white;  ">&nbsp;****<br>&nbsp;****<br>&nbsp;****<br>&nbsp;****</div>
+   <DIV style="float:left;margin-left:30%;  "><img src="U.jpg"></DIV>
+<div style=" float:right; margin-right:7%;  width:5%;height:5%; color:white;  ">****<br>****<br>****<br>****</div>
+ 
+ <div style="  clear:both;margin-bottom:0;   width:100%;height:5%; color:white;   "></div> 
+ <div style="width:100%;heiborder:1px solid red;"></div>
+ </div>
+ 
+ *</span> 
+	 </div>
+<!--
+ -->	  
+
+
+ <div id="loveHeart" style="display:none;">
+				<canvas id="garden" width=" " height=" "></canvas>
+				 
+					</div>
+			 
+		<div id="copyright"> </div>
+	</div></div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var displayMode = 1;
+		var together = new Date();
+		together.setFullYear(2005, 08, 20);
+		together.setHours(10);
+		together.setMinutes(02);
+		together.setSeconds(14);
+		together.setMilliseconds(23);
+		
+		$("#loveHeart").click(function(){
+			displayMode *= -1;
+			timeElapse(together, displayMode);
+		});
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together, displayMode);
+			setInterval(function () {
+				timeElapse(together, displayMode);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+  
+
+</body></html>

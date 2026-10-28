@@ -18,8 +18,8 @@
   
   <entry>
     <title>个人简历㊙️</title>
-    <link href="https://dragonersli.github.io/2026/10/18/readme/51job/"/>
-    <id>https://dragonersli.github.io/2026/10/18/readme/51job/</id>
+    <link href="https://dragonersli.github.io/2026/10/18/blog/51job/"/>
+    <id>https://dragonersli.github.io/2026/10/18/blog/51job/</id>
     <published>2026-10-18T05:14:15.000Z</published>
     <updated>2026-10-26T16:28:43.617Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>51信用卡💳</title>
-    <link href="https://dragonersli.github.io/2026/10/12/readme/51xyk/"/>
-    <id>https://dragonersli.github.io/2026/10/12/readme/51xyk/</id>
+    <link href="https://dragonersli.github.io/2026/10/12/blog/51xyk/"/>
+    <id>https://dragonersli.github.io/2026/10/12/blog/51xyk/</id>
     <published>2026-10-12T03:23:44.000Z</published>
     <updated>2026-10-26T16:29:07.871Z</updated>
     
@@ -64,12 +64,12 @@
   
   <entry>
     <title>钟表🕙</title>
-    <link href="https://dragonersli.github.io/2016/10/01/readme/clock/"/>
-    <id>https://dragonersli.github.io/2016/10/01/readme/clock/</id>
+    <link href="https://dragonersli.github.io/2016/10/01/blog/clock/"/>
+    <id>https://dragonersli.github.io/2016/10/01/blog/clock/</id>
     <published>2016-09-30T23:23:44.000Z</published>
-    <updated>2026-10-27T07:34:05.932Z</updated>
+    <updated>2026-10-28T04:24:48.927Z</updated>
     
-    <content type="html"><![CDATA[<style>  .clock-post {    clear: both;    overflow-x: auto;    background: #ddd;  }  .clock-post__frame {    display: block;    width: 100%;    min-width: 330px;    height: 420px;    border: 0;  }</style><section class="clock-post" aria-label="动态时钟">  <iframe class="clock-post__frame" src="/Clock/" title="动态时钟" loading="lazy" scrolling="no"></iframe></section><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .clock-post {    clear: both;    overflow-x: auto;    background: #ddd;  }  .clock-post__frame {    display: block;    width: 100%;    min-width: 330px;    height: 420px;    border: 0;  }</style><section class="clock-post" aria-label="动态时钟">  <iframe class="clock-post__frame" src="/2014/clock/" title="动态时钟" loading="lazy" scrolling="no"></iframe></section><hr>]]></content>
     
     
     <summary type="html">钟表🕙</summary>
@@ -85,12 +85,12 @@
   
   <entry>
     <title>中秋节🎑</title>
-    <link href="https://dragonersli.github.io/2016/09/27/readme/moon/"/>
-    <id>https://dragonersli.github.io/2016/09/27/readme/moon/</id>
+    <link href="https://dragonersli.github.io/2016/09/27/blog/moon/"/>
+    <id>https://dragonersli.github.io/2016/09/27/blog/moon/</id>
     <published>2016-09-27T12:13:14.000Z</published>
-    <updated>2026-10-25T08:49:26.952Z</updated>
+    <updated>2026-10-28T04:24:48.926Z</updated>
     
-    <content type="html"><![CDATA[<style>  .moon-post__viewer {    overflow: hidden;    border: 1px solid #dce4ed;    border-radius: 16px;    background: #111c36;    box-shadow: 0 8px 28px rgba(27, 45, 74, .12);  }  .moon-post__frame {    display: block;    width: 100%;    height: 720px;    border: 0;  }  @media (max-width: 767px) {    .moon-post__frame { height: 700px; }  }</style><section class="moon-post" aria-label="中秋月光祝福">  <div class="moon-post__viewer">    <iframe class="moon-post__frame" src="/moon/moon.html" title="中秋月光祝福互动页面" loading="lazy"></iframe>  </div></section><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .moon-post__viewer {    overflow: hidden;    border: 1px solid #dce4ed;    border-radius: 16px;    background: #111c36;    box-shadow: 0 8px 28px rgba(27, 45, 74, .12);  }  .moon-post__frame {    display: block;    width: 100%;    height: 720px;    border: 0;  }  @media (max-width: 767px) {    .moon-post__frame { height: 700px; }  }</style><section class="moon-post" aria-label="中秋月光祝福">  <div class="moon-post__viewer">    <iframe class="moon-post__frame" src="/2014/moon/moon.html" title="中秋月光祝福互动页面" loading="lazy"></iframe>  </div></section><hr>]]></content>
     
     
     <summary type="html">中秋月光祝福互动页面</summary>
@@ -106,12 +106,12 @@
   
   <entry>
     <title>太阳系🌞</title>
-    <link href="https://dragonersli.github.io/2016/06/18/readme/solar/"/>
-    <id>https://dragonersli.github.io/2016/06/18/readme/solar/</id>
+    <link href="https://dragonersli.github.io/2016/06/18/blog/solar/"/>
+    <id>https://dragonersli.github.io/2016/06/18/blog/solar/</id>
     <published>2016-06-18T12:13:14.000Z</published>
-    <updated>2026-10-24T15:22:27.232Z</updated>
+    <updated>2026-10-28T04:24:48.925Z</updated>
     
-    <content type="html"><![CDATA[<style>  .solar-article-frame {    display: block;    width: 100%;    height: clamp(310px, 39vh, 410px);    border: 0;    background: #181818;  }  @media (max-width: 767px) {    .solar-article-frame {      width: calc(100% + 20px);      height: 340px;      margin-left: -10px;    }  }</style><iframe  class="solar-article-frame"  src="/assets/resource/solar/index.html"  title="太阳系行星动画"  loading="eager"  scrolling="no"></iframe><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .solar-article-frame {    display: block;    width: 100%;    height: clamp(310px, 39vh, 410px);    border: 0;    background: #181818;  }  @media (max-width: 767px) {    .solar-article-frame {      width: calc(100% + 20px);      height: 340px;      margin-left: -10px;    }  }</style><iframe  class="solar-article-frame"  src="/2014/solar/index.html"  title="太阳系行星动画"  loading="eager"  scrolling="no"></iframe><hr>]]></content>
     
     
       
@@ -137,12 +137,12 @@
   
   <entry>
     <title>雪中等你❄️</title>
-    <link href="https://dragonersli.github.io/2015/12/23/readme/waitingforU/"/>
-    <id>https://dragonersli.github.io/2015/12/23/readme/waitingforU/</id>
+    <link href="https://dragonersli.github.io/2015/12/23/blog/waitingforU/"/>
+    <id>https://dragonersli.github.io/2015/12/23/blog/waitingforU/</id>
     <published>2015-12-23T08:28:37.000Z</published>
-    <updated>2026-10-26T09:39:33.625Z</updated>
+    <updated>2026-10-28T04:24:48.926Z</updated>
     
-    <content type="html"><![CDATA[<style>  .waitingforu-post__frame {    display: block;    width: 100%;    height: auto;    aspect-ratio: 1600 / 334;    border: 0;  }</style><iframe class="waitingforu-post__frame" src="/waitingforU/" title="雪中等你动画" loading="lazy"></iframe><!-- 生命不息，奋斗不止！ ----Dragoners.Li--><h1 style="font-size: 44px; margin: 0px auto; color: red; display: block;"><div id="div" style="margin-left:100px;color:red;font-size:26pt;"></div><script> var message="心跳不停，梦想不止！ 我们可以停止呼吸，但是不能停止思考！！ " i="0" var temptitle="" var speed="100" //速度：值大速度慢，值小速度快！function titler(){if (!document.all&&!document.getElementById)returndocument.getElementById("div").innerHTML=temptitle+message.charAt(i) temptitle=temptitle+message.charAt(i) i++if(i==message.length) {i="0" temptitle="" }setTimeout("titler()",speed) }window.onload=titler();</script></h1> <hr>]]></content>
+    <content type="html"><![CDATA[<style>  .waitingforu-post__frame {    display: block;    width: 100%;    height: auto;    aspect-ratio: 1600 / 334;    border: 0;  }</style><iframe class="waitingforu-post__frame" src="/2014/waitingforU/" title="雪中等你动画" loading="lazy"></iframe><!-- 生命不息，奋斗不止！ ----Dragoners.Li--><h1 style="font-size: 44px; margin: 0px auto; color: red; display: block;"><div id="div" style="margin-left:100px;color:red;font-size:26pt;"></div><script> var message="心跳不停，梦想不止！ 我们可以停止呼吸，但是不能停止思考！！ " i="0" var temptitle="" var speed="100" //速度：值大速度慢，值小速度快！function titler(){if (!document.all&&!document.getElementById)returndocument.getElementById("div").innerHTML=temptitle+message.charAt(i) temptitle=temptitle+message.charAt(i) i++if(i==message.length) {i="0" temptitle="" }setTimeout("titler()",speed) }window.onload=titler();</script></h1> <hr>]]></content>
     
     
     <summary type="html">雪中等你❄️</summary>
@@ -158,12 +158,12 @@
   
   <entry>
     <title>猫抓老鼠🐈‍⬛</title>
-    <link href="https://dragonersli.github.io/2015/12/23/readme/cat/"/>
-    <id>https://dragonersli.github.io/2015/12/23/readme/cat/</id>
+    <link href="https://dragonersli.github.io/2015/12/23/blog/cat/"/>
+    <id>https://dragonersli.github.io/2015/12/23/blog/cat/</id>
     <published>2015-12-22T19:44:00.000Z</published>
-    <updated>2026-10-24T15:55:11.829Z</updated>
+    <updated>2026-10-28T04:24:48.926Z</updated>
     
-    <content type="html"><![CDATA[<style>  .cat-post { color: #39473d; }  .cat-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .cat-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: .02em;  }  .cat-post__intro p:last-child {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .cat-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #526d4e;    box-shadow: 0 8px 28px rgba(37, 51, 40, .08);  }  .cat-post__frame {    display: block;    width: 100%;    height: auto;    min-height: 160px;    aspect-ratio: 950 / 306;    border: 0;  }  .cat-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .cat-post__footer p { margin: 0; }  .cat-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .cat-post__footer a:hover,  .cat-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .cat-post__intro { padding: 16px 18px; }    .cat-post__eyebrow { font-size: 15px; }  }</style><section class="cat-post" aria-label="猫抓老鼠互动动画">  <div class="cat-post__intro">    <p class="cat-post__eyebrow">猫抓老鼠 · 无需 Flash 插件</p>  </div>  <div class="cat-post__viewer">    <iframe class="cat-post__frame" src="/cat/cat.html" title="猫抓老鼠互动动画" loading="lazy" allowfullscreen></iframe>  </div>  <div class="cat-post__footer">  </div></section><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .cat-post { color: #39473d; }  .cat-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .cat-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: .02em;  }  .cat-post__intro p:last-child {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .cat-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #526d4e;    box-shadow: 0 8px 28px rgba(37, 51, 40, .08);  }  .cat-post__frame {    display: block;    width: 100%;    height: auto;    min-height: 160px;    aspect-ratio: 950 / 306;    border: 0;  }  .cat-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .cat-post__footer p { margin: 0; }  .cat-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .cat-post__footer a:hover,  .cat-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .cat-post__intro { padding: 16px 18px; }    .cat-post__eyebrow { font-size: 15px; }  }</style><section class="cat-post" aria-label="猫抓老鼠互动动画">  <div class="cat-post__intro">    <p class="cat-post__eyebrow">猫抓老鼠 · 无需 Flash 插件</p>  </div>  <div class="cat-post__viewer">    <iframe class="cat-post__frame" src="/2014/cat/cat.html" title="猫抓老鼠互动动画" loading="lazy" allowfullscreen></iframe>  </div>  <div class="cat-post__footer">  </div></section><hr>]]></content>
     
     
     <summary type="html">猫抓老鼠互动动画</summary>
@@ -179,12 +179,12 @@
   
   <entry>
     <title>陌上花开🌹</title>
-    <link href="https://dragonersli.github.io/2015/12/12/readme/godgril/"/>
-    <id>https://dragonersli.github.io/2015/12/12/readme/godgril/</id>
+    <link href="https://dragonersli.github.io/2015/12/12/blog/godgril/"/>
+    <id>https://dragonersli.github.io/2015/12/12/blog/godgril/</id>
     <published>2015-12-11T16:28:00.000Z</published>
-    <updated>2026-10-26T07:24:58.043Z</updated>
+    <updated>2026-10-28T04:24:48.926Z</updated>
     
-    <content type="html"><![CDATA[<style>  .godgirl-post__frame {    display: block;    width: 100%;    height: auto;    aspect-ratio: 950 / 313;    border: 0;  }</style><iframe class="godgirl-post__frame" src="/godgirl/" title="陌上花开动画" loading="lazy"></iframe><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .godgirl-post__frame {    display: block;    width: 100%;    height: auto;    aspect-ratio: 950 / 313;    border: 0;  }</style><iframe class="godgirl-post__frame" src="/2014/godgirl/" title="陌上花开动画" loading="lazy"></iframe><hr>]]></content>
     
     
     <summary type="html">陌上花开🌹</summary>
@@ -200,12 +200,12 @@
   
   <entry>
     <title>荷塘金鱼🐟</title>
-    <link href="https://dragonersli.github.io/2015/10/28/readme/fish/"/>
-    <id>https://dragonersli.github.io/2015/10/28/readme/fish/</id>
+    <link href="https://dragonersli.github.io/2015/10/28/blog/fish/"/>
+    <id>https://dragonersli.github.io/2015/10/28/blog/fish/</id>
     <published>2015-10-28T05:24:00.000Z</published>
-    <updated>2026-10-24T15:18:23.934Z</updated>
+    <updated>2026-10-28T04:24:48.925Z</updated>
     
-    <content type="html"><![CDATA[<style>  .fish-post { color: #39473d; }  .fish-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .fish-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: .02em;  }  .fish-post__intro p:last-child {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .fish-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #92a065;    box-shadow: 0 8px 28px rgba(37, 51, 40, .08);  }  .fish-post__frame {    display: block;    width: 100%;    height: auto;    min-height: 85px;    aspect-ratio: 1280 / 325;    border: 0;  }  .fish-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .fish-post__footer p { margin: 0; }  .fish-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .fish-post__footer a:hover,  .fish-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .fish-post__intro { padding: 16px 18px; }    .fish-post__eyebrow { font-size: 15px; }  }</style><section class="fish-post" aria-label="荷塘金鱼互动动画">  <div class="fish-post__intro">    <p class="fish-post__eyebrow">荷塘金鱼 · 无需 Flash 插件</p>    <p>在荷塘里看看金鱼，用鼠标或触摸屏与画面互动。首次载入可能需要几秒钟。</p>  </div>  <div class="fish-post__viewer">    <iframe class="fish-post__frame" src="/fish/fish.html" title="荷塘金鱼互动动画" loading="lazy" allowfullscreen></iframe>  </div>  <div class="fish-post__footer">   </div></section><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .fish-post { color: #39473d; }  .fish-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .fish-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: .02em;  }  .fish-post__intro p:last-child {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .fish-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #92a065;    box-shadow: 0 8px 28px rgba(37, 51, 40, .08);  }  .fish-post__frame {    display: block;    width: 100%;    height: auto;    min-height: 85px;    aspect-ratio: 1280 / 325;    border: 0;  }  .fish-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .fish-post__footer p { margin: 0; }  .fish-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .fish-post__footer a:hover,  .fish-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .fish-post__intro { padding: 16px 18px; }    .fish-post__eyebrow { font-size: 15px; }  }</style><section class="fish-post" aria-label="荷塘金鱼互动动画">  <div class="fish-post__intro">    <p class="fish-post__eyebrow">荷塘金鱼 · 无需 Flash 插件</p>    <p>在荷塘里看看金鱼，用鼠标或触摸屏与画面互动。首次载入可能需要几秒钟。</p>  </div>  <div class="fish-post__viewer">    <iframe class="fish-post__frame" src="/2014/fish/fish.html" title="荷塘金鱼互动动画" loading="lazy" allowfullscreen></iframe>  </div>  <div class="fish-post__footer">   </div></section><hr>]]></content>
     
     
     <summary type="html">荷塘金鱼互动动画</summary>
@@ -221,12 +221,12 @@
   
   <entry>
     <title>见缝插针🪡</title>
-    <link href="https://dragonersli.github.io/2015/10/18/readme/game/"/>
-    <id>https://dragonersli.github.io/2015/10/18/readme/game/</id>
+    <link href="https://dragonersli.github.io/2015/10/18/blog/game/"/>
+    <id>https://dragonersli.github.io/2015/10/18/blog/game/</id>
     <published>2015-10-18T02:30:00.000Z</published>
-    <updated>2026-10-26T08:34:57.477Z</updated>
+    <updated>2026-10-28T04:24:48.926Z</updated>
     
-    <content type="html"><![CDATA[<style>  .game-article-frame {    display: block;    width: 100%;    max-width: 360px;    height: 535px;    margin: 12px auto 24px;    border: 0;    background: #fff;  }</style><iframe  class="game-article-frame"  title="见缝插针小游戏，点击或触摸画布发射针"  loading="eager"  scrolling="no"  srcdoc='<!doctype html><html lang="zh-CN"><head>  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <style>    html, body { margin: 0; padding: 0; overflow: hidden; background: #fff; text-align: center; user-select: none; }    .title { margin: 0 0 4px; color: #000; font: 24px Microsoft YaHei, sans-serif; letter-spacing: 4px; }    canvas { display: block; max-width: 100%; height: auto; margin: 0 auto; border-top: 1px solid #000; background: #fff; touch-action: manipulation; }  </style></head><body>  <div class="title">见缝插针</div>  <canvas id="canvas1" width="320" height="480"></canvas>  <script src="/assets/resource/game/MyCtx.min.js"></script>  <script src="/assets/resource/game/aa.cc.min.js"></script></body></html>'></iframe><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .game-article-frame {    display: block;    width: 100%;    max-width: 360px;    height: 535px;    margin: 12px auto 24px;    border: 0;    background: #fff;  }</style><iframe  class="game-article-frame"  title="见缝插针小游戏，点击或触摸画布发射针"  loading="eager"  scrolling="no"  srcdoc='<!doctype html><html lang="zh-CN"><head>  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <style>    html, body { margin: 0; padding: 0; overflow: hidden; background: #fff; text-align: center; user-select: none; }    .title { margin: 0 0 4px; color: #000; font: 24px Microsoft YaHei, sans-serif; letter-spacing: 4px; }    canvas { display: block; max-width: 100%; height: auto; margin: 0 auto; border-top: 1px solid #000; background: #fff; touch-action: manipulation; }  </style></head><body>  <div class="title">见缝插针</div>  <canvas id="canvas1" width="320" height="480"></canvas>  <script src="/2014/game/MyCtx.min.js"></script>  <script src="/2014/game/aa.cc.min.js"></script></body></html>'></iframe><hr>]]></content>
     
     
     <summary type="html">见缝插针小游戏</summary>
@@ -242,8 +242,8 @@
   
   <entry>
     <title>七夕快乐🎉</title>
-    <link href="https://dragonersli.github.io/2015/07/07/readme/rose/"/>
-    <id>https://dragonersli.github.io/2015/07/07/readme/rose/</id>
+    <link href="https://dragonersli.github.io/2015/07/07/blog/rose/"/>
+    <id>https://dragonersli.github.io/2015/07/07/blog/rose/</id>
     <published>2015-07-06T23:07:07.000Z</published>
     <updated>2026-10-26T15:48:50.886Z</updated>
     
@@ -275,12 +275,12 @@
   
   <entry>
     <title>初恋NA件小事❤️</title>
-    <link href="https://dragonersli.github.io/2015/05/20/readme/love/"/>
-    <id>https://dragonersli.github.io/2015/05/20/readme/love/</id>
+    <link href="https://dragonersli.github.io/2015/05/20/blog/love/"/>
+    <id>https://dragonersli.github.io/2015/05/20/blog/love/</id>
     <published>2015-05-19T21:20:00.000Z</published>
-    <updated>2026-10-19T01:41:51.688Z</updated>
+    <updated>2026-10-28T04:24:48.925Z</updated>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="f275fea942bcf3f25de79b6919bebdc51ae8a9f46d85ccfe0ee73ae881688701">f8e393b73063127bb17b34b245092998547b4b4f4d6b98cf3c7dfe030aa222e2cebc4ccfb71b1be0153ea2086ee477f4c7df8499b87b02e8868c4f47c2b3f16067c7597134c65c7b4c9e0e62d2c12bd96b6e6659fae31ea1a887c82357eded3c9d41fc7ec0e1ed3b490d367d67aa18d66a7368457fc26b8402e71e0110b3598adfa676284aac25c5a847b87aa089e7052ba563e48d043085d88144ffd07e1b91475276fbd3f266b4ea96a1c26a843865482c51c980c9aaa3774f00a4fea6b0a9265e1d3fe4b23004c314757a9ff66f29122766c67fb480d3cf771d449d032385f148d4591cb47dbcc029012af8f19053df3dadd5c2d08a0248e15f8499a510e5789058a6c2dcaa7bc4d461c54f527509ab4ef8a9fb863698d227fe2a79cd155b7bbd1ac95c5085a33066673dcdf2dddcc52d0a326bd5296822a55561e12c030df1e69e88bf0d945c36f50a2c081dec20fd4795bff8021a564cc9ab3fac11911b8cdb2fd2f809a15ce007cd74551e48217b9b4848dcf7aacd6f6d480bb97e5bff1188a85793d03d5fa09fd3ebf6ce67c90239410d911021cd75ccc283cc5238ffb55109d99adc89b533cd3c8ef8ba087aa415f9773fb41552db3e7cff386f47c6f4c062030eea211d26d4cfa12ef5ffd9cc3d060e4fdbb29a0abb8a62da256c71</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">㊙️这是私密文章，请输入密码查看！</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="4f6f8f2055f49aee951dd36d48bf00939c5f609a3785d8e19e4c26f46a1cd4c9">f8e393b73063127bb17b34b245092998547b4b4f4d6b98cf3c7dfe030aa222e2cebc4ccfb71b1be0153ea2086ee477f4c7df8499b87b02e8868c4f47c2b3f16067c7597134c65c7b4c9e0e62d2c12bd96b6e6659fae31ea1a887c82357eded3c9d41fc7ec0e1ed3b490d367d67aa18d66a7368457fc26b8402e71e0110b3598adfa676284aac25c5a847b87aa089e7052ba563e48d043085d88144ffd07e1b91475276fbd3f266b4ea96a1c26a843865482c51c980c9aaa3774f00a4fea6b0a9265e1d3fe4b23004c314757a9ff66f29122766c67fb480d3cf771d449d032385f148d4591cb47dbcc029012af8f19053df3dadd5c2d08a0248e15f8499a510e5789058a6c2dcaa7bc4d461c54f527509ab4ef8a9fb863698d227fe2a79cd155b7bbd1ac95c5085a33066673dcdf2dddcc52d0a326bd5296822a55561e12c030d34a01c113d49c938cc6c3f8a81f733f4cec51f5a54ca91af253a8c1e38119757ae3e9e496f00ab1d6453cad1cd53c80272230595c54faa39be2f348b30a4a52c21d649ae89a7f5961592cfaf5e1682d2d0859ce4441e7a2a04be6e5fc9d46415abf58cd3e8b5cddd8031b4012dbc7002285f8e45fe36a2f9d87f350cabb0fbd65ee118237f6e037bb6a8c24d99925cf9</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">㊙️这是私密文章，请输入密码查看！</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
     
     
     <summary type="html">摘要！如果你非常好奇，请与我联系。</summary>
@@ -296,12 +296,12 @@
   
   <entry>
     <title>flash小游戏🎮</title>
-    <link href="https://dragonersli.github.io/2015/02/14/readme/flash/"/>
-    <id>https://dragonersli.github.io/2015/02/14/readme/flash/</id>
+    <link href="https://dragonersli.github.io/2015/02/14/blog/flash/"/>
+    <id>https://dragonersli.github.io/2015/02/14/blog/flash/</id>
     <published>2015-02-14T02:02:14.000Z</published>
-    <updated>2026-10-26T08:36:14.002Z</updated>
+    <updated>2026-10-28T04:24:48.925Z</updated>
     
-    <content type="html"><![CDATA[<style>  .flash-post {    color: #3e4b46;  }  .flash-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .flash-post__intro .flash-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: 0.02em;  }  .flash-post__intro p {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .flash-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #f5f6f2;    box-shadow: 0 8px 28px rgba(37, 51, 40, 0.08);  }  .flash-post__frame {    display: block;    width: 100%;    height: 670px;    border: 0;  }  .flash-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .flash-post__footer p {    margin: 0;  }  .flash-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .flash-post__footer a:hover,  .flash-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .flash-post__intro {      padding: 16px 18px;    }    .flash-post__intro .flash-post__eyebrow {      font-size: 15px;    }    .flash-post__frame {      height: 760px;    }  }</style><section class="flash-post" aria-label="Flash 互动动画馆">  <div class="flash-post__intro">    <p class="flash-post__eyebrow">12 款经典互动动画 · 无需 Flash 插件</p>    <p>点击右侧或下方的名称切换游戏，用鼠标或触摸屏与画面互动。首次载入可能需要几秒钟。</p>  </div>  <div class="flash-post__viewer">    <iframe      class="flash-post__frame"      src="/flash/flash.html"      title="12 个 Flash 小游戏与互动动画"      loading="lazy"      allowfullscreen    ></iframe>  </div>  <div class="flash-post__footer">   </div></section><script data-pjax>  (function () {    var frame = document.querySelector('.flash-post__frame');    var observer;    if (!frame || frame.dataset.heightReady) return;    frame.dataset.heightReady = 'true';    function fitFrame() {      var page = frame.contentDocument;      var main = page && page.querySelector('main');      if (main) frame.style.height = Math.ceil(main.getBoundingClientRect().bottom + 2) + 'px';    }    function watchContent() {      var page = frame.contentDocument;      var main = page && page.querySelector('main');      if (!main) return;      if (observer) observer.disconnect();      fitFrame();      if ('ResizeObserver' in window) {        observer = new ResizeObserver(fitFrame);        observer.observe(main);      }    }    frame.addEventListener('load', watchContent);    if (frame.contentDocument && frame.contentDocument.readyState === 'complete') watchContent();  }());</script><hr>]]></content>
+    <content type="html"><![CDATA[<style>  .flash-post {    color: #3e4b46;  }  .flash-post__intro {    margin: 0 0 22px;    padding: 20px 24px;    border: 1px solid #dce8dc;    border-left: 4px solid #65a378;    border-radius: 12px;    background: #f6faf6;  }  .flash-post__intro .flash-post__eyebrow {    margin: 0 0 6px;    color: #2f5940;    font-size: 16px;    font-weight: 700;    letter-spacing: 0.02em;  }  .flash-post__intro p {    margin: 0;    color: #5b6b60;    font-size: 15px;    line-height: 1.75;  }  .flash-post__viewer {    overflow: hidden;    border: 1px solid #dce4da;    border-radius: 16px;    background: #f5f6f2;    box-shadow: 0 8px 28px rgba(37, 51, 40, 0.08);  }  .flash-post__frame {    display: block;    width: 100%;    height: 670px;    border: 0;  }  .flash-post__footer {    display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;    gap: 10px 18px;    margin: 14px 2px 0;    color: #66736b;    font-size: 14px;    line-height: 1.6;  }  .flash-post__footer p {    margin: 0;  }  .flash-post__footer a {    color: #3d8259;    font-weight: 600;    white-space: nowrap;  }  .flash-post__footer a:hover,  .flash-post__footer a:focus-visible {    color: #275c3c;    text-decoration: underline;  }  @media (max-width: 767px) {    .flash-post__intro {      padding: 16px 18px;    }    .flash-post__intro .flash-post__eyebrow {      font-size: 15px;    }    .flash-post__frame {      height: 760px;    }  }</style><section class="flash-post" aria-label="Flash 互动动画馆">  <div class="flash-post__intro">    <p class="flash-post__eyebrow">12 款经典互动动画 · 无需 Flash 插件</p>    <p>点击右侧或下方的名称切换游戏，用鼠标或触摸屏与画面互动。首次载入可能需要几秒钟。</p>  </div>  <div class="flash-post__viewer">    <iframe      class="flash-post__frame"      src="/2014/flash/flash.html"      title="12 个 Flash 小游戏与互动动画"      loading="lazy"      allowfullscreen    ></iframe>  </div>  <div class="flash-post__footer">   </div></section><script data-pjax>  (function () {    var frame = document.querySelector('.flash-post__frame');    var observer;    if (!frame || frame.dataset.heightReady) return;    frame.dataset.heightReady = 'true';    function fitFrame() {      var page = frame.contentDocument;      var main = page && page.querySelector('main');      if (main) frame.style.height = Math.ceil(main.getBoundingClientRect().bottom + 2) + 'px';    }    function watchContent() {      var page = frame.contentDocument;      var main = page && page.querySelector('main');      if (!main) return;      if (observer) observer.disconnect();      fitFrame();      if ('ResizeObserver' in window) {        observer = new ResizeObserver(fitFrame);        observer.observe(main);      }    }    frame.addEventListener('load', watchContent);    if (frame.contentDocument && frame.contentDocument.readyState === 'complete') watchContent();  }());</script><hr>]]></content>
     
     
     <summary type="html">flash小游戏🎮</summary>
@@ -317,8 +317,8 @@
   
   <entry>
     <title>愿意温柔待花开，愿意慈悲等风来！</title>
-    <link href="https://dragonersli.github.io/2015/01/01/readme/index/"/>
-    <id>https://dragonersli.github.io/2015/01/01/readme/index/</id>
+    <link href="https://dragonersli.github.io/2015/01/01/blog/index/"/>
+    <id>https://dragonersli.github.io/2015/01/01/blog/index/</id>
     <published>2014-12-31T18:03:04.000Z</published>
     <updated>2026-10-26T09:39:18.647Z</updated>
     

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://love.hackerzhou.me/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>thin lily</title> 
+</head> 
+
+ 
+	<style type="text/css">  
+ #loveHeart{float:left;width:670px;height:625px}
+#garden{width:100%;height:100%}
+#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
+#words{font-family:"sans-serif";width:505px;font-size:24px;color:#666;}
+#messages{display:none;  }
+#elapseClock .digit{font-family:"digit";font-size:36px;color:red;}
+#loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:120px;text-align:right;display:block}
+#loveu .signature{margin-top:10px;font-size:20px;font-style:italic}
+
+#copyright{margin-top:10px;text-align:center;width:100%;color:#666}
+#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
+#copyright a{color:#666}
+	</style> 
+	<script type="text/javascript" src=" ./jquery.js"></script>
+	<script type="text/javascript" src=" ./garden_dev.js"></script>
+    <script type="text/javascript" src=" ./functions_dev.js"></script>
+</head>
+
+<body style="background-color:black;">
+<div   style="margin-top:0px;height:100%;width:100%;border:1px solid red;color:white;">
+<p id="div" style="margin:0  auto;color:white;font-size:10pt;">I love U ,thin lily</p>
+</div> 
+ <script language="JavaScript1.2">    
+var t = new Date();
+var year = t.getFullYear();       //年  
+var month = t.getMonth() + 1;     //月
+   var day = t.getDate();            //日
+   var hours = t.getHours();
+   var minutes = t.getMinutes();
+   var seconds = t.getSeconds();
+   var week = t.getDay();
+   var weekArr = new Array('周日','周一','周二','周三','周四','周五','周六');
+   week = weekArr[week];
+   var show_str ="";
+   var show_str = year + "年";
+         
+         if(month < 10)
+          show_str += "0";
+        
+         show_str += month + "月";
+        
+         if(day < 10)
+             show_str += "0";
+            
+         show_str += day + "日 ";
+   show_str +=(hours > 12) ? "下午 ": "上午 ";
+// show_str += ((hours > 12) ? hours-12 : hours);
+ // show_str += ((minutes <10) ? ":0" : ":") + minutes;
+  // show_str += ((seconds <10) ? ":0" : ":") + seconds;
+   show_str += '  '+week;
+ 
+var message="第一次喜欢一个人，没经过允许就把她放在心里。这感觉很单纯，很幸福，也很心酸！  忘不了曾经眼神相遇的那一刹，那种心跳加速大脑空白，快要窒息的感觉。 可惜这么些年却从未有第二个女孩子能让他有如此冲动！ 不可否认她是一个聪明优秀的女孩子，他只是众多爱慕她的人中的一个。 但他很笨很蠢很普通，不会说话，不会说讨好女孩子的话，不知怎样主动追女孩子，他唯有以自己的方式默默地关注着，祝福着她。 有时他很想告诉她喜欢她，从第一眼就很喜欢很喜欢。 有时他也想就这么算了，这么些年都过去了，他们都不是当初的彼此。但却还是心不由己的思念。 有些事情已成为一种习惯，恐怕一生都难以戒除！ 他小心翼翼地披上马甲接近她，却还是被她无情的拒绝。她的敏感让他很伤心。他并不想死缠烂打或是怎样，只是想她的世界里自己不要做陌生人！故事大致如此，如果打扰了她平静的生活，他表示很抱歉！！" 
+ var message=message+show_str+"----The one who love you\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r" 
+i="0" 
+var temptitle="" 
+var speed="520" //速度：值大速度慢，值小速度快！
+function titler(){
+
+if (!document.all&&!document.getElementById)
+return
+document.getElementById("div").innerHTML=temptitle+message.charAt(i)  
+temptitle=temptitle+message.charAt(i) 
+i++
+if(i==message.length) 
+{
+i="0" 
+temptitle="" 
+}
+setTimeout("titler()",speed) 
+}
+
+window.onload=titler();
+
+</script>
+ 								
+				 
+   <!--主题内容结束 -->
+  
+ 
+
+
+
+
+
+<!--#code{float:left;width:440px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
+#code .string{color:#2a36ff}
+#code .keyword{color:#7f0055;font-weight:bold}
+#code .placeholder{margin-left:15px}
+#code .space{margin-left:7px}
+#code .comments{color:#3f7f5f}
+ <div style=" float:left;  width:20%;  ">
+<div   style=" margin:0 auto;color:white; width:20%;height:20px;overflow:hidden;">IIIIIIIIIIIIIIIIIIII </div>
+<div   style=" margin:0 auto; color:white; width:10%;height:625px;overflow:hidden; ">IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIII<br>IIIIIIIII </div>
+<div   style=" margin:0 auto;color:white; width:20%;height:20px;overflow:hidden;">IIIIIIIIIIIIIIIIIIIIIIII </div>
+</div> -->
+ <div id="code" >
+	 
+				 <span class="comments">* <div style=" float:left;  width:22%;  ">
+<div   style=" margin:0 auto;color:white; width:44%;height:30px;overflow:hidden;"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"> </div>
+<div   style=" margin:0 auto; color:white; width:16%;height:625px;overflow:hidden; "> <img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"> </div>
+<div   style=" margin:0 auto;color:white; width:44%;height:30px;overflow:hidden;"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"> </div>
+</div> *</span>  <span class="comments">*	
+	
+	 <div style=" float:right;margin-left:10px; width:25%;height:625px; ">
+<div   style="float:left;margin-left:5%; color:white; width:10%;height:545px;overflow:hidden; "><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"> </div>
+ 
+ <div style="float:left; color:white; width:65%;height:545px;overflow:hidden; ">
+ <div  style="font-size:100px;margin-left:60px; color:Purple;">顾<br>小<br>娜<br><img src="./U.jpg">  </div>
+ 
+ </div>
+ <div   style="float:right;margin-right:5%; color:white; width:10%;height:545px;overflow:hidden; "> <img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"><img src="./ILOVEU.JPG"></div> 
+  <div   style=" clear:both;  float:left;margin-left:5%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div>  
+ <div   style="              float:right;margin-right:5%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div> 
+ 
+ <div   style=" clear:both;  float:left;margin-left:10%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div>  
+ <div   style="              float:right;margin-right:10%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div> 
+ 
+  <div   style=" clear:both;  float:left;margin-left:15%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div>  
+ <div   style="              float:right;margin-right:15%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"> </div> 
+ 
+   <div   style=" clear:both;  float:left;margin-left:20%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div>  
+ <div   style="              float:right;margin-right:20%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"> </div> 
+ 
+ 
+ <div   style=" clear:both; float:left;margin-left:25%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div>  
+ <div   style=" float:right;margin-right:25%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"> </div> 
+ 
+ <div   style=" clear:both; float:left;margin-left:30%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div>  
+ <div   style=" float:right;margin-right:30%; color:white; width:10%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"></div> 
+
+  <div   style=" clear:both; float:left;margin-left:40%; color:white; width:30%;height:20px;overflow:hidden;"><img src="./ILOVEU.JPG"> <img src="./ILOVEU.JPG"> <img src="./ILOVEU.JPG"> </div>  
+  
+ 
+ 
+ </div>*</span> 
+	 </div>
+<!---->	
+
+ <div id="loveHeart" style="float:left;width:50%">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words">
+					<div id="messages" style="cursor:crosshair;" >
+						Thin Lily :Give you my best wish! 
+						<div id="elapseClock"><span class="digit"> 8</span> year <span class="digit">8</span> month <span class="digit">8</span> day <span class="digit">8</span> hr <span class="digit">8</span> min <span class="digit">8</span> sec</div>
+					</div>
+					<div id="loveu" style="display: none;">
+						Love u forever and ever.<br>
+						<div class="signature">- Dragoners.Li</div>
+					</div>
+			 
+		<div id="copyright"> </div>
+	</div></div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var displayMode = 1;
+		var together = new Date();
+		together.setFullYear(2005, 08, 20);
+		together.setHours(10);
+		together.setMinutes(02);
+		together.setSeconds(14);
+		together.setMilliseconds(23);
+		
+		$("#loveHeart").click(function(){
+			displayMode *= -1;
+			timeElapse(together, displayMode);
+		});
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together, displayMode);
+			setInterval(function () {
+				timeElapse(together, displayMode);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+ 
+ 
+  
+
+
+</body></html>
