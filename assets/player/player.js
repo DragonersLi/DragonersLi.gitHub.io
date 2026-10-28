@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：全站音乐播放器逻辑，包括歌曲列表、播放控制、封面和样式加载。
+ * 加载：themes/yilia/layout/_partial/post/music.ejs 引入本脚本；音乐接口地址来自站点配置。
+ * 依赖：运行时加载 player.css、font-awesome.css，缺省封面使用 logo.png；改动后检查真实播放与站内跳转。
+ */
 /**
  * 宅音乐播放器
  * author: Zing(IT技术宅)

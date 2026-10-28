@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：音乐页面 APlayer 组件的第三方样式。
+ * 加载：themes/yilia/layout/musics.ejs 引用。
+ * 使用：与 APlayer.min.js 配套；这是压缩代码，升级时整体替换并保留原许可证信息。
+ */
 .aplayer {
     background: #fff;
     font-family: Arial,Helvetica,sans-serif;

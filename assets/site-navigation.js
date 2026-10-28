@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：站内无刷新导航，切换文章内容并保持页面播放器实例持续运行。
+ * 加载：themes/yilia/layout/_partial/after-footer.ejs 以 defer 引入。
+ * 使用：仅处理站内可接管的链接；修改后检查返回、前进、文章跳转和歌曲不中断。
+ */
 (function (window, document) {
     'use strict';
 

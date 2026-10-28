@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：调整时间轴嵌入框架的高度与交互布局。
+ * 加载：themes/yilia/layout/timeline.ejs 引入。
+ * 使用：依赖模板中的时间轴 iframe；修改后检查页面滚动与内容完整性。
+ */
 (function attachTimelineFrame() {
   const frame = document.querySelector('#js-content #timeline-resource-frame');
   if (!frame) return;

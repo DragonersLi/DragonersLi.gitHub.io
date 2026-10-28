@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：文字闪光效果，关于页和博客首页会直接调用。
+ * 加载：themes/yilia/layout/aboutme.ejs 和 source/_posts/blog/index.md。
+ * 使用：调用脚本提供的效果函数；修改时检查对应页面的文字动画。
+ */
 /**
  * 颜色代码动态写字特效
  * ☞使用 eff_bling(document.getElementById('bling'));

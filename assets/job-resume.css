@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：/job 简历页面的色彩、卡片、排版和响应式布局。
+ * 加载：themes/yilia/layout/job.ejs 引用 /assets/job-resume.css。
+ * 使用：简历结构在模板中，视觉样式在本文件；修改后检查桌面和手机宽度。
+ */
 .resume-page {
   --resume-accent: #147d73;
   --resume-accent-soft: #e8f5f2;

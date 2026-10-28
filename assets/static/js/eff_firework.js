@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：全站鼠标点击烟花特效。
+ * 加载：themes/yilia/layout/_partial/footer.ejs 根据 themes/yilia/_config.yml 的 eff: firework 动态拼出文件名。
+ * 使用：改变主题 eff 配置会切换所加载的特效脚本；本文件目前为默认配置。
+ */
 /*鼠标点击烟花特效*/
 class Circle {
   constructor({ origin, speed, color, angle, context }) {

@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：全站鼠标星光层的定位、层级和动画样式。
+ * 加载：themes/yilia/layout/_partial/head.ejs；与 static/js/mouse-stars.js 配套。
+ * 使用：调整星光显示范围或层级时修改，并确认不遮挡页面点击。
+ */
 #mouse-stars {
   position: fixed;
   inset: 0;

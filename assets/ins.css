@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：相册、音乐、视频页面的标签导航和内容排版。
+ * 加载：themes/yilia/layout/photos.ejs、musics.ejs、videos.ejs 以 /assets/ins.css 引入。
+ * 使用：修改这三个页面的共用切换栏时编辑本文件；调整后运行 npm run build 并检查三个页面。
+ */
 #post-instagram{
   padding: 30px;
 }

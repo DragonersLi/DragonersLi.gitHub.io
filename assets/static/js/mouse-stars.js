@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：监听指针操作并绘制全站鼠标星光效果。
+ * 加载：themes/yilia/layout/_partial/after-footer.ejs 以 defer 引入。
+ * 依赖：static/css/mouse-stars.css 定义效果层样式；改动后检查点击穿透和移动端行为。
+ */
 (function (window, document) {
   'use strict';
 

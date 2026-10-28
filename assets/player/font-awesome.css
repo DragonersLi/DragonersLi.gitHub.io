@@ -1,3 +1,9 @@
+/*
+ * File purpose / 文件说明
+ * 用途：播放器按钮使用的 Font Awesome 图标字体样式。
+ * 加载：/assets/player/player.js 动态添加本样式表。
+ * 依赖：同目录 fontawesome-webfont.eot、woff、ttf、svg 由 @font-face 相对路径加载；迁移时必须一起保留。
+ */
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
