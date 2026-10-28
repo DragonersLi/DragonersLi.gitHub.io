@@ -1,0 +1,345 @@
+/*** 绘制表壳 ***/
+#clock-layer{
+    width:330px;
+    height:330px;
+    position:absolute;
+    border-radius:50%;
+    background:
+        -webkit-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+        -webkit-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+        -webkit-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+        -webkit-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+        -webkit-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+        -webkit-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+        -webkit-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+        -webkit-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+        -webkit-linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+        -webkit-linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+    background:
+           -moz-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+           -moz-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+           -moz-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+           -moz-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+           -moz-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+           -moz-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+           -moz-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+           -moz-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+           -moz-linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+           -moz-linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+    background:
+            -ms-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+            -ms-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+            -ms-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+            -ms-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+            -ms-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+            -ms-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+            -ms-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+            -ms-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+            -ms-linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+            -ms-linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+    background:
+             -o-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+             -o-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+             -o-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+             -o-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+             -o-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+             -o-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+             -o-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+             -o-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+             -o-linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+             -o-linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+    background:
+                radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+                radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+                radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+                radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+                radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+                radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+                radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+                radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+                linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+                linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+    background-color:#300;
+    background-size:100px 100px;
+    box-shadow:0 0 15px black, inset 0 0 10px white;
+}
+/*** 绘制表盘 ***/
+#clock{
+    margin:15px;
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+    background:
+        -webkit-radial-gradient(black 15%, transparent 16%) 0 0,
+        -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px,
+        -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background:
+           -moz-radial-gradient(black 15%, transparent 16%) 0 0,
+           -moz-radial-gradient(black 15%, transparent 16%) 8px 8px,
+           -moz-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+           -moz-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background:
+            -ms-radial-gradient(black 15%, transparent 16%) 0 0,
+            -ms-radial-gradient(black 15%, transparent 16%) 8px 8px,
+            -ms-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+            -ms-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background:
+             -o-radial-gradient(black 15%, transparent 16%) 0 0,
+             -o-radial-gradient(black 15%, transparent 16%) 8px 8px,
+             -o-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+             -o-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background:
+                radial-gradient(black 15%, transparent 16%) 0 0,
+                radial-gradient(black 15%, transparent 16%) 8px 8px,
+                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+/*** 时间刻度、表蒙、等等***/
+#tick-mark, #glass{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+    border-radius:50%;
+}
+#glass{
+    box-shadow:inset 0 0 90px rgba(205, 230,255,0.4);
+}
+#tack, #mark1, #mark2, #mark4, #mark5, #mark7, #mark8, #mark10, #mark11{
+    width:10px;
+    height:10px;
+    margin-top:1px;
+    margin-left:145px;
+    position:absolute;
+    border-radius:50%;
+    background:gray;
+    -webkit-transform-origin: 5px 149px;
+       -moz-transform-origin: 5px 149px;
+        -ms-transform-origin: 5px 149px;
+         -o-transform-origin: 5px 149px;
+            transform-origin: 5px 149px;
+}
+#tack{
+    background:black;
+    margin-top:145px;
+}
+#mark1{
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+            transform: rotate(30deg);
+}
+#mark2{
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+            transform: rotate(60deg);
+}
+#mark4{
+    -webkit-transform: rotate(120deg);
+       -moz-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+         -o-transform: rotate(120deg);
+            transform: rotate(120deg);
+}
+#mark5{
+    -webkit-transform: rotate(150deg);
+       -moz-transform: rotate(150deg);
+        -ms-transform: rotate(150deg);
+         -o-transform: rotate(150deg);
+            transform: rotate(150deg);
+}
+#mark7{
+    -webkit-transform: rotate(-150deg);
+       -moz-transform: rotate(-150deg);
+        -ms-transform: rotate(-150deg);
+         -o-transform: rotate(-150deg);
+            transform: rotate(-150deg);
+}
+#mark8{
+    -webkit-transform: rotate(-120deg);
+       -moz-transform: rotate(-120deg);
+        -ms-transform: rotate(-120deg);
+         -o-transform: rotate(-120deg);
+            transform: rotate(-120deg);
+}
+#mark10{
+    -webkit-transform: rotate(-60deg);
+       -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+}
+#mark11{
+    -webkit-transform: rotate(-30deg);
+       -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+         -o-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+}
+#mark3, #mark6, #mark9, #mark12{
+    width:44px; 
+    height:44px;
+    color:white;
+    font-size:40px;
+    line-height:44px;
+    text-align:center;
+    font-family:arial;
+    font-weight:bold;
+    position:absolute;
+    opacity:0.65;
+}
+#mark3{
+    top:50%;
+    right:-2px;
+    margin-top:-22px;
+}
+#mark6{
+    left:50%;
+    bottom:-2px;
+    margin-left:-22px;
+}
+#mark9{
+    top:50%;
+    left:-2px;
+    margin-top:-22px;
+}
+#mark12{
+    top:-2px;
+    left:50%;
+    margin-left:-22px;
+}
+
+/*** 绘制指针 ***/
+#hourHand-layer, #minuteHand-layer, #secondHand-layer{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+    border-radius:50%;
+}
+#hourHand, #minuteHand, #secondHand{
+    top:150px;
+    left:150px;
+    position:absolute;
+    background:black;
+    background:-webkit-linear-gradient(bottom, hsla(222, 17%, 65%, 1) 0%,hsla(222, 26%, 53%, 1) 100%);
+    background:   -moz-linear-gradient(bottom, hsla(222, 17%, 65%, 1) 0%,hsla(222, 26%, 53%, 1) 100%);
+    background:    -ms-linear-gradient(bottom, hsla(222, 17%, 65%, 1) 0%,hsla(222, 26%, 53%, 1) 100%);
+    background:     -o-linear-gradient(bottom, hsla(222, 17%, 65%, 1) 0%,hsla(222, 26%, 53%, 1) 100%);
+    background:        linear-gradient(bottom, hsla(222, 17%, 65%, 1) 0%,hsla(222, 26%, 53%, 1) 100%);
+    box-shadow:0 0 20px rgba(255,255,255,0.3);
+    -webkit-transform-origin: 50% 100%;
+       -moz-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+         -o-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+}
+#hourHand{
+    width:12px;
+    height:80px;
+    margin-top:-80px;
+    margin-left:-6px;
+}
+#minuteHand{
+    width:8px;
+    height:120px;
+    margin-top:-120px;
+    margin-left:-4px;
+}
+#secondHand-m-layer{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+#secondHand{
+    width:2px;
+    height:130px;
+    margin-top:-130px;
+    margin-left:-1px;
+    box-shadow:none;
+    background:red;
+    border:none;
+}
+/*** 指针旋转 ***/
+.move #hourHand{
+    -webkit-animation: rotate 43200s infinite;
+       -moz-animation: rotate 43200s infinite;
+        -ms-animation: rotate 43200s infinite;
+         -o-animation: rotate 43200s infinite;
+            animation: rotate 43200s infinite;
+
+    -webkit-animation-timing-function: linear;
+       -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+         -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+.move #minuteHand{
+    -webkit-animation: rotate 3600s infinite;
+       -moz-animation: rotate 3600s infinite;
+        -ms-animation: rotate 3600s infinite;
+         -o-animation: rotate 3600s infinite;
+            animation: rotate 3600s infinite;
+
+    -webkit-animation-timing-function: linear;
+       -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+         -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+.move #secondHand-m-layer{
+    -webkit-animation: rotate 60s infinite;
+       -moz-animation: rotate 60s infinite;
+        -ms-animation: rotate 60s infinite;
+         -o-animation: rotate 60s infinite;
+            animation: rotate 60s infinite;
+
+    -webkit-transform-origin: 50% 50%;
+       -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+         -o-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+
+    -webkit-animation-timing-function: linear;
+       -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+         -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+.move #secondHand{
+    -webkit-animation: second 1s infinite;
+       -moz-animation: second 1s infinite;
+        -ms-animation: second 1s infinite;
+         -o-animation: second 1s infinite;
+            animation: second 1s infinite;
+
+    -webkit-animation-timing-function: linear;
+       -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+         -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+/*** 旋转动画 ***/
+@-webkit-keyframes rotate{ 0%{-webkit-transform:rotate(0deg);} 100%{-webkit-transform:rotate(360deg);} }
+   @-moz-keyframes rotate{ 0%{   -moz-transform:rotate(0deg);} 100%{   -moz-transform:rotate(360deg);} }
+    @-ms-keyframes rotate{ 0%{    -ms-transform:rotate(0deg);} 100%{    -ms-transform:rotate(360deg);} }
+     @-o-keyframes rotate{ 0%{     -o-transform:rotate(0deg);} 100%{     -o-transform:rotate(360deg);} }
+        @keyframes rotate{ 0%{        transform:rotate(0deg);} 100%{        transform:rotate(360deg);} }
+
+@-webkit-keyframes second{ 0%{-webkit-transform:rotate(2deg);} 5%{-webkit-transform:rotate(0deg);} 100%{-webkit-transform:rotate(-6deg);} }
+   @-moz-keyframes second{ 0%{   -moz-transform:rotate(2deg);} 5%{   -moz-transform:rotate(0deg);} 100%{   -moz-transform:rotate(-6deg);} }
+    @-ms-keyframes second{ 0%{    -ms-transform:rotate(2deg);} 5%{    -ms-transform:rotate(0deg);} 100%{    -ms-transform:rotate(-6deg);} }
+     @-o-keyframes second{ 0%{     -o-transform:rotate(2deg);} 5%{     -o-transform:rotate(0deg);} 100%{     -o-transform:rotate(-6deg);} }
+        @keyframes second{ 0%{        transform:rotate(2deg);} 5%{        transform:rotate(0deg);} 100%{        transform:rotate(-6deg);} }
