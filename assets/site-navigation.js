@@ -99,6 +99,14 @@
         return !extension || /^(html?|xhtml)$/i.test(extension[1]);
     }
 
+    function isStandalonePage(url) {
+        var path = url.pathname;
+        return ['resume', 'ibooks'].some(function (name) {
+            var base = rootPath + name;
+            return path === base || path.indexOf(base + '/') === 0;
+        });
+    }
+
     function rememberExplicitTargets(scope) {
         var links = scope.querySelectorAll('a[target]');
         var i;
@@ -153,7 +161,7 @@
         } catch (error) {
             return false;
         }
-        if ((url.protocol !== 'http:' && url.protocol !== 'https:') || !isInSite(url) || !isHtmlPath(url)) {
+        if ((url.protocol !== 'http:' && url.protocol !== 'https:') || !isInSite(url) || !isHtmlPath(url) || isStandalonePage(url)) {
             return false;
         }
         normalizeThemeTarget(anchor, url);

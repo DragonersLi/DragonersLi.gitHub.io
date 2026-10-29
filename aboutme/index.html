@@ -27,14 +27,40 @@
   <link rel="stylesheet" type="text/css" href="/./main.3e410a.css">
 
   <link rel="stylesheet" href="/article-back.css">
+  <link rel="stylesheet" href="/article-list-spacing.css?v=list-spacing-5">
+  <link rel="stylesheet" href="/vivid-navigation.css?v=category-nav-11">
   <link rel="stylesheet" href="/reward-popup.css?v=2">
   <link rel="stylesheet" href="/assets/static/css/mouse-stars.css">
   <style type="text/css">
+    .fork-me-link { position: fixed; z-index: 1001; top: 0; right: 0; display: block; width: 149px; height: 149px; }
+    .fork-me-link img { display: block; width: 100%; height: auto; }
+    @media (max-width: 767px) {
+      .fork-me-link { width: 78px; height: 78px; }
+    }
+    .site-page-menu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin: 8px 14px 18px; }
+    .site-page-menu a { display: block; padding: 7px 5px; border-radius: 7px; color: #176273; background: #e7f2f5; font-size: 13px; line-height: 1.45; text-align: center; text-decoration: none; white-space: nowrap; }
+    .site-page-menu a:hover, .site-page-menu a:focus-visible { color: #0b4a5c; background: #cfe8ee; }
     #container.show {
-      background: linear-gradient(200deg,#ccc,#000);
+      background: linear-gradient(200deg, #a0cfe4, #e8c37e);
     }
 
   </style>
+  
+<style>
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
   
 
   
@@ -47,7 +73,7 @@
 <!--</script>-->
 <!-- 分享按钮 Baidu Button END -->
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="すせなの技术博客" type="application/atom+xml">
+<meta name="generator" content="Hexo 8.1.2"><link rel="alternate" href="/atom.xml" title="すせなの技术博客" type="application/atom+xml">
 </head>
 
 <!--jquery文件-->
@@ -102,7 +128,7 @@
  }
 $(function(){
   startNeon();
-  newtext();
+    newtext();
 });
 </script>
 <!--title滚动end-->
@@ -207,6 +233,11 @@ $(function(){
   </script>
 
 <body>
+  
+    <a class="fork-me-link" href="https://github.com/DragonersLi" target="_blank" rel="noopener noreferrer" aria-label="Fork me on GitHub">
+      <img src="/img/forkme.png" alt="Fork me on GitHub">
+    </a>
+  
 <!--include content.html-->
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -563,9 +594,13 @@ $(function(){
 <!--     <nav class="header-menu">
       <ul>
       
-        <li style="display:inline;"><a href="/categories">分类标签</a></li>
+        <li style="display:inline;"><a href="/preview/" >主页预览</a></li>
           
-        <li style="display:inline;"><a href="/history">归档历史</a></li>
+        <li style="display:inline;"><a href="/list/" >文章列表</a></li>
+          
+        <li style="display:inline;"><a href="/categories" >分类标签</a></li>
+          
+        <li style="display:inline;"><a href="/history" >归档历史</a></li>
           
       </ul>
     </nav> -->
@@ -589,6 +624,18 @@ $(function(){
         
 		</nav>
   <!-- 快捷菜单 end -->
+
+  <nav class="site-page-menu" aria-label="站点页面">
+    
+      <a href="/preview/" >主页预览</a>
+    
+      <a href="/list/" >文章列表</a>
+    
+      <a href="/categories" >分类标签</a>
+    
+      <a href="/history" >归档历史</a>
+    
+  </nav>
 
   <!-- 图标 -->
 		<nav class="header-nav">
@@ -687,8 +734,23 @@ $(function(){
 <!-- 标签 end -->
 
       </p>
+			<nav class="site-page-menu" aria-label="站点页面">
+				
+					<a href="/preview/" >主页预览</a>
+				
+					<a href="/list/" >文章列表</a>
+				
+					<a href="/categories" >分类标签</a>
+				
+					<a href="/history" >归档历史</a>
+				
+			</nav>
 
 			
+			
+				
+			
+				
 			
 				
 			
@@ -753,12 +815,16 @@ $(function(){
 			</nav>
 
 <!--			<nav class="header-menu js-header-menu">-->
-<!--				<ul style="width: 50%">-->
+<!--				<ul style="width: 70%">-->
 <!--				-->
 <!--				-->
-<!--					<li style="width: 50%"><a href="/categories">分类标签</a></li>-->
+<!--					<li style="width: 25%"><a href="/preview/">主页预览</a></li>-->
 <!--		        -->
-<!--					<li style="width: 50%"><a href="/history">归档历史</a></li>-->
+<!--					<li style="width: 25%"><a href="/list/">文章列表</a></li>-->
+<!--		        -->
+<!--					<li style="width: 25%"><a href="/categories">分类标签</a></li>-->
+<!--		        -->
+<!--					<li style="width: 25%"><a href="/history">归档历史</a></li>-->
 <!--		        -->
 <!--				</ul>-->
 <!--			</nav>-->
@@ -918,8 +984,8 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
        <!--新增代码-->
         <span id="siterun"></span>|
         
-        <span id="busuanzi_container_site_pv">本站总访问量&nbsp;<span id="busuanzi_value_site_pv" style="color:red;"></span>&nbsp;次|
-        <span>您是第&nbsp;<span id="busuanzi_value_site_uv" style="color:red;"></span>&nbsp;位访客</span>
+        <span id="busuanzi_container_site_pv">本站总访问量&nbsp;<span id="busuanzi_site_pv" style="color:red;">加载中</span>&nbsp;次|
+        <span>本站访客数&nbsp;<span id="busuanzi_site_uv" style="color:red;">加载中</span>&nbsp;人</span>
         </span>
         
         <!--新增代码-->
@@ -940,7 +1006,10 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
 
 <script type="text/javascript" src="/assets/static/js/eff_firework.js"></script>
 <!--不蒜子统计-->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script defer src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js"></script>
+<script defer src="/yilia-extras/statistics-fallback.js"></script>
+
 <!--网站运行时间-->
 <script>
   var now = new Date();
@@ -1057,11 +1126,11 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
           <ul class="article-tag-list" q-show="showTags" >
             
             <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color2">51</a>
+              <a href="javascript:void(0)" class="js-tag color2">js</a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="javascript:void(0)" class="js-tag color2">js</a>
+              <a href="javascript:void(0)" class="js-tag color2">51</a>
             </li>
             
             <li class="article-tag-list-item">
@@ -1159,302 +1228,352 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
           <ul class="article-tag-list" style="display: block;">
             
             <li class="article-tag-list-item">
-              <a href="https://github.com/1x481n" target="_blank" class="color6">
-                1x481n
+              
+              <a href="https://github.com/1x481n" target="_blank" rel="noopener noreferrer" class="color6" >
+                 1x481n
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://www.yinwang.org/" target="_blank" class="color2">
-                王垠
+              
+              <a href="http://www.yinwang.org/" target="_blank" rel="noopener noreferrer" class="color2" >
+                 王垠
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://www.huzheng.org/" target="_blank" class="color2">
-                胡正
+              
+              <a href="http://www.huzheng.org/" target="_blank" rel="noopener noreferrer" class="color2" >
+                 胡正
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://wordyenglish.com" target="_blank" class="color2">
-                李杀
+              
+              <a href="http://wordyenglish.com" target="_blank" rel="noopener noreferrer" class="color2" >
+                 李杀
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.laruence.com/" target="_blank" class="color8">
-                鸟哥(风雪之隅)
+              
+              <a href="https://www.laruence.com/" target="_blank" rel="noopener noreferrer" class="color8" >
+                 鸟哥(风雪之隅)
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://coolshell.cn" target="_blank" class="color9">
-                酷壳(左耳朵耗子)
+              
+              <a href="https://coolshell.cn" target="_blank" rel="noopener noreferrer" class="color9" >
+                 酷壳(左耳朵耗子)
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://rango.swoole.com/" target="_blank" class="color0">
-                韩天峰(Rango)
+              
+              <a href="http://rango.swoole.com/" target="_blank" rel="noopener noreferrer" class="color0" >
+                 韩天峰(Rango)
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://www.ruanyifeng.com/blog/" target="_blank" class="color3">
-                阮一峰
+              
+              <a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 阮一峰
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.liaoxuefeng.com/" target="_blank" class="color3">
-                廖雪峰
+              
+              <a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 廖雪峰
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://blog-lab99-org.putstack.com/" target="_blank" class="color9">
-                Docker问答录
+              
+              <a href="https://blog-lab99-org.putstack.com/" target="_blank" rel="noopener noreferrer" class="color9" >
+                 Docker问答录
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://overtrue.me/" target="_blank" class="color8">
-                overtrue
+              
+              <a href="https://overtrue.me/" target="_blank" rel="noopener noreferrer" class="color8" >
+                 overtrue
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://linmi.cc/" target="_blank" class="color5">
-                Linmi
+              
+              <a href="https://linmi.cc/" target="_blank" rel="noopener noreferrer" class="color5" >
+                 Linmi
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://ares-x.com" target="_blank" class="color2">
-                ARESX&#39;S BLOG
+              
+              <a href="https://ares-x.com" target="_blank" rel="noopener noreferrer" class="color2" >
+                 ARESX&#39;S BLOG
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://blog.daraw.cn/" target="_blank" class="color4">
-                月迷津渡
+              
+              <a href="https://blog.daraw.cn/" target="_blank" rel="noopener noreferrer" class="color4" >
+                 月迷津渡
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://chegva.com/" target="_blank" class="color6">
-                chegva
+              
+              <a href="https://chegva.com/" target="_blank" rel="noopener noreferrer" class="color6" >
+                 chegva
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.insp.top/" target="_blank" class="color8">
-                Inspirer
+              
+              <a href="https://www.insp.top/" target="_blank" rel="noopener noreferrer" class="color8" >
+                 Inspirer
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://www.13775.org/" target="_blank" class="color0">
-                潘晓良(吹风吹到疯)
+              
+              <a href="http://www.13775.org/" target="_blank" rel="noopener noreferrer" class="color0" >
+                 潘晓良(吹风吹到疯)
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.gracecode.com/" target="_blank" class="color5">
-                無標題文檔
+              
+              <a href="https://www.gracecode.com/" target="_blank" rel="noopener noreferrer" class="color5" >
+                 無標題文檔
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://tridiamond.tech/" target="_blank" class="color2">
-                三钻
+              
+              <a href="https://tridiamond.tech/" target="_blank" rel="noopener noreferrer" class="color2" >
+                 三钻
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://liuxunzhuo.com" target="_blank" class="color3">
-                刘训灼
+              
+              <a href="https://liuxunzhuo.com" target="_blank" rel="noopener noreferrer" class="color3" >
+                 刘训灼
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://baijunyao.com/" target="_blank" class="color3">
-                白俊遥
+              
+              <a href="https://baijunyao.com/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 白俊遥
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://www.php20.cn/" target="_blank" class="color3">
-                仙士可
+              
+              <a href="http://www.php20.cn/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 仙士可
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://it-ebooks.flygon.net/" target="_blank" class="color4">
-                布客新知
+              
+              <a href="http://it-ebooks.flygon.net/" target="_blank" rel="noopener noreferrer" class="color4" >
+                 布客新知
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://zespia.tw/" target="_blank" class="color1">
-                陳嘉輝（hexo作者）
+              
+              <a href="https://zespia.tw/" target="_blank" rel="noopener noreferrer" class="color1" >
+                 陳嘉輝（hexo作者）
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.raychase.net/" target="_blank" class="color6">
-                熊燚(四火)
+              
+              <a href="https://www.raychase.net/" target="_blank" rel="noopener noreferrer" class="color6" >
+                 熊燚(四火)
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.taohui.pub/" target="_blank" class="color4">
-                陶辉笔记
+              
+              <a href="https://www.taohui.pub/" target="_blank" rel="noopener noreferrer" class="color4" >
+                 陶辉笔记
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.zhangxinxu.com/" target="_blank" class="color2">
-                张鑫
+              
+              <a href="https://www.zhangxinxu.com/" target="_blank" rel="noopener noreferrer" class="color2" >
+                 张鑫
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://www.ichenhua.cn/" target="_blank" class="color8">
-                陈华(百万炒基)
+              
+              <a href="http://www.ichenhua.cn/" target="_blank" rel="noopener noreferrer" class="color8" >
+                 陈华(百万炒基)
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://create.hanc.cc/" target="_blank" class="color1">
-                HanSon微信机器人
+              
+              <a href="http://create.hanc.cc/" target="_blank" rel="noopener noreferrer" class="color1" >
+                 HanSon微信机器人
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://lqwang.net/" target="_blank" class="color2">
-                旺阳
+              
+              <a href="https://lqwang.net/" target="_blank" rel="noopener noreferrer" class="color2" >
+                 旺阳
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.parryqiu.com/" target="_blank" class="color8">
-                好记性不如烂键盘
+              
+              <a href="https://www.parryqiu.com/" target="_blank" rel="noopener noreferrer" class="color8" >
+                 好记性不如烂键盘
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://blog.haoji.me/" target="_blank" class="color5">
-                好记的博客
+              
+              <a href="http://blog.haoji.me/" target="_blank" rel="noopener noreferrer" class="color5" >
+                 好记的博客
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://yuerblog.cc/" target="_blank" class="color5">
-                鱼儿的博客
+              
+              <a href="https://yuerblog.cc/" target="_blank" rel="noopener noreferrer" class="color5" >
+                 鱼儿的博客
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://blog.51yip.com/" target="_blank" class="color0">
-                海底苍鹰(tank)
+              
+              <a href="http://blog.51yip.com/" target="_blank" rel="noopener noreferrer" class="color0" >
+                 海底苍鹰(tank)
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.cnblogs.com/zonglonglong" target="_blank" class="color3">
-                西瓜霜
+              
+              <a href="https://www.cnblogs.com/zonglonglong" target="_blank" rel="noopener noreferrer" class="color3" >
+                 西瓜霜
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.cnblogs.com/wuhuacong/" target="_blank" class="color3">
-                伍华聪
+              
+              <a href="https://www.cnblogs.com/wuhuacong/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 伍华聪
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://www.eryajf.net/" target="_blank" class="color4">
-                二丫讲梵
+              
+              <a href="http://www.eryajf.net/" target="_blank" rel="noopener noreferrer" class="color4" >
+                 二丫讲梵
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://yoff.cn/" target="_blank" class="color4">
-                一个IT男走过了十几年的笔记
+              
+              <a href="http://yoff.cn/" target="_blank" rel="noopener noreferrer" class="color4" >
+                 一个IT男走过了十几年的笔记
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://qugeek.com/" target="_blank" class="color4">
-                墨灵音乐
+              
+              <a href="https://qugeek.com/" target="_blank" rel="noopener noreferrer" class="color4" >
+                 墨灵音乐
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://www.jetli.com.cn/" target="_blank" class="color3">
-                博客志
+              
+              <a href="http://www.jetli.com.cn/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 博客志
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://qugeek.com/blog/" target="_blank" class="color4">
-                趣·极客
+              
+              <a href="https://qugeek.com/blog/" target="_blank" rel="noopener noreferrer" class="color4" >
+                 趣·极客
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://passer-by.com/" target="_blank" class="color3">
-                路人甲
+              
+              <a href="https://passer-by.com/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 路人甲
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.bubaijun.com/" target="_blank" class="color3">
-                不败君
+              
+              <a href="https://www.bubaijun.com/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 不败君
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.yunyoujun.cn" target="_blank" class="color3">
-                云游君
+              
+              <a href="https://www.yunyoujun.cn" target="_blank" rel="noopener noreferrer" class="color3" >
+                 云游君
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://www.freebuf.com/" target="_blank" class="color7">
-                FreeBuf
+              
+              <a href="https://www.freebuf.com/" target="_blank" rel="noopener noreferrer" class="color7" >
+                 FreeBuf
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://learnku.com/" target="_blank" class="color7">
-                LearnKu
+              
+              <a href="https://learnku.com/" target="_blank" rel="noopener noreferrer" class="color7" >
+                 LearnKu
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://refactoringguru.cn" target="_blank" class="color1">
-                Refactoring
+              
+              <a href="https://refactoringguru.cn" target="_blank" rel="noopener noreferrer" class="color1" >
+                 Refactoring
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://zh.forvo.com/" target="_blank" class="color5">
-                Forvo
+              
+              <a href="https://zh.forvo.com/" target="_blank" rel="noopener noreferrer" class="color5" >
+                 Forvo
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="https://developer.mozilla.org/zh-CN/" target="_blank" class="color3">
-                MDN
+              
+              <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener noreferrer" class="color3" >
+                 MDN
               </a>
             </li>
             
             <li class="article-tag-list-item">
-              <a href="http://lvmaojun.com/huaji/" target="_blank" class="color2">
-                滑稽
+              
+              <a href="http://lvmaojun.com/huaji/" target="_blank" rel="noopener noreferrer" class="color2" >
+                 滑稽
               </a>
             </li>
             
@@ -1467,86 +1586,14 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
           </ul>
         </div>
   		
-        <div id="friends-live2d" class="friends-live2d" aria-label="博客看板娘">
-          <div class="friends-live2d-stage"></div>
-        </div>
     	</section>
     
   <!--友情链接-->
-    
     <style>
-      .tools-section-friends .friends-live2d {
-        height: 370px;
-        margin: 18px 20px 0;
-        overflow: hidden;
-      }
-      .tools-section-friends .friends-live2d-stage {
-        position: relative;
-        width: 180px;
-        height: 360px;
-        margin: 0 auto;
-      }
-      .tools-section-friends canvas#live2dcanvas {
-        border: 0 !important;
-        position: absolute !important;
-        top: 0 !important;
-        bottom: auto !important;
-        left: 0 !important;
-        right: auto !important;
-        width: 180px !important;
-        height: 360px !important;
-        margin: 0 !important;
-        z-index: 1 !important;
-      }
-      @media (max-width: 600px) {
-        .tools-section-friends .friends-live2d { height: 530px; }
-        .tools-section-friends .friends-live2d-stage { width: 150px; height: 300px; }
-        .tools-section-friends canvas#live2dcanvas { width: 150px !important; height: 300px !important; }
-      }
+      .tools-col { z-index: 1002; pointer-events: none; }
+      .tools-col.show { pointer-events: auto; }
+      .tools-col.hide { z-index: 0; }
     </style>
-    <script>
-      (function () {
-        var host = document.getElementById('friends-live2d');
-        var stage = host && host.querySelector('.friends-live2d-stage');
-        if (!stage) return;
-
-        function placeCanvas() {
-          var canvas = document.getElementById('live2dcanvas');
-          if (!canvas) return false;
-          stage.appendChild(canvas);
-          return true;
-        }
-
-        function startWidget() {
-          var observer = new MutationObserver(function () {
-            if (placeCanvas()) observer.disconnect();
-          });
-          observer.observe(document.body, { childList: true, subtree: true });
-          window.L2Dwidget.init();
-          if (placeCanvas()) observer.disconnect();
-        }
-
-        function loadWidget() {
-          if (window.L2Dwidget) return startWidget();
-          var script = document.createElement('script');
-          script.src = '/assets/static/js/L2Dwidget.min.js';
-          script.onload = startWidget;
-          document.head.appendChild(script);
-        }
-
-        if ('IntersectionObserver' in window) {
-          var visibility = new IntersectionObserver(function (entries) {
-            if (!entries[0].isIntersecting) return;
-            visibility.disconnect();
-            loadWidget();
-          });
-          visibility.observe(host);
-        } else {
-          loadWidget();
-        }
-      }());
-    </script>
-    
     <!-- 一言接口写入隐藏节点，友链区仍由原来的打字效果展示。 -->
     <span id="friend-hitokoto" hidden></span>
     <script>
@@ -1580,24 +1627,20 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
     
 
       <section class="tools-section tools-section-me" q-show="aboutme">
-        <style>
-  .site-menu nav { overflow: hidden; }
-  .site-menu ul { list-style-type: none; text-align: center; margin: 0 auto; }
-  .site-menu ul li { float: left; width: 100%; line-height: 37px; height: 37px; }
-  .site-menu a { display: block; height: 100% !important; margin-top: 10px; margin-bottom: 10px; color: #FFF; transition: All 1s ease; -webkit-transition: All 1s ease; -moz-transition: All 1s ease; -o-transition: All 1s ease; }
-  .site-menu a:hover { background: rgba(255,255,255,0.2); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); }
-</style>
-<nav class="site-menu">
+        <nav class="site-menu">
   <nav class="tagcloud">
     <ul>
       
-      <a href="/categories" class="color1">
-        <li >分类标签</li>
-      </a>
       
-      <a href="/history" class="color8">
-        <li >归档历史</li>
-      </a>
+      
+      
+      <li><a href="/categories" style="--menu-button-color:#c62828" class="category-menu-link">分类标签</a></li>
+      
+      <li><a href="/history" style="--menu-button-color:#1565c0" class="category-menu-link">归档历史</a></li>
+      
+      <li><a href="/resume/" style="--menu-button-color:#6a1b9a" class="category-menu-link">动态简历</a></li>
+      
+      <li><a href="/ibooks/" style="--menu-button-color:#00796b" class="category-menu-link">技术笔记</a></li>
       
     </ul>
   </nav>
@@ -1608,15 +1651,15 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
             <ul class="article-tag-list" style="display: block;">
               
               <li class="article-tag-list-item">
+                <a href="/categories/技术栈" class="color3">技术栈(12)</a>
+              </li>
+              
+              <li class="article-tag-list-item">
                 <a href="/categories/51信用卡" class="color5">51信用卡(1)</a>
               </li>
               
               <li class="article-tag-list-item">
                 <a href="/categories/boss直聘" class="color0">boss直聘(1)</a>
-              </li>
-              
-              <li class="article-tag-list-item">
-                <a href="/categories/技术栈" class="color3">技术栈(12)</a>
               </li>
               
               <div class="clearfix"></div>
@@ -1703,7 +1746,15 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=1330849396&r=1
     </div>
 
 </div>
+    
+
+
+
+<script>window.yiliaLive2DOptions={"models":{"z16":{"path":"/yilia-extras/live2d_models/z16/assets/z16.model.json","width":145,"height":315,"vOffset":-55},"hibiki":{"path":"/yilia-extras/live2d_models/hibiki/assets/hibiki.model.json","width":145,"height":315},"shizuku":{"path":"/yilia-extras/live2d_models/shizuku/assets/shizuku.model.json","width":150,"height":315},"haru01":{"path":"/yilia-extras/live2d_models/haru01/assets/haru01.model.json","width":150,"height":315,"scale":0.68,"vOffset":-22},"koharu":{"path":"/yilia-extras/live2d_models/koharu/assets/koharu.model.json","width":150,"height":315},"miku":{"path":"/yilia-extras/live2d_models/miku/assets/miku.model.json","width":150,"height":315},"tororo":{"path":"/yilia-extras/live2d_models/tororo/assets/tororo.model.json","width":150,"height":315},"nito":{"path":"/yilia-extras/live2d_models/nito/assets/nito.model.json","width":150,"height":315,"scale":1},"haru02":{"path":"/yilia-extras/live2d_models/haru02/assets/haru02.model.json","width":150,"height":315,"scale":0.68,"vOffset":-25},"izumi":{"path":"/yilia-extras/live2d_models/izumi/assets/izumi.model.json","width":150,"height":315,"vOffset":-80},"chitose":{"path":"/yilia-extras/live2d_models/chitose/assets/chitose.model.json","width":150,"height":315,"vOffset":-80},"nico":{"path":"/yilia-extras/live2d_models/nico/assets/nico.model.json","width":150,"height":315,"scale":1},"tsumiki":{"path":"/yilia-extras/live2d_models/tsumiki/assets/tsumiki.model.json","width":150,"height":315},"extra_001":{"path":"/yilia-extras/live2d_models/collection/kanzaki/kanzaki.model.json","width":150,"height":315,"scale":0.7},"extra_002":{"path":"/yilia-extras/live2d_models/collection/redeemer/model.json","width":150,"height":315,"scale":0.7},"extra_003":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/px4storm_2801/normal/model.json","width":150,"height":315,"scale":0.7},"extra_004":{"path":"/yilia-extras/live2d_models/collection/Kobayaxi/Kobayaxi.model.json","width":150,"height":315,"scale":0.7},"extra_005":{"path":"/yilia-extras/live2d_models/collection/Epsilon2.1/Epsilon2.1.model.json","width":150,"height":315,"scale":0.7},"extra_006":{"path":"/yilia-extras/live2d_models/collection/chiaki_kitty/model.json","width":150,"height":315,"scale":0.7},"extra_007":{"path":"/yilia-extras/live2d_models/collection/jin/jin.model.json","width":150,"height":315,"scale":0.7},"extra_008":{"path":"/yilia-extras/live2d_models/collection/shifuku/shifuku.model.json","width":150,"height":315,"scale":0.7},"extra_009":{"path":"/yilia-extras/live2d_models/collection/stl/stl.model.json","width":150,"height":315,"scale":0.7},"extra_010":{"path":"/yilia-extras/live2d_models/collection/platelet-2/model.json","width":150,"height":315,"scale":0.7},"extra_011":{"path":"/yilia-extras/live2d_models/collection/rem/model.json","width":150,"height":315,"scale":0.7},"extra_012":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/vert_classic/index.json","width":150,"height":315,"scale":0.7},"extra_013":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/dsr50_1801/normal/model.json","width":150,"height":315,"scale":0.7},"extra_014":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/gelina/normal/model.json","width":150,"height":315,"scale":0.7},"extra_015":{"path":"/yilia-extras/live2d_models/collection/Potion-Maker/Tia/index.json","width":150,"height":315,"scale":0.7},"extra_016":{"path":"/yilia-extras/live2d_models/collection/bronya_1/model.json","width":150,"height":315,"scale":0.7},"extra_017":{"path":"/yilia-extras/live2d_models/collection/sakura/model.json","width":150,"height":315,"scale":0.7},"extra_018":{"path":"/yilia-extras/live2d_models/collection/mei/model.json","width":150,"height":315,"scale":0.7},"extra_019":{"path":"/yilia-extras/live2d_models/collection/kiana/model.json","width":150,"height":315,"scale":0.7},"extra_020":{"path":"/yilia-extras/live2d_models/collection/len/len_space/len_space.model.json","width":150,"height":315,"scale":0.7},"extra_021":{"path":"/yilia-extras/live2d_models/collection/hallo_16/hallo_16.model.json","width":150,"height":315,"scale":0.7},"extra_022":{"path":"/yilia-extras/live2d_models/collection/uiharu/uiharu.model.json","width":150,"height":315,"scale":0.7},"extra_023":{"path":"/yilia-extras/live2d_models/collection/theresa/model.json","width":150,"height":315,"scale":0.7},"extra_024":{"path":"/yilia-extras/live2d_models/collection/YuzukiYukari/YuzukiYukari.model.json","width":150,"height":315,"scale":0.7},"extra_025":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/vector_1901/normal/model.json","width":150,"height":315,"scale":0.7},"extra_026":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/sat8_2601/normal/model.json","width":150,"height":315,"scale":0.7},"extra_027":{"path":"/yilia-extras/live2d_models/collection/ShizukuTalk/shizuku-48/index.json","width":150,"height":315,"scale":0.7},"extra_028":{"path":"/yilia-extras/live2d_models/collection/len/len_impact/len_impact.model.json","width":150,"height":315,"scale":0.7},"extra_029":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/noir_santa/index.json","width":150,"height":315,"scale":0.7},"extra_030":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/hk416_805/normal/model.json","width":150,"height":315,"scale":0.7},"extra_031":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/blanc_classic/index.json","width":150,"height":315,"scale":0.7},"extra_032":{"path":"/yilia-extras/live2d_models/collection/illyasviel/illyasviel.model.json","width":150,"height":315,"scale":0.7},"extra_033":{"path":"/yilia-extras/live2d_models/collection/himeko/model.json","width":150,"height":315,"scale":0.7},"extra_034":{"path":"/yilia-extras/live2d_models/collection/sagiri/sagiri.model.json","width":150,"height":315,"scale":0.7},"extra_035":{"path":"/yilia-extras/live2d_models/collection/len/len_nomal/len.model.json","width":150,"height":315,"scale":0.7},"extra_036":{"path":"/yilia-extras/live2d_models/collection/bronya/model.json","width":150,"height":315,"scale":0.7},"extra_037":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/ags-30/model.json","width":150,"height":315,"scale":0.7},"extra_038":{"path":"/yilia-extras/live2d_models/collection/live_uu/model.json","width":150,"height":315,"scale":0.7},"extra_039":{"path":"/yilia-extras/live2d_models/collection/snow_miku/model.json","width":150,"height":315,"scale":0.7},"extra_040":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/rfb_1601/normal/model.json","width":150,"height":315,"scale":0.7},"extra_041":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/nepgear_extra/index.json","width":150,"height":315,"scale":0.7},"extra_042":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/nepgear/index.json","width":150,"height":315,"scale":0.7},"extra_043":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/ntw20_2301/normal/model.json","width":150,"height":315,"scale":0.7},"extra_044":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/nepnep/index.json","width":150,"height":315,"scale":0.7},"extra_045":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/noir_classic/index.json","width":150,"height":315,"scale":0.7},"extra_046":{"path":"/yilia-extras/live2d_models/collection/ryoufuku/ryoufuku.model.json","width":150,"height":315,"scale":0.7},"extra_047":{"path":"/yilia-extras/live2d_models/collection/kurumi/model.json","width":150,"height":315,"scale":0.7},"extra_048":{"path":"/yilia-extras/live2d_models/collection/KantaiCollection/murakumo/index.json","width":150,"height":315,"scale":0.7},"extra_049":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/ots14_3001/normal/model.json","width":150,"height":315,"scale":0.7},"extra_050":{"path":"/yilia-extras/live2d_models/collection/platelet/model.json","width":150,"height":315,"scale":0.7},"extra_051":{"path":"/yilia-extras/live2d_models/collection/yukari_model/yukari_model.model.json","width":150,"height":315,"scale":0.7},"extra_052":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/88type_1809/normal/model.json","width":150,"height":315,"scale":0.7},"extra_053":{"path":"/yilia-extras/live2d_models/collection/Alice/model.json","width":150,"height":315,"scale":0.7},"extra_054":{"path":"/yilia-extras/live2d_models/collection/mashiro/seifuku.model.json","width":150,"height":315,"scale":0.7},"extra_055":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/kp31_1103/normal/model.json","width":150,"height":315,"scale":0.7},"extra_056":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/neptune_classic/index.json","width":150,"height":315,"scale":0.7},"extra_057":{"path":"/yilia-extras/live2d_models/collection/moon/model.json","width":150,"height":315,"scale":0.7},"extra_058":{"path":"/yilia-extras/live2d_models/collection/wed_16/wed_16.model.json","width":150,"height":315,"scale":0.7},"extra_059":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/g36c_1202/normal/model.json","width":150,"height":315,"scale":0.7},"extra_060":{"path":"/yilia-extras/live2d_models/collection/bilibili/33_high/model.json","width":150,"height":315,"scale":0.7},"extra_061":{"path":"/yilia-extras/live2d_models/collection/unitychan/unitychan.model.json","width":150,"height":315,"scale":0.7},"extra_062":{"path":"/yilia-extras/live2d_models/collection/index/model.json","width":150,"height":315,"scale":0.7},"extra_063":{"path":"/yilia-extras/live2d_models/collection/makoto0/makoto0.model.json","width":150,"height":315,"scale":0.7},"extra_064":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/grizzly_2102/normal/model.json","width":150,"height":315,"scale":0.7},"extra_065":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/95type_405/normal/model.json","width":150,"height":315,"scale":0.7},"extra_066":{"path":"/yilia-extras/live2d_models/collection/bilibili/22_high/model.json","width":150,"height":315,"scale":0.7},"extra_067":{"path":"/yilia-extras/live2d_models/collection/kuroko/kuroko.model.json","width":150,"height":315,"scale":0.7},"extra_068":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/type64-ar_2901/normal/model.json","width":150,"height":315,"scale":0.7},"extra_069":{"path":"/yilia-extras/live2d_models/collection/sin/model.json","width":150,"height":315,"scale":0.7},"extra_070":{"path":"/yilia-extras/live2d_models/collection/katou_01/katou_01.model.json","width":150,"height":315,"scale":0.7},"extra_071":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/nepmaid/index.json","width":150,"height":315,"scale":0.7},"extra_072":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/noir/index.json","width":150,"height":315,"scale":0.7},"extra_073":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/kp31_310/normal/model.json","width":150,"height":315,"scale":0.7},"extra_074":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/welrod_1401/normal/model.json","width":150,"height":315,"scale":0.7},"extra_075":{"path":"/yilia-extras/live2d_models/collection/mashiro/shifuku.model.json","width":150,"height":315,"scale":0.7},"extra_076":{"path":"/yilia-extras/live2d_models/collection/iio/iio.model.json","width":150,"height":315,"scale":0.7},"extra_077":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/mlemk1_604/normal/model.json","width":150,"height":315,"scale":0.7},"extra_078":{"path":"/yilia-extras/live2d_models/collection/seele/model.json","width":150,"height":315,"scale":0.7},"extra_079":{"path":"/yilia-extras/live2d_models/collection/shifuku2/shifuku2.model.json","width":150,"height":315,"scale":0.7},"extra_080":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/blanc_normal/index.json","width":150,"height":315,"scale":0.7},"extra_081":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/neptune_santa/index.json","width":150,"height":315,"scale":0.7},"extra_082":{"path":"/yilia-extras/live2d_models/collection/ShizukuTalk/shizuku/shizuku.model.json","width":150,"height":315,"scale":0.7},"extra_083":{"path":"/yilia-extras/live2d_models/collection/seifuku/seifuku.model.json","width":150,"height":315,"scale":0.7},"extra_084":{"path":"/yilia-extras/live2d_models/collection/Potion-Maker/Pio/model.json","width":150,"height":315,"scale":0.7},"extra_085":{"path":"/yilia-extras/live2d_models/collection/yuri/model.json","width":150,"height":315,"scale":0.7},"extra_086":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/g41_2401/normal/model.json","width":150,"height":315,"scale":0.7},"extra_087":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/m1928a1_1501/normal/model.json","width":150,"height":315,"scale":0.7},"extra_088":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/vert_normal/index.json","width":150,"height":315,"scale":0.7},"extra_089":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/fn57_2203/normal/model.json","width":150,"height":315,"scale":0.7},"extra_090":{"path":"/yilia-extras/live2d_models/collection/saten/saten.model.json","width":150,"height":315,"scale":0.7},"extra_091":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/dsr50_2101/normal/model.json","width":150,"height":315,"scale":0.7},"extra_092":{"path":"/yilia-extras/live2d_models/collection/platelet-3/kesyoban.model.json","width":150,"height":315,"scale":0.7},"extra_093":{"path":"/yilia-extras/live2d_models/collection/liang/model.json","width":150,"height":315,"scale":0.7},"extra_094":{"path":"/yilia-extras/live2d_models/collection/xiaomai/xiaomai.model.json","width":150,"height":315,"scale":0.7},"extra_095":{"path":"/yilia-extras/live2d_models/collection/HyperdimensionNeptunia/histoire/index.json","width":150,"height":315,"scale":0.7},"extra_096":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/wa2000_6/normal/model.json","width":150,"height":315,"scale":0.7},"extra_097":{"path":"/yilia-extras/live2d_models/collection/dollsfrontline/kp31_3101/normal/model.json","width":150,"height":315,"scale":0.7},"extra_098":{"path":"/yilia-extras/live2d_models/collection/mikoto/mikoto.model.json","width":150,"height":315,"scale":0.7},"extra_099":{"path":"/yilia-extras/live2d_models/collection/date_16/model.json","width":150,"height":315,"scale":0.7},"extra_100":{"path":"/yilia-extras/live2d_models/collection/mashiro/ryoufuku.model.json","width":150,"height":315,"scale":0.7}},"selected":"z16","rotation":{"enable":true,"mode":"random","interval_seconds":5,"models":["hibiki","z16","shizuku","haru01","koharu","miku","tororo","nito","haru02","izumi","chitose","nico","tsumiki","extra_001","extra_002","extra_003","extra_004","extra_005","extra_006","extra_007","extra_008","extra_009","extra_010","extra_011","extra_012","extra_013","extra_014","extra_015","extra_016","extra_017","extra_018","extra_019","extra_020","extra_021","extra_022","extra_023","extra_024","extra_025","extra_026","extra_027","extra_028","extra_029","extra_030","extra_031","extra_032","extra_033","extra_034","extra_035","extra_036","extra_037","extra_038","extra_039","extra_040","extra_041","extra_042","extra_043","extra_044","extra_045","extra_046","extra_047","extra_048","extra_049","extra_050","extra_051","extra_052","extra_053","extra_054","extra_055","extra_056","extra_057","extra_058","extra_059","extra_060","extra_061","extra_062","extra_063","extra_064","extra_065","extra_066","extra_067","extra_068","extra_069","extra_070","extra_071","extra_072","extra_073","extra_074","extra_075","extra_076","extra_077","extra_078","extra_079","extra_080","extra_081","extra_082","extra_083","extra_084","extra_085","extra_086","extra_087","extra_088","extra_089","extra_090","extra_091","extra_092","extra_093","extra_094","extra_095","extra_096","extra_097","extra_098","extra_099","extra_100"]},"hOffset":105,"vOffset":0,"scale":0.8,"frameUrl":"/yilia-extras/live2d-frame.html?v=fit-4"};</script><script src="/yilia-extras/live2d-host.js?v=fit-4"></script>
+
+
   </div>
+  
 <!--include content.html-->
 <!--include aplayer.html-->
 <div id="aplayerContent">

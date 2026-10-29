@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>李世龙的动态简历</title>
+  <link rel="icon" href="/assets/static/img/favicon.ico">
+  <link rel="stylesheet" href="./resume.css">
+</head>
+<body class="resume-page">
+  <header class="toolbar">
+    <a class="home-link" href="/">← 返回首页</a>
+    <span class="toolbar-title">李世龙的动态简历</span>
+    <div class="toolbar-actions">
+      <button id="skipButton" type="button">跳过动画</button>
+      <button id="replayButton" type="button">重新播放</button>
+    </div>
+  </header>
+  <main class="stage" aria-label="李世龙的动态简历">
+    <section class="editor editor-code" aria-label="逐字输入的样式代码">
+      <div class="editor-heading"><span class="editor-dot"></span> style.css</div>
+      <pre id="codeOutput"></pre>
+    </section>
+    <section class="editor editor-resume" aria-label="简历内容">
+      <div class="editor-heading"><span class="editor-dot"></span> resume.md</div>
+      <div id="resumeOutput" class="resume-output" aria-live="off"></div>
+    </section>
+  </main>
+  <style id="animatedStyle"></style>
+  <script src="./resume.js" defer></script>
+</body>
+</html>

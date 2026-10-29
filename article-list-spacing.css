@@ -1,0 +1,101 @@
+/* 首页文章沿用 Yilia 原有卡片样式，仅拉开卡片间距并整理底部信息。 */
+.article-index + .article-index {
+  margin-top: 48px;
+}
+
+/* 分类、标签下方留白，避免紧贴卡片底部分隔线。 */
+.article-info-index.article-info {
+  padding-bottom: 40px;
+}
+
+.article-index .article-info-index {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  min-height: 58px;
+  padding-bottom: 56px;
+}
+
+.article-index .article-info-index .article-tag,
+.article-index .article-info-index .article-category {
+  position: static;
+  float: none;
+  margin: 0;
+}
+
+.article-index .article-info-index .article-more-link {
+  float: none;
+  margin: 0 0 0 auto;
+  white-space: nowrap;
+}
+
+.article-index .article-info-index .clearfix {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .article-index + .article-index { margin-top: 32px; }
+  .article-info-index.article-info { padding-bottom: 32px; }
+  .article-index .article-info-index { padding-bottom: 40px; }
+  .article-index .article-info-index .article-more-link { margin-left: auto; }
+}
+
+/* 预览页全文底部的分类和标签靠右，并与下方分隔线保持距离。 */
+.preview-archives .isfull-article-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  clear: both;
+  margin-top: 16px;
+  padding: 12px 0 16px;
+  text-align: right;
+}
+.preview-archives .isfull-article-info .article-tag,
+.preview-archives .isfull-article-info .article-category {
+  float: none;
+  margin: 0;
+}
+/* 文章列表：阅读全文在左，分类和标签在右。 */
+.post-list-page .article-info-index .article-more-link {
+  order: -1;
+  margin: 0 auto 0 0;
+}
+.post-list-page .article-taxonomy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px 14px;
+  margin-left: auto;
+}
+
+.preview-archives .preview-article-info {
+  float: none;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px 16px;
+  padding-bottom: 16px;
+}
+.preview-archives .preview-article-info .article-tag,
+.preview-archives .preview-article-info .article-category { float: none; margin: 0; }
+.preview-archives .preview-read-more {
+  margin-right: auto;
+  white-space: nowrap;
+  background: #4d4d4d;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 5px 8px;
+}
+.preview-archives .preview-read-more:hover { background: #3c3c3c; }

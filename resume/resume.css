@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+html { min-height: 100%; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #dce8e5; background: #062d36; }
+a { color: inherit; }
+.toolbar { min-height: 58px; padding: 10px 20px; display: flex; align-items: center; gap: 16px; border-bottom: 1px solid rgba(255,255,255,.18); }
+.home-link { text-decoration: none; color: #8ee4d5; white-space: nowrap; }
+.home-link:hover, .home-link:focus-visible { text-decoration: underline; }
+.toolbar-title { flex: 1; font-weight: 700; text-align: center; letter-spacing: .12em; }
+.toolbar-actions { display: flex; gap: 8px; }
+button { padding: 7px 12px; border: 1px solid #8ee4d5; border-radius: 8px; background: transparent; color: #dce8e5; cursor: pointer; white-space: nowrap; }
+button:hover, button:focus-visible { background: rgba(142,228,213,.16); }
+.stage { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; padding: 20px; min-height: calc(100vh - 58px); }
+.editor { min-width: 0; height: calc(100vh - 98px); overflow: auto; border: 1px solid rgba(255,255,255,.35); border-radius: 12px; background: rgba(0,0,0,.17); box-shadow: 0 15px 35px rgba(0,0,0,.14); }
+.editor-heading { position: sticky; top: 0; display: flex; align-items: center; gap: 9px; padding: 11px 16px; background: #15414a; border-bottom: 1px solid rgba(255,255,255,.14); font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; z-index: 1; }
+.editor-dot { width: 10px; height: 10px; border-radius: 50%; background: #edaa67; }
+#codeOutput { margin: 0; padding: 20px; white-space: pre-wrap; overflow-wrap: anywhere; font: 14px/1.7 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.editor-resume { background: #f9fbfa; color: #273e43; }
+.editor-resume .editor-heading { background: #e8f0ee; color: #446268; }
+.resume-output { padding: 24px 30px 40px; line-height: 1.7; }
+.resume-output h1 { margin: 0 0 .45em; font-size: clamp(26px, 3vw, 39px); line-height: 1.2; }
+.resume-output h2 { margin: 1.2em 0 .45em; padding-bottom: .2em; border-bottom: 2px solid #63b8aa; font-size: 20px; }
+.resume-output p { margin: .5em 0; }
+.resume-output ul { margin: .45em 0; padding-left: 1.5em; }
+.resume-output li { margin: .2em 0; }
+.resume-output a { color: #087d81; }
+.resume-output .load-error { color: #b33333; }
+@media (max-width: 760px) {
+  .toolbar { flex-wrap: wrap; padding: 10px 14px; }
+  .toolbar-title { text-align: right; }
+  .toolbar-actions { width: 100%; justify-content: flex-end; }
+  .stage { display: flex; flex-direction: column; gap: 12px; padding: 12px; min-height: auto; }
+  .editor { height: 39vh; min-height: 220px; }
+  .editor-resume { height: 49vh; min-height: 280px; }
+  .resume-output { padding: 20px; }
+}
+
+.resume-portrait { display: block; width: 100px; height: 120px; object-fit: cover; object-position: center top; border-radius: 10px; margin: 0 0 16px; }

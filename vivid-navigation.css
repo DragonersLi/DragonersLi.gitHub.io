@@ -1,0 +1,110 @@
+/* Category archive navigation is configured independently in category_nav. */
+.site-menu,
+.site-menu nav {
+  height: auto !important;
+  overflow: visible !important;
+}
+.site-menu {
+  padding-top: 8px;
+  box-sizing: border-box;
+}
+.site-menu ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0 auto;
+  padding: 0 8px 0 0;
+  list-style: none;
+}
+.site-menu ul li {
+  float: none;
+  flex: 0 0 auto;
+  min-width: 0;
+  width: auto;
+  height: auto !important;
+  margin: 0;
+  line-height: normal !important;
+}
+.site-menu .category-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: auto;
+  height: auto !important;
+  min-height: 34px;
+  margin: 0 !important;
+  padding: 4px 8px 3px 20px;
+  border-radius: 8px;
+  background-color: var(--menu-button-color) !important;
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35 !important;
+  text-align: center;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .28);
+  box-shadow: 0 3px 8px rgba(25, 45, 40, .2);
+  transition: filter .2s ease, transform .2s ease;
+}
+
+.site-menu .category-menu-link:hover,
+.site-menu .category-menu-link:focus-visible {
+  background-color: var(--menu-button-color) !important;
+  color: #fff !important;
+  filter: brightness(1.14);
+  transform: translateY(-2px);
+}
+.site-menu .category-menu-link::before {
+  content: none !important;
+}
+.site-menu .category-menu-link::after {
+  top: 50%;
+  left: 11px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 520px) {
+  .site-menu ul { flex-wrap: wrap; }
+  .site-menu ul li { flex: 1 1 calc(50% - 8px); }
+  .site-menu .category-menu-link { width: 100%; }
+}
+
+/* Saturated, high-contrast tag/category colors; each adjacent chip has a
+   different color regardless of the text-derived color class in the markup. */
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 1) a { --chip-color: #174ea6; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 2) a { --chip-color: #c62828; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 3) a { --chip-color: #6a1b9a; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 4) a { --chip-color: #00796b; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 5) a { --chip-color: #e65100; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 6) a { --chip-color: #ad1457; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 7) a { --chip-color: #2e7d32; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 8) a { --chip-color: #4527a0; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n + 9) a { --chip-color: #00838f; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item:nth-child(10n) a { --chip-color: #5d4037; }
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item a {
+  background: var(--chip-color) !important;
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item a::before {
+  border-right-color: var(--chip-color) !important;
+}
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item a:hover,
+:is(.tools-section-friends, .tools-section-category) .tagcloud .article-tag-list-item a:focus-visible {
+  color: #fff !important;
+  filter: brightness(1.12);
+  opacity: 1;
+}
+
+/* Brighten the article totals shown after each archive year. */
+.archive-year-count {
+  color: #ff1744 !important;
+  font-size: 18px;
+  font-weight: 800;
+  margin-left: 7px;
+  vertical-align: .12em;
+}
+

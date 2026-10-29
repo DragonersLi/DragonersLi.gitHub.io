@@ -11,12 +11,15 @@
     body { background: #fff; }
 
     .banner {
-      height: 313px;
       background: url("./godgirl.jpg") center top no-repeat;
+      /* 动画画布为 950×313，背景为 1600×516，原本居中裁切配合。
+         两层始终按画布宽度等比缩放，不能将整张背景缩进画布，
+         否则铁轨与人物路线会错位。 */
+      background-size: calc(100% * 1600 / 950) auto;
     }
     .hero {
       position: relative;
-      width: min(100%, 950px);
+      width: 100%;
       margin: 0 auto;
     }
     .hero img { display: block; width: 100%; height: auto; }
@@ -48,7 +51,6 @@
     .corner-animation:hover .corner-hover { opacity: 1; }
 
     @media (max-width: 950px) {
-      .banner { height: auto; aspect-ratio: 950 / 313; background-size: auto 100%; }
       .title { font-size: clamp(16px, 2.53vw, 24px); }
     }
     @media (max-width: 600px) {

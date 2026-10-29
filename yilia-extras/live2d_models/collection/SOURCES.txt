@@ -1,0 +1,125 @@
+100 个模型来源：https://github.com/hst1189/live2d-widget/tree/master/model
+来源仓库提交：3a79f2c50d951e8bcba40ce81bca687d43472740
+下载归档 SHA-256：9037c6cf4f93c3a730a3c79e45964b52a0982c585019a3f094ec9a26c8c81b0a
+来源说明：素材收集自互联网，原权利属于各自作者；来源页面描述仅限学习和非营利用途，具体权利应逐项核实。
+缺失可选动作、声音、物理或姿态文件时，从本地模型配置中移除对应引用；原始配置保存在 original-manifests。
+
+extra_001: kanzaki/kanzaki.model.json
+extra_002: redeemer/model.json
+  缺失的可选资源：motion: motions/6.mtn；motion: motions/1.mtn；motion: motions/2.mtn；motion: motions/3.mtn；motion: motions/4.mtn；motion: motions/3.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/5.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn
+extra_003: dollsfrontline/px4storm_2801/normal/model.json
+  缺失的可选资源：motion: 
+extra_004: Kobayaxi/Kobayaxi.model.json
+extra_005: Epsilon2.1/Epsilon2.1.model.json
+extra_006: chiaki_kitty/model.json
+extra_007: jin/jin.model.json
+extra_008: shifuku/shifuku.model.json
+extra_009: stl/stl.model.json
+extra_010: platelet-2/model.json
+extra_011: rem/model.json
+extra_012: HyperdimensionNeptunia/vert_classic/index.json
+extra_013: dollsfrontline/dsr50_1801/normal/model.json
+extra_014: dollsfrontline/gelina/normal/model.json
+extra_015: Potion-Maker/Tia/index.json
+extra_016: bronya_1/model.json
+  缺失的可选资源：motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn
+extra_017: sakura/model.json
+  缺失的可选资源：motion: motions/1.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/2.mtn；motion: motions/4.mtn；motion: motions/3.mtn；motion: motions/4.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/7.mtn；motion: motions/idle.mtn
+extra_018: mei/model.json
+extra_019: kiana/model.json
+  缺失的可选资源：motion: motions/6.mtn；motion: motions/4.mtn；motion: motions/3.mtn；motion: motions/1.mtn；motion: motions/2.mtn；motion: motions/1.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/3.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn
+extra_020: len/len_space/len_space.model.json
+  缺失的可选资源：sound: sounds/len_start_first_01.mp3；sound: sounds/len_start_first_02.mp3；sound: sounds/len_start_first_03.mp3；sound: sounds/len_start_first_04.mp3；sound: sounds/len_start_first_05.mp3；sound: sounds/len_start_first_06.mp3；sound: sounds/len_tap_belly_01.mp3；sound: sounds/len_tap_belly_02.mp3；sound: sounds/len_tap_chest_01.mp3；sound: sounds/len_tap_chest_02.mp3；sound: sounds/len_tap_face_01.mp3；sound: sounds/len_tap_face_02.mp3；sound: sounds/len_tap_face_03.mp3；sound: sounds/len_tap_face_04.mp3；sound: sounds/len_tap_face_05.mp3；sound: sounds/len_tap_face_22.mp3；sound: sounds/len_tap_face_06.mp3；sound: sounds/len_tap_face_07.mp3；sound: sounds/len_tap_face_23.mp3；sound: sounds/len_tap_face_08.mp3；sound: sounds/len_tap_face_09.mp3；sound: sounds/len_tap_face_24.mp3；sound: sounds/len_tap_face_10.mp3；sound: sounds/len_tap_face_11.mp3；sound: sounds/len_tap_face_25.mp3；sound: sounds/len_tap_face_12.mp3；sound: sounds/len_tap_face_13.mp3；sound: sounds/len_tap_face_14.mp3；sound: sounds/len_tap_face_15.mp3；sound: sounds/len_tap_face_16.mp3；sound: sounds/len_tap_face_17.mp3；sound: sounds/len_tap_face_18.mp3；sound: sounds/len_tap_face_19.mp3；sound: sounds/len_tap_face_20.mp3；sound: sounds/len_tap_face_21.mp3；sound: sounds/len_tap_hand_01.mp3；sound: sounds/len_tap_hand_02.mp3；sound: sounds/len_tap_hand_01.mp3；sound: sounds/len_tap_hand_02.mp3；sound: sounds/len_tap_head_01.mp3；sound: sounds/len_tap_head_02.mp3
+extra_021: hallo_16/hallo_16.model.json
+  缺失的可选资源：sound: motions/tap/voice_3368.mp3；sound: motions/tap/voice_3369.mp3；sound: motions/tap/voice_3370.mp3；sound: motions/tap/voice_3371.mp3；sound: motions/tap/voice_3372.mp3；sound: motions/tap/voice_3373.mp3
+extra_022: uiharu/uiharu.model.json
+extra_023: theresa/model.json
+  缺失的可选资源：motion: motions/1.mtn；motion: motions/2.mtn；motion: motions/2.mtn；motion: motions/4.mtn；motion: motions/4.mtn；motion: motions/4.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/9.mtn；motion: motions/15.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn
+extra_024: YuzukiYukari/YuzukiYukari.model.json
+extra_025: dollsfrontline/vector_1901/normal/model.json
+extra_026: dollsfrontline/sat8_2601/normal/model.json
+extra_027: ShizukuTalk/shizuku-48/index.json
+extra_028: len/len_impact/len_impact.model.json
+  缺失的可选资源：sound: sounds/len_impact_start_first_01.mp3；sound: sounds/len_impact_start_first_02.mp3；sound: sounds/len_impact_tap_belly_01.mp3；sound: sounds/len_impact_tap_belly_02.mp3；sound: sounds/len_impact_tap_chest_01.mp3；sound: sounds/len_impact_tap_chest_02.mp3；sound: sounds/len_impact_tap_face_01.mp3；sound: sounds/len_impact_tap_face_02.mp3；sound: sounds/len_impact_tap_head_01.mp3；sound: sounds/len_impact_tap_head_02.mp3；sound: sounds/len_impact_tap_leg_01.mp3；sound: sounds/len_impact_tap_leg_02.mp3
+extra_029: HyperdimensionNeptunia/noir_santa/index.json
+extra_030: dollsfrontline/hk416_805/normal/model.json
+extra_031: HyperdimensionNeptunia/blanc_classic/index.json
+extra_032: illyasviel/illyasviel.model.json
+extra_033: himeko/model.json
+  缺失的可选资源：motion: motions/7.mtn；motion: motions/1.mtn；motion: motions/1.mtn；motion: motions/3.mtn；motion: motions/2.mtn；motion: motions/4.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/6.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn
+extra_034: sagiri/sagiri.model.json
+extra_035: len/len_nomal/len.model.json
+  缺失的可选资源：sound: sounds/len_start_first_01.mp3；sound: sounds/len_start_first_02.mp3；sound: sounds/len_start_first_03.mp3；sound: sounds/len_start_first_04.mp3；sound: sounds/len_start_first_05.mp3；sound: sounds/len_start_first_06.mp3；sound: sounds/len_tap_belly_01.mp3；sound: sounds/len_tap_belly_02.mp3；sound: sounds/len_tap_chest_01.mp3；sound: sounds/len_tap_chest_02.mp3；sound: sounds/len_tap_face_01.mp3；sound: sounds/len_tap_face_02.mp3；sound: sounds/len_tap_face_03.mp3；sound: sounds/len_tap_face_04.mp3；sound: sounds/len_tap_face_05.mp3；sound: sounds/len_tap_face_22.mp3；sound: sounds/len_tap_face_06.mp3；sound: sounds/len_tap_face_07.mp3；sound: sounds/len_tap_face_23.mp3；sound: sounds/len_tap_face_08.mp3；sound: sounds/len_tap_face_09.mp3；sound: sounds/len_tap_face_24.mp3；sound: sounds/len_tap_face_10.mp3；sound: sounds/len_tap_face_11.mp3；sound: sounds/len_tap_face_25.mp3；sound: sounds/len_tap_face_12.mp3；sound: sounds/len_tap_face_13.mp3；sound: sounds/len_tap_face_14.mp3；sound: sounds/len_tap_face_15.mp3；sound: sounds/len_tap_face_16.mp3；sound: sounds/len_tap_face_17.mp3；sound: sounds/len_tap_face_18.mp3；sound: sounds/len_tap_face_19.mp3；sound: sounds/len_tap_face_20.mp3；sound: sounds/len_tap_face_21.mp3；sound: sounds/len_tap_hand_01.mp3；sound: sounds/len_tap_hand_02.mp3；sound: sounds/len_tap_hand_01.mp3；sound: sounds/len_tap_hand_02.mp3；sound: sounds/len_tap_head_01.mp3；sound: sounds/len_tap_head_02.mp3；sound: sounds/len_tap_skirt_01.mp3；sound: sounds/len_tap_skirt_02.mp3
+extra_036: bronya/model.json
+extra_037: dollsfrontline/ags-30/model.json
+extra_038: live_uu/model.json
+extra_039: snow_miku/model.json
+extra_040: dollsfrontline/rfb_1601/normal/model.json
+extra_041: HyperdimensionNeptunia/nepgear_extra/index.json
+extra_042: HyperdimensionNeptunia/nepgear/index.json
+extra_043: dollsfrontline/ntw20_2301/normal/model.json
+extra_044: HyperdimensionNeptunia/nepnep/index.json
+extra_045: HyperdimensionNeptunia/noir_classic/index.json
+extra_046: ryoufuku/ryoufuku.model.json
+extra_047: kurumi/model.json
+  缺失的可选资源：physics: physics.json
+extra_048: KantaiCollection/murakumo/index.json
+extra_049: dollsfrontline/ots14_3001/normal/model.json
+extra_050: platelet/model.json
+extra_051: yukari_model/yukari_model.model.json
+extra_052: dollsfrontline/88type_1809/normal/model.json
+extra_053: Alice/model.json
+  缺失的可选资源：motion: motions/8.mtn；motion: motions/1.mtn；motion: motions/2.mtn；motion: motions/3.mtn；motion: motions/5.mtn；motion: motions/4.mtn
+extra_054: mashiro/seifuku.model.json
+extra_055: dollsfrontline/kp31_1103/normal/model.json
+extra_056: HyperdimensionNeptunia/neptune_classic/index.json
+extra_057: moon/model.json
+  缺失的可选资源：motion: motions/7.mtn；motion: motions/1.mtn；motion: motions/2.mtn；motion: motions/3.mtn；motion: motions/4.mtn；motion: motions/4.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/5.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn
+extra_058: wed_16/wed_16.model.json
+  缺失的可选资源：sound: motions/tap/voice_3368.mp3；sound: motions/tap/voice_3369.mp3；sound: motions/tap/voice_3370.mp3；sound: motions/tap/voice_3371.mp3；sound: motions/tap/voice_3372.mp3；sound: motions/tap/voice_3373.mp3
+extra_059: dollsfrontline/g36c_1202/normal/model.json
+extra_060: bilibili/33_high/model.json
+extra_061: unitychan/unitychan.model.json
+extra_062: index/model.json
+extra_063: makoto0/makoto0.model.json
+extra_064: dollsfrontline/grizzly_2102/normal/model.json
+extra_065: dollsfrontline/95type_405/normal/model.json
+extra_066: bilibili/22_high/model.json
+extra_067: kuroko/kuroko.model.json
+extra_068: dollsfrontline/type64-ar_2901/normal/model.json
+extra_069: sin/model.json
+  缺失的可选资源：motion: motions/11.mtn；motion: motions/7.mtn；motion: motions/6.mtn；motion: motions/2.mtn；motion: motions/9.mtn；motion: motions/4.mtn；motion: motions/5.mtn；motion: motions/10.mtn；motion: motions/idle.mtn；motion: motions/idle.mtn；motion: motions/2.mtn；motion: motions/10.mtn；motion: motions/10.mtn
+extra_070: katou_01/katou_01.model.json
+  缺失的可选资源：motion: mtn/IDLING_01.mtn
+extra_071: HyperdimensionNeptunia/nepmaid/index.json
+extra_072: HyperdimensionNeptunia/noir/index.json
+extra_073: dollsfrontline/kp31_310/normal/model.json
+extra_074: dollsfrontline/welrod_1401/normal/model.json
+extra_075: mashiro/shifuku.model.json
+extra_076: iio/iio.model.json
+extra_077: dollsfrontline/mlemk1_604/normal/model.json
+extra_078: seele/model.json
+extra_079: shifuku2/shifuku2.model.json
+extra_080: HyperdimensionNeptunia/blanc_normal/index.json
+extra_081: HyperdimensionNeptunia/neptune_santa/index.json
+extra_082: ShizukuTalk/shizuku/shizuku.model.json
+extra_083: seifuku/seifuku.model.json
+extra_084: Potion-Maker/Pio/model.json
+extra_085: yuri/model.json
+extra_086: dollsfrontline/g41_2401/normal/model.json
+extra_087: dollsfrontline/m1928a1_1501/normal/model.json
+extra_088: HyperdimensionNeptunia/vert_normal/index.json
+extra_089: dollsfrontline/fn57_2203/normal/model.json
+extra_090: saten/saten.model.json
+extra_091: dollsfrontline/dsr50_2101/normal/model.json
+extra_092: platelet-3/kesyoban.model.json
+extra_093: liang/model.json
+  缺失的可选资源：motion: motions/aoba_live2D_01.mtn
+extra_094: xiaomai/xiaomai.model.json
+extra_095: HyperdimensionNeptunia/histoire/index.json
+extra_096: dollsfrontline/wa2000_6/normal/model.json
+extra_097: dollsfrontline/kp31_3101/normal/model.json
+extra_098: mikoto/mikoto.model.json
+extra_099: date_16/model.json
+  缺失的可选资源：sound: motions/tap/voice_3368.mp3；sound: motions/tap/voice_3369.mp3；sound: motions/tap/voice_3370.mp3；sound: motions/tap/voice_3371.mp3；sound: motions/tap/voice_3372.mp3；sound: motions/tap/voice_3373.mp3
+extra_100: mashiro/ryoufuku.model.json
