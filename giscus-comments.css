@@ -1,0 +1,86 @@
+/* 文章详情评论区：外层布局独立于 Giscus iframe 内部主题。 */
+.giscus-comments#comments {
+  box-sizing: border-box;
+  margin: 30px 30px 40px;
+  padding: 24px 30px 30px !important;
+  background: #fff;
+  color: #555;
+}
+
+.giscus-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.giscus-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #555;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.giscus-heading-icon {
+  width: 23px;
+  height: 23px;
+  flex: none;
+  color: #777;
+}
+
+.giscus-heading a {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1683aa;
+}
+
+.giscus-heading a:hover,
+.giscus-heading a:focus-visible {
+  color: #075c7a;
+  text-decoration: underline;
+}
+
+.giscus-like-hint {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  padding: 11px 14px;
+  border-radius: 6px;
+  background: #fff4f4;
+  color: #765758;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.giscus-like-heart {
+  color: #e36870;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.giscus-like-hint strong { color: #a1474e; }
+
+.giscus-comments .giscus,
+.giscus-comments .giscus-frame {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  .giscus-comments#comments {
+    margin: 20px 10px 28px;
+    padding: 20px 16px 24px !important;
+  }
+
+  .giscus-heading h2 { font-size: 19px; }
+  .giscus-heading { margin-bottom: 16px; }
+}

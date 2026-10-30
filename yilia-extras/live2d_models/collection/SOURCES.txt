@@ -11,10 +11,10 @@ extra_003: dollsfrontline/px4storm_2801/normal/model.json
   缺失的可选资源：motion: 
 extra_004: Kobayaxi/Kobayaxi.model.json
 extra_005: Epsilon2.1/Epsilon2.1.model.json
-extra_006: chiaki_kitty/model.json
-extra_007: jin/jin.model.json
+extra_006: Potion-Maker/Pio/model1.json
+extra_007: Potion-Maker/Pio/model2.json
 extra_008: shifuku/shifuku.model.json
-extra_009: stl/stl.model.json
+extra_009: Potion-Maker/Pio/model4.json
 extra_010: platelet-2/model.json
 extra_011: rem/model.json
 extra_012: HyperdimensionNeptunia/vert_classic/index.json
@@ -51,10 +51,10 @@ extra_034: sagiri/sagiri.model.json
 extra_035: len/len_nomal/len.model.json
   缺失的可选资源：sound: sounds/len_start_first_01.mp3；sound: sounds/len_start_first_02.mp3；sound: sounds/len_start_first_03.mp3；sound: sounds/len_start_first_04.mp3；sound: sounds/len_start_first_05.mp3；sound: sounds/len_start_first_06.mp3；sound: sounds/len_tap_belly_01.mp3；sound: sounds/len_tap_belly_02.mp3；sound: sounds/len_tap_chest_01.mp3；sound: sounds/len_tap_chest_02.mp3；sound: sounds/len_tap_face_01.mp3；sound: sounds/len_tap_face_02.mp3；sound: sounds/len_tap_face_03.mp3；sound: sounds/len_tap_face_04.mp3；sound: sounds/len_tap_face_05.mp3；sound: sounds/len_tap_face_22.mp3；sound: sounds/len_tap_face_06.mp3；sound: sounds/len_tap_face_07.mp3；sound: sounds/len_tap_face_23.mp3；sound: sounds/len_tap_face_08.mp3；sound: sounds/len_tap_face_09.mp3；sound: sounds/len_tap_face_24.mp3；sound: sounds/len_tap_face_10.mp3；sound: sounds/len_tap_face_11.mp3；sound: sounds/len_tap_face_25.mp3；sound: sounds/len_tap_face_12.mp3；sound: sounds/len_tap_face_13.mp3；sound: sounds/len_tap_face_14.mp3；sound: sounds/len_tap_face_15.mp3；sound: sounds/len_tap_face_16.mp3；sound: sounds/len_tap_face_17.mp3；sound: sounds/len_tap_face_18.mp3；sound: sounds/len_tap_face_19.mp3；sound: sounds/len_tap_face_20.mp3；sound: sounds/len_tap_face_21.mp3；sound: sounds/len_tap_hand_01.mp3；sound: sounds/len_tap_hand_02.mp3；sound: sounds/len_tap_hand_01.mp3；sound: sounds/len_tap_hand_02.mp3；sound: sounds/len_tap_head_01.mp3；sound: sounds/len_tap_head_02.mp3；sound: sounds/len_tap_skirt_01.mp3；sound: sounds/len_tap_skirt_02.mp3
 extra_036: bronya/model.json
-extra_037: dollsfrontline/ags-30/model.json
+extra_037: Potion-Maker/Pio/model5.json
 extra_038: live_uu/model.json
 extra_039: snow_miku/model.json
-extra_040: dollsfrontline/rfb_1601/normal/model.json
+extra_040: ShizukuTalk/shizuku-pajama/index.json
 extra_041: HyperdimensionNeptunia/nepgear_extra/index.json
 extra_042: HyperdimensionNeptunia/nepgear/index.json
 extra_043: dollsfrontline/ntw20_2301/normal/model.json
